@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img
-          src="https://raw.githubusercontent.com/sajadghawami/recscout-homepage/master/build/static/media/logo.6ce24c58.svg?token=AC2ADUFKS67AZJQGANUBFDLAJM5EI"
+          src="https://raw.githubusercontent.com/sajadghawami/recscout-homepage/master/public/logo512.png"
           className="App-logo"
           alt="logo"
         />
