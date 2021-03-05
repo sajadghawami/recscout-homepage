@@ -85,7 +85,7 @@ const FeaturesSplit = ({
               >
                 <Image
                   src={
-                    "https://raw.githubusercontent.com/sajadghawami/recscout-homepage/master/public/assets/images/features-split-image-01.png"
+                    "https://sajadghawami.github.io/recscout-homepage/public/assets/images/features-split-image-01.png"
                   }
                   alt="Features split 01"
                   width={528}
@@ -119,7 +119,7 @@ const FeaturesSplit = ({
               >
                 <Image
                   src={
-                    "https://raw.githubusercontent.com/sajadghawami/recscout-homepage/master/public/assets/images/features-split-image-02.png"
+                    "https://sajadghawami.github.io/recscout-homepage/public/assets/images/features-split-image-02.png"
                   }
                   alt="Features split 02"
                   width={528}
@@ -153,7 +153,7 @@ const FeaturesSplit = ({
               >
                 <Image
                   src={
-                    "https://raw.githubusercontent.com/sajadghawami/recscout-homepage/master/public/assets/images/features-split-image-03.png"
+                    "https://sajadghawami.github.io/recscout-homepage/public/assets/images/features-split-image-03.png"
                   }
                   alt="Features split 03"
                   width={528}

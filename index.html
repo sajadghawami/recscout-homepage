@@ -1,0 +1,43 @@
+<script>
+  window.addEventListener("load", function (event) {
+    console.log("recscout script initialized");
+    // if we find the customization-wraper, it means we are on the homepage
+    const elem = document.getElementsByClassName(
+      "community-customization-wrapper"
+    );
+    if (elem.length) {
+      // now remove the cover image
+      const coverImage = document.getElementsByClassName("coverimage");
+      coverImage[0].parentNode.removeChild(coverImage[0]);
+      // remove the page content
+      const pageContent = document.getElementsByClassName("page-content");
+      pageContent[0].parentNode.removeChild(pageContent[0]);
+
+      // add our entry
+      const root = document.createElement("div");
+      root.setAttribute("id", "root");
+      document
+        .getElementsByClassName("marketplace-lander")[0]
+        .appendChild(root);
+
+      // inject react
+      const reactScript = document.createElement("script");
+      reactScript.type = "text/javascript";
+      reactScript.src =
+        "https://sajadghawami.github.io/recscout-homepage/public/main.js";
+      $("head").append(reactScript);
+    }
+  });
+</script>
+
+<link
+  href="https://sajadghawami.github.io/recscout-homepage/public/main.css"
+  rel="stylesheet"
+/>
+
+<style>
+  /* remove the button because its visible on first paint */
+  .marketplace-lander .search-form {
+    display: none;
+  }
+</style>

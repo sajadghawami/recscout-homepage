@@ -1,9 +1,9 @@
     <link
-      href="https://raw.githubusercontent.com/sajadghawami/recscout-homepage/master/public/main.css"
+      href="https://sajadghawami.github.io/recscout-homepage/public/main.css"
       rel="stylesheet"
     />
 
-    <script src="https://raw.githubusercontent.com/sajadghawami/recscout-homepage/master/public/main.js></script>
+    <script src="https://sajadghawami.github.io/recscout-homepage/public/main.js></script>
 
 ---
 
@@ -18,4 +18,4 @@ will move .css and js to public folder, which we reference
 
 ---
 
-https://raw.githubusercontent.com/sajadghawami/recscout-homepage/master/public/assets/images/cta-illustration.svg
+https://sajadghawami.github.io/recscout-homepage/public/assets/images/cta-illustration.svg

@@ -60,7 +60,7 @@ const FeaturesTiles = ({
                   <div className="features-tiles-item-image mb-16">
                     <Image
                       src={
-                        "https://raw.githubusercontent.com/sajadghawami/recscout-homepage/master/public/assets/images/feature-tile-icon-01.svg"
+                        "https://sajadghawami.github.io/recscout-homepage/public/assets/images/feature-tile-icon-01.svg"
                       }
                       alt="Features tile icon 01"
                       width={64}
@@ -88,7 +88,7 @@ const FeaturesTiles = ({
                   <div className="features-tiles-item-image mb-16">
                     <Image
                       src={
-                        "https://raw.githubusercontent.com/sajadghawami/recscout-homepage/master/public/assets/images/feature-tile-icon-02.svg"
+                        "https://sajadghawami.github.io/recscout-homepage/public/assets/images/feature-tile-icon-02.svg"
                       }
                       alt="Features tile icon 02"
                       width={64}
@@ -116,7 +116,7 @@ const FeaturesTiles = ({
                   <div className="features-tiles-item-image mb-16">
                     <Image
                       src={
-                        "https://raw.githubusercontent.com/sajadghawami/recscout-homepage/master/public/assets/images/feature-tile-icon-03.svg"
+                        "https://sajadghawami.github.io/recscout-homepage/public/assets/images/feature-tile-icon-03.svg"
                       }
                       alt="Features tile icon 03"
                       width={64}
@@ -141,7 +141,7 @@ const FeaturesTiles = ({
                   <div className="features-tiles-item-image mb-16">
                     <Image
                       src={
-                        "https://raw.githubusercontent.com/sajadghawami/recscout-homepage/master/public/assets/images/feature-tile-icon-04.svg"
+                        "https://sajadghawami.github.io/recscout-homepage/public/assets/images/feature-tile-icon-04.svg"
                       }
                       alt="Features tile icon 04"
                       width={64}
@@ -169,7 +169,7 @@ const FeaturesTiles = ({
                   <div className="features-tiles-item-image mb-16">
                     <Image
                       src={
-                        "https://raw.githubusercontent.com/sajadghawami/recscout-homepage/master/public/assets/images/feature-tile-icon-05.svg"
+                        "https://sajadghawami.github.io/recscout-homepage/public/assets/images/feature-tile-icon-05.svg"
                       }
                       alt="Features tile icon 05"
                       width={64}
@@ -197,7 +197,7 @@ const FeaturesTiles = ({
                   <div className="features-tiles-item-image mb-16">
                     <Image
                       src={
-                        "https://raw.githubusercontent.com/sajadghawami/recscout-homepage/master/public/assets/images/feature-tile-icon-06.svg"
+                        "https://sajadghawami.github.io/recscout-homepage/public/assets/images/feature-tile-icon-06.svg"
                       }
                       alt="Features tile icon 06"
                       width={64}
