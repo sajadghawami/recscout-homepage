@@ -1,16 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.8c8b27cf.css",
+    "main.css": "/static/css/main.cc4e79ff.css",
     "main.js": "/static/js/main.js",
     "main.js.map": "/static/js/main.js.map",
-    "static/js/1.e97fec94.chunk.js": "/static/js/1.e97fec94.chunk.js",
-    "static/js/1.e97fec94.chunk.js.map": "/static/js/1.e97fec94.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.8c8b27cf.css.map": "/static/css/main.8c8b27cf.css.map",
-    "static/js/main.js.LICENSE.txt": "/static/js/main.js.LICENSE.txt"
+    "static/css/main.cc4e79ff.css.map": "/static/css/main.cc4e79ff.css.map",
+    "static/js/main.js.LICENSE.txt": "/static/js/main.js.LICENSE.txt",
+    "static/media/style.scss": "/static/media/illustration-section-02.f11c21a9.svg",
+    "static/media/feature-tile-icon-01.e13cef8e.svg": "/static/media/feature-tile-icon-01.e13cef8e.svg",
+    "static/media/feature-tile-icon-02.46935659.svg": "/static/media/feature-tile-icon-02.46935659.svg",
+    "static/media/feature-tile-icon-03.69e94e20.svg": "/static/media/feature-tile-icon-03.69e94e20.svg",
+    "static/media/feature-tile-icon-04.1acd4dac.svg": "/static/media/feature-tile-icon-04.1acd4dac.svg",
+    "static/media/feature-tile-icon-05.af2bae11.svg": "/static/media/feature-tile-icon-05.af2bae11.svg",
+    "static/media/feature-tile-icon-06.74b0477e.svg": "/static/media/feature-tile-icon-06.74b0477e.svg",
+    "static/media/features-split-image-01.94b14c16.png": "/static/media/features-split-image-01.94b14c16.png",
+    "static/media/features-split-image-02.49942613.png": "/static/media/features-split-image-02.49942613.png",
+    "static/media/features-split-image-03.7bd67155.png": "/static/media/features-split-image-03.7bd67155.png",
+    "static/media/logo.3b931fc4.svg": "/static/media/logo.3b931fc4.svg",
+    "static/media/pexels-photo-01.8b4ce64c.jpeg": "/static/media/pexels-photo-01.8b4ce64c.jpeg"
   },
   "entrypoints": [
-    "static/css/main.8c8b27cf.css",
+    "static/css/main.cc4e79ff.css",
     "static/js/main.js"
   ]
 }
