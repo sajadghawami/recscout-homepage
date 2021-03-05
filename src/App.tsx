@@ -1,12 +1,16 @@
 import React from "react";
-import logo from "./logo.svg";
+
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img
+          src="https://raw.githubusercontent.com/sajadghawami/recscout-homepage/master/build/static/media/logo.6ce24c58.svg?token=AC2ADUFKS67AZJQGANUBFDLAJM5EI"
+          className="App-logo"
+          alt="logo"
+        />
         <p>let the fun begin</p>
         <a
           className="App-link"
