@@ -1,9 +1,9 @@
     <link
-      href="https://raw.githubusercontent.com/sajadghawami/recscout-homepage/master/build/static/css/main.8c8b27cf.css"
+      href="https://raw.githubusercontent.com/sajadghawami/recscout-homepage/master/public/main.css"
       rel="stylesheet"
     />
 
-    <script src="https://raw.githubusercontent.com/sajadghawami/recscout-homepage/master/build/static/js/main.js></script>
+    <script src="https://raw.githubusercontent.com/sajadghawami/recscout-homepage/master/public/main.js></script>
 
 ---
 
@@ -15,3 +15,7 @@ yarn build
 yarn build:clean
 
 will move .css and js to public folder, which we reference
+
+---
+
+https://raw.githubusercontent.com/sajadghawami/recscout-homepage/master/public/assets/images/cta-illustration.svg

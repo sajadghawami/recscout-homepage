@@ -3,12 +3,6 @@ import classNames from "classnames";
 import { SectionTilesProps } from "../../utils/SectionProps";
 import SectionHeader from "./partials/SectionHeader";
 import Image from "../elements/Image";
-import FeatureTileIcon01 from "./../../assets/images/feature-tile-icon-01.svg";
-import FeatureTileIcon02 from "./../../assets/images/feature-tile-icon-02.svg";
-import FeatureTileIcon03 from "./../../assets/images/feature-tile-icon-03.svg";
-import FeatureTileIcon04 from "./../../assets/images/feature-tile-icon-04.svg";
-import FeatureTileIcon05 from "./../../assets/images/feature-tile-icon-05.svg";
-import FeatureTileIcon06 from "./../../assets/images/feature-tile-icon-06.svg";
 
 const propTypes = {
   ...SectionTilesProps.types,
@@ -65,7 +59,9 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={FeatureTileIcon01}
+                      src={
+                        "https://raw.githubusercontent.com/sajadghawami/recscout-homepage/master/public/assets/images/feature-tile-icon-01.svg"
+                      }
                       alt="Features tile icon 01"
                       width={64}
                       height={64}
@@ -91,7 +87,9 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={FeatureTileIcon02}
+                      src={
+                        "https://raw.githubusercontent.com/sajadghawami/recscout-homepage/master/public/assets/images/feature-tile-icon-02.svg"
+                      }
                       alt="Features tile icon 02"
                       width={64}
                       height={64}
@@ -117,7 +115,9 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={FeatureTileIcon03}
+                      src={
+                        "https://raw.githubusercontent.com/sajadghawami/recscout-homepage/master/public/assets/images/feature-tile-icon-03.svg"
+                      }
                       alt="Features tile icon 03"
                       width={64}
                       height={64}
@@ -140,7 +140,9 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={FeatureTileIcon04}
+                      src={
+                        "https://raw.githubusercontent.com/sajadghawami/recscout-homepage/master/public/assets/images/feature-tile-icon-04.svg"
+                      }
                       alt="Features tile icon 04"
                       width={64}
                       height={64}
@@ -166,7 +168,9 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={FeatureTileIcon05}
+                      src={
+                        "https://raw.githubusercontent.com/sajadghawami/recscout-homepage/master/public/assets/images/feature-tile-icon-05.svg"
+                      }
                       alt="Features tile icon 05"
                       width={64}
                       height={64}
@@ -192,7 +196,9 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={FeatureTileIcon06}
+                      src={
+                        "https://raw.githubusercontent.com/sajadghawami/recscout-homepage/master/public/assets/images/feature-tile-icon-06.svg"
+                      }
                       alt="Features tile icon 06"
                       width={64}
                       height={64}

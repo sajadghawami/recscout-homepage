@@ -3,9 +3,6 @@ import classNames from "classnames";
 import { SectionSplitProps } from "../../utils/SectionProps";
 import SectionHeader from "./partials/SectionHeader";
 import Image from "../elements/Image";
-import FeatureSplitImage01 from "./../../assets/images/features-split-image-01.png";
-import FeatureSplitImage02 from "./../../assets/images/features-split-image-02.png";
-import FeatureSplitImage03 from "./../../assets/images/features-split-image-03.png";
 
 const propTypes = {
   ...SectionSplitProps.types,
@@ -87,7 +84,9 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <Image
-                  src={FeatureSplitImage01}
+                  src={
+                    "https://raw.githubusercontent.com/sajadghawami/recscout-homepage/master/public/assets/images/features-split-image-01.png"
+                  }
                   alt="Features split 01"
                   width={528}
                   height={396}
@@ -119,7 +118,9 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <Image
-                  src={FeatureSplitImage02}
+                  src={
+                    "https://raw.githubusercontent.com/sajadghawami/recscout-homepage/master/public/assets/images/features-split-image-02.png"
+                  }
                   alt="Features split 02"
                   width={528}
                   height={396}
@@ -151,7 +152,9 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <Image
-                  src={FeatureSplitImage03}
+                  src={
+                    "https://raw.githubusercontent.com/sajadghawami/recscout-homepage/master/public/assets/images/features-split-image-03.png"
+                  }
                   alt="Features split 03"
                   width={528}
                   height={396}
