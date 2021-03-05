@@ -27,7 +27,8 @@
     "build:old": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build": "npx ./build.js"
+    "build": "npx ./build.js",
+    "build:clean": "cd build && mv static/js/*.js ../public/main.js && mv static/css/*.css ../public/main.css && rm -r static"
   },
   "eslintConfig": {
     "extends": [
