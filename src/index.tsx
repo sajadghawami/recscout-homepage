@@ -8,7 +8,7 @@ ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementsByClassName("marketplace-lander")[0]
+  document.getElementById("homepage-filters")
 );
 
 // If you want to start measuring performance in your app, pass a function
