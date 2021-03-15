@@ -51,7 +51,7 @@ const FeaturesSplit = ({
   const sectionHeader = {
     title: "Recruitment that just works",
     paragraph:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.",
+      "Unser Team setzt sich aus erfahrenen Gründern, Recruitern und HR Business Partnern zusammen. Wir vereinen somit die verschiedene Ansichten und Anforderungen aller Parteien in unserem Team. ",
   };
 
   return (
@@ -70,10 +70,9 @@ const FeaturesSplit = ({
                 </div>
                 <h3 className="mt-0 mb-12">Data-driven insights</h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                  — Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  Was ist das Besondere an Recscout. die probleme die wir sehen
+                  und wie wir diese lösen. verhalten untereinander, nervige
+                  anrufe. kontaktversuche cvs zusenden. keine inbound leads. usw
                 </p>
               </div>
               <div
@@ -85,7 +84,7 @@ const FeaturesSplit = ({
               >
                 <Image
                   src={
-                    "https://sajadghawami.github.io/recscout-homepage/public/assets/images/features-split-image-01.png"
+                    "https://sajadghawami.github.io/recscout-homepage/public/assets/images/illustrations/one.jpeg"
                   }
                   alt="Features split 01"
                   width={528}
@@ -104,10 +103,8 @@ const FeaturesSplit = ({
                 </div>
                 <h3 className="mt-0 mb-12">Data-driven insights</h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                  — Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  So legen Sie los. Was passiert in den nächsten schritten und
+                  was ändert sich dadurch an den problemen
                 </p>
               </div>
               <div
@@ -119,7 +116,7 @@ const FeaturesSplit = ({
               >
                 <Image
                   src={
-                    "https://sajadghawami.github.io/recscout-homepage/public/assets/images/features-split-image-02.png"
+                    "https://sajadghawami.github.io/recscout-homepage/public/assets/images/illustrations/two.jpeg"
                   }
                   alt="Features split 02"
                   width={528}
@@ -138,10 +135,8 @@ const FeaturesSplit = ({
                 </div>
                 <h3 className="mt-0 mb-12">Data-driven insights</h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                  — Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  Ein Blick in die Zukunft. welche funktionen und möglichkeiten
+                  kommen
                 </p>
               </div>
               <div
@@ -153,7 +148,7 @@ const FeaturesSplit = ({
               >
                 <Image
                   src={
-                    "https://sajadghawami.github.io/recscout-homepage/public/assets/images/features-split-image-03.png"
+                    "https://sajadghawami.github.io/recscout-homepage/public/assets/images/illustrations/five.jpeg"
                   }
                   alt="Features split 03"
                   width={528}

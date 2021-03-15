@@ -4,29 +4,29 @@
 $palette: (
 	dark: (
 		1: #fff,
-		2: #25282c,
+		2: #eec24c,
 		3: #717d86,
 	),
 	light: (
 		1: #151719,
-		2: #25282c,
+		2: #050505,
 		3: #33363a,
 	),
 	primary: (
-		1: #044a3a,
-		2: #acadff,
-		3: #044a3a,
-		4: #e9e9ff,
+		1: #53d8d8,
+		2: #7ce7de,
+		3: #53d8d8,
+		4: #ddfdf2,
 	),
 	secondary: (
-		1: #044a3a,
-		2: #d0fae7,
-		3: #044a3a,
-		4: #d2f9ee,
+		1: #eec24c,
+		2: #f4d677,
+		3: #ddfdf2,
+		4: #fef8db,
 	),
 	alert: (
-		error: #bf1e21,
-		warning: #bf7301,
+		error: #f7798b,
+		warning: #fbd0ab,
 		success: #428c15,
 	),
 );
@@ -80,7 +80,7 @@ $icon--color: (
 	// accordion icon
 	social-inverse: null,
 	// social icons
-	social-hover-inverse: null // social icons (:hover),,,,,,,,,,,,,,,,,,
+	social-hover-inverse: null // social icons (:hover),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 );
 
 // Misc elements: background color

@@ -19,3 +19,7 @@ will move .css and js to public folder, which we reference
 ---
 
 https://sajadghawami.github.io/recscout-homepage/public/assets/images/cta-illustration.svg
+
+
+
+ create mode 100644 public/assets/images/illustrations/four.jpeg

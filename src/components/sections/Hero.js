@@ -70,43 +70,40 @@ const Hero = ({
       <div style={{ width: "100%", height: "100%" }}>
         <div className={innerClasses}>
           <div className="hero-content">
-            <h1
+            <h2
               className="mt-0 mb-16 reveal-from-bottom"
               data-reveal-delay="200"
             >
-              connecting <span className="text-color-primary">companies</span>{" "}
-              and <span className="text-color-primary">recruiters</span>
-            </h1>
+              Finde den besten Recruiter für jede Vakanz
+              <br />
+              <span className="text-color-primary">- Komm recscouten</span>
+            </h2>
             <div className="container-xs">
               <p
                 className="m-0 mb-32 reveal-from-bottom"
                 data-reveal-delay="400"
               >
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                Per Klick den besten Recruiter beauftragen. Recscout ist der
+                Marktplatz auf dem Firmen und Recruiter schnell zueinander
+                finden. Eröffnen Sie jetzt in wenigen Minuten Ihren kostenlosen
+                Account - komm recscouten
               </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
                   <Button tag="a" color="primary" wideMobile href="/register">
-                    Register
+                    Jetzt recscouten
                   </Button>
-                  {/* <Button
-                    tag="a"
-                    color="dark"
-                    wideMobile
-                    href="https://github.com/cruip/open-react-template/"
-                  >
-                    View on Github
-                  </Button> */}
+                  <Button tag="a" color="dark" wideMobile href="#">
+                    Demo buchen
+                  </Button>
                 </ButtonGroup>
               </div>
             </div>
           </div>
-          <div>
+          <div className="hero-image">
             <img
               src="https://sajadghawami.github.io/recscout-homepage/public/assets/images/illustrations/three.jpeg"
-              alt="test"
+              alt="#"
             />
           </div>
 

@@ -8,7 +8,7 @@ import Cta from "../components/sections/Cta";
 
 const Home = () => {
   return (
-    <>
+    <div style={{ backgroundColor: "#f7f7f7" }}>
       <Hero />
       <FeaturesTiles className="illustration-section-01" />
       <FeaturesSplit
@@ -19,7 +19,7 @@ const Home = () => {
       />
       <Testimonial topDivider />
       {/* <Cta split /> */}
-    </>
+    </div>
   );
 };
 

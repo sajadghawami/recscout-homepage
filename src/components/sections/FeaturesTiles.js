@@ -43,9 +43,9 @@ const FeaturesTiles = ({
   );
 
   const sectionHeader = {
-    title: "Build up the whole picture",
+    title: "RecScout - und das HR Team ist happy",
     paragraph:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.",
+      "#More Trust Less Bullshit oder 'das Ziel vom effektiven Spaß bei der Zusammenarbeit'. Sparen Sie Ihre Zeit, Ihre Kosten und Ihre kostbaren Nerven mit effektiven Recruiting.",
   };
 
   return (
@@ -69,11 +69,12 @@ const FeaturesTiles = ({
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">Robust Workflow</h4>
+                  <h4 className="mt-0 mb-8">Keine Kosten</h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat.
+                    Erstellen Sie Ihren Account als Unternehmen oder Recruiter
+                    schnell und kostenlos. In wenigen Schritten sind Sie
+                    startbereit. Als Unternehmen zahlen Sie wie gewohnt eine Fee
+                    an den Recruiter.
                   </p>
                 </div>
               </div>
@@ -97,11 +98,12 @@ const FeaturesTiles = ({
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">Robust Workflow</h4>
+                  <h4 className="mt-0 mb-8">
+                    Matching / Inbound Sales + Referrals + Leads
+                  </h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat.
+                    Direkte Suche um den besten zu finden. Entdecke Recscout –
+                    der Marktplatz, der sich Ihrem Recruiting-Prozess anpasst.
                   </p>
                 </div>
               </div>
@@ -116,7 +118,7 @@ const FeaturesTiles = ({
                   <div className="features-tiles-item-image mb-16">
                     <Image
                       src={
-                        "https://sajadghawami.github.io/recscout-homepage/public/assets/images/feature-tile-icon-03.svg"
+                        "https://sajadghawami.github.io/recscout-homepage/public/assets/images/feature-tile-icon-05.svg"
                       }
                       alt="Features tile icon 03"
                       width={64}
@@ -125,11 +127,12 @@ const FeaturesTiles = ({
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">Robust Workflow</h4>
+                  <h4 className="mt-0 mb-8">Bewertungen</h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat.
+                    Recruiter können nach einem deal bewertet werden. das sorgt
+                    für qualität und vertrauen zwischen auftraggeber und
+                    recruiter. zudem sind alle bemüht eine optimale leistung zu
+                    zeigen
                   </p>
                 </div>
               </div>
@@ -150,11 +153,12 @@ const FeaturesTiles = ({
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">Robust Workflow</h4>
+                  <h4 className="mt-0 mb-8">Kommunikation</h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat.
+                    Direkte gespräche über den chat. alle gespräche zentral
+                    geordnet. Genießen Sie zudem unseren Support bei Fragen zu
+                    Recruiting-Prozessen oder unserem Marktplatz per Mail,
+                    Telefon und Whatsapp.
                   </p>
                 </div>
               </div>
@@ -169,7 +173,7 @@ const FeaturesTiles = ({
                   <div className="features-tiles-item-image mb-16">
                     <Image
                       src={
-                        "https://sajadghawami.github.io/recscout-homepage/public/assets/images/feature-tile-icon-05.svg"
+                        "https://sajadghawami.github.io/recscout-homepage/public/assets/images/feature-tile-icon-03.svg"
                       }
                       alt="Features tile icon 05"
                       width={64}
@@ -178,11 +182,11 @@ const FeaturesTiles = ({
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">Robust Workflow</h4>
+                  <h4 className="mt-0 mb-8">Zahlungen</h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat.
+                    Zahlungen direkt über die recscout plattform. Allein die
+                    Iban ist ausreichend. alle zahlungen passend zu den
+                    prozessen.
                   </p>
                 </div>
               </div>
@@ -206,11 +210,12 @@ const FeaturesTiles = ({
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">Robust Workflow</h4>
+                  <h4 className="mt-0 mb-8">Kommende Features</h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat.
+                    Wir arbeiten schon an neuen features. wir möchten recruitern
+                    die mögleichkeit geben auf ausgeschriebene stellen passende
+                    kandidaten vorzustellen, ohne die tägliche arbeit der hr
+                    partner auf unternehmensseite zu stören. zudem
                   </p>
                 </div>
               </div>
