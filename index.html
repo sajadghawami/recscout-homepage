@@ -12,13 +12,18 @@
       // remove the page content
       const pageContent = document.getElementsByClassName("page-content");
       pageContent[0].parentNode.removeChild(pageContent[0]);
+      // change the classname so we dont get overrides
+      document
+        .getElementsByClassName("marketplace-lander")[0]
+        .classList.add("root-entry");
+      document
+        .getElementsByClassName("root-entry")[0]
+        .classList.remove("marketplace-lander");
 
       // add our entry
       const root = document.createElement("div");
       root.setAttribute("id", "root");
-      document
-        .getElementsByClassName("marketplace-lander")[0]
-        .appendChild(root);
+      document.getElementsByClassName("root-entry")[0].appendChild(root);
 
       // inject react
       const reactScript = document.createElement("script");
