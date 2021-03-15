@@ -61,10 +61,10 @@ const Hero = ({
         minHeight: "100vh",
         position: "relative",
         overflow: "hidden",
-        backgroundImage: `url(https://sajadghawami.github.io/recscout-homepage/public/assets/images/pexels-photo-01.jpeg)`,
-        backgroundSize: "cover",
+        // backgroundImage: `url(https://sajadghawami.github.io/recscout-homepage/public/assets/images/pexels-photo-01.jpeg)`,
+        // backgroundSize: "cover",
         display: "flex",
-        alignItems: "center",
+        // alignItems: "center",
       }}
     >
       <div style={{ width: "100%", height: "100%" }}>
@@ -103,6 +103,13 @@ const Hero = ({
               </div>
             </div>
           </div>
+          <div>
+            <img
+              src="https://sajadghawami.github.io/recscout-homepage/public/assets/images/illustrations/three.jpeg"
+              alt="test"
+            />
+          </div>
+
           {/* <div
             className="hero-figure reveal-from-bottom illustration-element-01"
             data-reveal-value="20px"

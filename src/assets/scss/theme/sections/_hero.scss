@@ -1,0 +1,16 @@
+.hero-inner {
+    // Affects only hero full
+    > .hero-content {
+        width: 50%;
+    }
+
+    // > .hero-figure {
+
+    // 	> a {
+    // 		display: inline-flex;
+    // 		// prevents stretching
+    // 		align-items: center;
+    // 		vertical-align: top;
+    // 	}
+    // }
+}
