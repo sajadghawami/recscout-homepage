@@ -5,7 +5,7 @@ import { throttle } from "lodash";
 const ScrollReveal = React.forwardRef((props, ref) => {
   const [viewportHeight, setViewportheight] = useState(window.innerHeight);
   const [revealEl, setRevealel] = useState([]);
-  console.log("SCROLL REVEAL", viewportHeight);
+
   const checkComplete = () => {
     return (
       revealEl.length <=
