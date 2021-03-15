@@ -64,7 +64,7 @@ const Hero = ({
         // backgroundImage: `url(https://sajadghawami.github.io/recscout-homepage/public/assets/images/pexels-photo-01.jpeg)`,
         // backgroundSize: "cover",
         display: "flex",
-        // alignItems: "center",
+        alignItems: "center",
       }}
     >
       <div style={{ width: "100%", height: "100%" }}>
