@@ -61,8 +61,6 @@ const Hero = ({
         minHeight: "100vh",
         position: "relative",
         overflow: "hidden",
-        // backgroundImage: `url(https://sajadghawami.github.io/recscout-homepage/public/assets/images/pexels-photo-01.jpeg)`,
-        // backgroundSize: "cover",
         display: "flex",
         alignItems: "center",
       }}
