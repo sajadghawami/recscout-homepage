@@ -19,6 +19,9 @@
       document
         .getElementsByClassName("root-entry")[0]
         .classList.remove("marketplace-lander");
+      // add the animation classes
+      document.body.classList.add("is-loaded");
+      document.body.classList.add("has-animations");
 
       // add our entry
       const root = document.createElement("div");
