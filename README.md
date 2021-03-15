@@ -22,4 +22,4 @@ https://sajadghawami.github.io/recscout-homepage/public/assets/images/cta-illust
 
 
 
- create mode 100644 public/assets/images/illustrations/four.jpeg
+yarn build && yarn build:clean && git add . && git commit -m "wip" && git push
