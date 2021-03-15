@@ -100,7 +100,7 @@ const Hero = ({
           </div>
           <div className="hero-image">
             <img
-              src="https://sajadghawami.github.io/recscout-homepage/public/assets/images/illustrations/three.jpeg"
+              src="https://sajadghawami.github.io/recscout-homepage/public/assets/images/illustrations/three.svg"
               alt="#"
             />
           </div>
