@@ -1,6 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <textarea id="testimonial_text"></textarea>
+  </body>
+</html>
+
+<!-- FOR THE PAGE --->
+<!-- Rating -->
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+<script>
+  window.addEventListener("load", function (event) {
+    console.log("rating script initialized");
+
+    // get the pathname
+    var splittedPathname = new URL(document.URL).pathname.split("/");
+    const splittedPathnameArrayPosition = splittedPathname.length - 1;
+    console.log(
+      splittedPathname[splittedPathnameArrayPosition - 1],
+      splittedPathname[splittedPathnameArrayPosition - 2]
+    );
+
+    // Rating Page
+    if (
+      splittedPathname[splittedPathnameArrayPosition] === "new" &&
+      splittedPathname[splittedPathnameArrayPosition - 1] === "feedbacks"
+    ) {
+      console.log($("#testimonial_text"));
+      let ratingQuestion = [
+        {
+          id: 1,
+          question: "Qualität der Profile",
+        },
+        {
+          id: 2,
+          question: "Zuverlässigkeit",
+        },
+        {
+          id: 3,
+          question: "Zusammenarbeit insgesamt",
+        },
+      ];
+      let ratingData = {};
+      // create the rating elements
+      for (let i = 0; i < ratingQuestion.length; i++) {
+        const rating = ratingQuestion[i];
+
+        const question = `<p class="rating-question">${rating.question}</p>`;
+        let scale = "";
+        for (let j = 1; j <= 5; j++) {
+          scale = `${scale}<button data-answer=${j}>${j}</button>`;
+        }
+        $("#testimonial_text").after(
+          `<div class='rating-wrapper' data-question='${rating.id}'>${question}<div class="rating-scale">${scale}</div></div>`
+        );
+      }
+
+      // add the event listener
+      $(".rating-wrapper button").click(function () {
+        const question = $(this).parent().data("question");
+        const answer = $(this).data("answer");
+        ratingData[`${question}`] = answer;
+        $("#testimonial_text").val(JSON.stringify(ratingData));
+      });
+    }
+    // Accept Rating Page
+    if (
+      splittedPathname[splittedPathnameArrayPosition - 1] === "transactions"
+    ) {
+      console.log("autoaccept, redirecting");
+      // automatically accept
+      $("a.accept")[0].click();
+    }
+  });
+</script>
+
+<!-- Homepage -->
 <script>
   window.addEventListener("load", function (event) {
     console.log("recscout script initialized");
+
     // if we find the customization-wraper, it means we are on the homepage
     const elem = document.getElementsByClassName(
       "community-customization-wrapper"
@@ -29,12 +113,17 @@
       document.getElementsByClassName("root-entry")[0].appendChild(root);
 
       // inject react
+      injectReact();
+    }
+
+    const injectReact = () => {
+      // inject react
       const reactScript = document.createElement("script");
       reactScript.type = "text/javascript";
       reactScript.src =
         "https://sajadghawami.github.io/recscout-homepage/public/main.js";
       $("head").append(reactScript);
-    }
+    };
   });
 </script>
 
