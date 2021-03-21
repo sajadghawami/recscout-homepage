@@ -8,5 +8,15 @@
 
     .rating-scale {
         display: flex;
+
+        button {
+            background-color: #fff;
+            color: #000;
+            border: solid 3px;
+            &.selected {
+                color: #fff;
+                background-color: #000;
+            }
+        }
     }
 }

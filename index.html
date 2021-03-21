@@ -7,7 +7,59 @@
     <title>Document</title>
   </head>
   <body>
-    <textarea id="testimonial_text"></textarea>
+    <!-- Create Rating -->
+    <!-- <textarea id="testimonial_text"></textarea> -->
+
+    <!-- Read Rating -->
+    <div id="profile-testimonials-list">
+      <div class="profile-testimonials-list">
+        <div class="light_green testimonial" id="testimonial160880">
+          <div class="testimonial-avatar">
+            <a href="/de/recscout"
+              ><img
+                src="https://user-assets.sharetribe.com/images/people/images/YAlF6LPqiF4Ai_RcMEb2TA/thumb/Rec_Scout.png?1615367655"
+            /></a>
+          </div>
+          <div class="testimonial-details">
+            <div class="testimonial-message">
+              <p>{"1":3,"2":1,"3":1}</p>
+            </div>
+            <div class="testimonial-author">
+              <a href="/de/recscout">RecScout</a>
+              über den Eintrag
+              <a href="/de/listings/1393334-researcher-tech">Researcher Tech</a>
+              Vor 12 Sekunden.
+            </div>
+          </div>
+          <div class="positive testimonial-icon">
+            <i class="ss-like positive"></i>
+          </div>
+        </div>
+        <div class="light_green testimonial" id="testimonial160301">
+          <div class="testimonial-avatar">
+            <a href="/de/recscout"
+              ><img
+                src="https://user-assets.sharetribe.com/images/people/images/YAlF6LPqiF4Ai_RcMEb2TA/thumb/Rec_Scout.png?1615367655"
+            /></a>
+          </div>
+          <div class="testimonial-details">
+            <div class="testimonial-message">
+              <p>{"1":1,"2":3,"3":4}</p>
+            </div>
+            <div class="testimonial-author">
+              <a href="/de/recscout">RecScout</a>
+              über den Eintrag
+              <a href="/de/listings/1393334-researcher-tech">Researcher Tech</a>
+              Vor 6 Tagen.
+            </div>
+          </div>
+          <div class="positive testimonial-icon">
+            <i class="ss-like positive"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row load-more-link"></div>
+    </div>
   </body>
 </html>
 
@@ -18,35 +70,26 @@
   window.addEventListener("load", function (event) {
     console.log("rating script initialized");
 
-    // get the pathname
-    var splittedPathname = new URL(document.URL).pathname.split("/");
-    const splittedPathnameArrayPosition = splittedPathname.length - 1;
-    console.log(
-      splittedPathname[splittedPathnameArrayPosition - 1],
-      splittedPathname[splittedPathnameArrayPosition - 2]
-    );
+    // functions
+    const ratingQuestion = [
+      {
+        id: 1,
+        question: "Qualität der Profile",
+      },
+      {
+        id: 2,
+        question: "Zuverlässigkeit",
+      },
+      {
+        id: 3,
+        question: "Zusammenarbeit insgesamt",
+      },
+    ];
 
-    // Rating Page
-    if (
-      splittedPathname[splittedPathnameArrayPosition] === "new" &&
-      splittedPathname[splittedPathnameArrayPosition - 1] === "feedbacks"
-    ) {
-      console.log($("#testimonial_text"));
-      let ratingQuestion = [
-        {
-          id: 1,
-          question: "Qualität der Profile",
-        },
-        {
-          id: 2,
-          question: "Zuverlässigkeit",
-        },
-        {
-          id: 3,
-          question: "Zusammenarbeit insgesamt",
-        },
-      ];
-      let ratingData = {};
+    const createRatingElements = (initialRatingValues) => {
+      const disableCheck = initialRatingValues ? "disabled" : "";
+
+      let ratingElements = "";
       // create the rating elements
       for (let i = 0; i < ratingQuestion.length; i++) {
         const rating = ratingQuestion[i];
@@ -54,28 +97,61 @@
         const question = `<p class="rating-question">${rating.question}</p>`;
         let scale = "";
         for (let j = 1; j <= 5; j++) {
-          scale = `${scale}<button data-answer=${j}>${j}</button>`;
+          let selectedCheck = "";
+          if (disableCheck) {
+            // check if in the initial values for this ratingQuestion.id we selected this answer
+            selectedCheck =
+              initialRatingValues[`${rating.id}`] === j
+                ? 'class="selected"'
+                : "";
+          }
+          scale = `${scale}<button ${disableCheck} ${selectedCheck} data-answer=${j}>${j}</button>`;
         }
-        $("#testimonial_text").after(
-          `<div class='rating-wrapper' data-question='${rating.id}'>${question}<div class="rating-scale">${scale}</div></div>`
-        );
+        ratingElements = `${ratingElements}<div class='rating-wrapper'>${question}<div class="rating-scale" data-question='${rating.id}'>${scale}</div></div>`;
       }
+      return ratingElements;
+    };
+
+    // get the pathname
+    const splittedPathname = new URL(document.URL).pathname.split("/");
+    const splittedPathnameArrayPosition = splittedPathname.length - 1;
+
+    // pages
+    const isLocalhost = new URL(document.URL).hostname === "localhost";
+    const isCreateRatingPage =
+      splittedPathname[splittedPathnameArrayPosition] === "new" &&
+      splittedPathname[splittedPathnameArrayPosition - 1] === "feedbacks";
+    const isAutoAcceptRatingPage =
+      splittedPathname[splittedPathnameArrayPosition - 1] === "transactions";
+    const isReadRatingPage = $("#profile-testimonials-list").length > 0;
+
+    // Rating Page
+    if (isCreateRatingPage || isLocalhost) {
+      // append rating elements
+      $("#testimonial_text").after(createRatingElements());
 
       // add the event listener
+      const ratingData = {};
       $(".rating-wrapper button").click(function () {
-        const question = $(this).parent().data("question");
-        const answer = $(this).data("answer");
+        const question = $(this).parent().data("question"); // gets the question id
+        const answer = $(this).data("answer"); // gets the actual selected answer
         ratingData[`${question}`] = answer;
         $("#testimonial_text").val(JSON.stringify(ratingData));
       });
     }
-    // Accept Rating Page
-    if (
-      splittedPathname[splittedPathnameArrayPosition - 1] === "transactions"
-    ) {
+    // Auto accept Rating Page
+    if (isAutoAcceptRatingPage) {
       console.log("autoaccept, redirecting");
       // automatically accept
       $("a.accept")[0].click();
+    }
+
+    // display rating
+    if (isReadRatingPage) {
+      $(".testimonial-message").each(function () {
+        const initialRatingValues = JSON.parse($(this).text());
+        $(this).after(createRatingElements(initialRatingValues));
+      });
     }
   });
 </script>
