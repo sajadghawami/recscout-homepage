@@ -5,13 +5,18 @@
 }
 
 .toggle.with-borders.toggled {
-    background-color: #e8e8e8;
-    color: #000;
+    background-color: #e8e8e8 !important;
+    color: #000 !important;
+    border-bottom-right-radius: 0.3125em;
+    border-bottom-left-radius: 0.3125em;
 }
 
 .toggle-menu {
-    background-color: #e8e8e8 important !important;
+    background-color: #e8e8e8 !important;
     color: #000 !important;
+    border-bottom-right-radius: 0.3125em;
+    border-bottom-left-radius: 0.3125em;
+    border-top-right-radius: 0.3125em;
 }
 
 .marketplace-lander figure.marketplace-cover-small {
