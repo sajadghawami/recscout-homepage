@@ -86,8 +86,8 @@
       },
     ];
 
-    const createRatingElements = (initialRatingValues) => {
-      const disableCheck = initialRatingValues ? "disabled" : "";
+    const createRatingElements = (initialRatingValues, disabled = false) => {
+      // const disableCheck = initialRatingValues ? "disabled" : "";
 
       let ratingElements = "";
       // create the rating elements
@@ -98,14 +98,15 @@
         let scale = "";
         for (let j = 1; j <= 5; j++) {
           let selectedCheck = "";
-          if (disableCheck) {
-            // check if in the initial values for this ratingQuestion.id we selected this answer
+          // if (disableCheck) {
+          // check if in the initial values for this ratingQuestion.id we selected this answer
+          if (initialRatingValues) {
             selectedCheck =
               initialRatingValues[`${rating.id}`] === j
                 ? 'class="selected"'
                 : "";
           }
-          scale = `${scale}<button ${disableCheck} ${selectedCheck} data-answer=${j}>${j}</button>`;
+          scale = `${scale}<button ${disabled} ${selectedCheck} data-answer=${j}>${j}</button>`;
         }
         ratingElements = `${ratingElements}<div class='rating-wrapper'>${question}<div class="rating-scale" data-question='${rating.id}'>${scale}</div></div>`;
       }
@@ -133,6 +134,9 @@
       // add the event listener
       const ratingData = {};
       $(".rating-wrapper button").click(function () {
+        // remove all selected
+        $(this).siblings().removeClass("selected");
+        $(this).addClass("selected");
         const question = $(this).parent().data("question"); // gets the question id
         const answer = $(this).data("answer"); // gets the actual selected answer
         ratingData[`${question}`] = answer;
