@@ -6,9 +6,10 @@ import FeaturesSplit from "../components/sections/FeaturesSplit";
 import Testimonial from "../components/sections/Testimonial";
 import Cta from "../components/sections/Cta";
 
+// <div style={{ backgroundColor: "#f7f7f7" }}>
 const Home = () => {
   return (
-    <div style={{ backgroundColor: "#f7f7f7" }}>
+    <div>
       <Hero />
       <FeaturesTiles className="illustration-section-01" />
       <FeaturesSplit
