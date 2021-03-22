@@ -13,7 +13,8 @@
             background-color: #fff;
             color: #000;
             border: solid 3px;
-            &.selected {
+
+            .selected {
                 color: #fff;
                 background-color: #000;
             }
