@@ -43,9 +43,9 @@ const FeaturesTiles = ({
   );
 
   const sectionHeader = {
-    title: "RecScout - und das HR Team ist happy",
+    title: "RECSCOUT - More Trust Less Bullshit",
     paragraph:
-      "#More Trust Less Bullshit oder 'das Ziel vom effektiven Spaß bei der Zusammenarbeit'. Sparen Sie Ihre Zeit, Ihre Kosten und Ihre kostbaren Nerven mit effektiven Recruiting.",
+      "Sparen Sie Zeit, Kosten und Ihre wertvollen Nerven mit effektiven Recruiting.",
   };
 
   return (
@@ -57,24 +57,23 @@ const FeaturesTiles = ({
             <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
+                  <div className="mb-16">
                     <Image
                       src={
-                        "https://sajadghawami.github.io/recscout-homepage/public/assets/images/feature-tile-icon-01.svg"
+                        "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/quick_start.svg"
                       }
                       alt="Features tile icon 01"
-                      width={64}
-                      height={64}
+                      width="100%"
+                      height={256}
                     />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">Keine Kosten</h4>
+                  <h4 className="mt-0 mb-8">Schneller Start</h4>
                   <p className="m-0 text-sm">
                     Erstellen Sie Ihren Account als Unternehmen oder Recruiter
                     schnell und kostenlos. In wenigen Schritten sind Sie
-                    startbereit. Als Unternehmen zahlen Sie wie gewohnt eine Fee
-                    an den Recruiter.
+                    startbereit.
                   </p>
                 </div>
               </div>
@@ -86,24 +85,24 @@ const FeaturesTiles = ({
             >
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
+                  <div className="mb-16">
                     <Image
                       src={
-                        "https://sajadghawami.github.io/recscout-homepage/public/assets/images/feature-tile-icon-02.svg"
+                        "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/matching.svg"
                       }
                       alt="Features tile icon 02"
-                      width={64}
-                      height={64}
+                      width="100%"
+                      height={256}
                     />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Matching / Inbound Sales + Referrals + Leads
-                  </h4>
+                  <h4 className="mt-0 mb-8">Matching</h4>
                   <p className="m-0 text-sm">
-                    Direkte Suche um den besten zu finden. Entdecke Recscout –
-                    der Marktplatz, der sich Ihrem Recruiting-Prozess anpasst.
+                    Über Filter, wie Spezialisierung, Preis, Erreichbarkeit,
+                    Branche, Standort etc. finden Sie direkt den richtigen
+                    Recruiter für Ihre Vakanz und können gezielt in die
+                    Projektabsprache starten
                   </p>
                 </div>
               </div>
@@ -115,24 +114,23 @@ const FeaturesTiles = ({
             >
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
+                  <div className="mb-16">
                     <Image
                       src={
-                        "https://sajadghawami.github.io/recscout-homepage/public/assets/images/feature-tile-icon-05.svg"
+                        "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/rating.svg"
                       }
                       alt="Features tile icon 03"
-                      width={64}
-                      height={64}
+                      width="100%"
+                      height={256}
                     />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">Bewertungen</h4>
                   <p className="m-0 text-sm">
-                    Recruiter können nach einem deal bewertet werden. das sorgt
-                    für qualität und vertrauen zwischen auftraggeber und
-                    recruiter. zudem sind alle bemüht eine optimale leistung zu
-                    zeigen
+                    unser transparentes bewertungssystem sorgt für vertrauen und
+                    qualität. investieren sie direkt beim start in eine
+                    erfolgversprechende zusammenarbeit.
                   </p>
                 </div>
               </div>
@@ -141,24 +139,25 @@ const FeaturesTiles = ({
             <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
+                  <div className="mb-16">
                     <Image
                       src={
-                        "https://sajadghawami.github.io/recscout-homepage/public/assets/images/feature-tile-icon-04.svg"
+                        "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/optimize.svg"
                       }
                       alt="Features tile icon 04"
-                      width={64}
-                      height={64}
+                      width="100%"
+                      height={256}
                     />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">Kommunikation</h4>
+                  <h4 className="mt-0 mb-8">Optimierung</h4>
                   <p className="m-0 text-sm">
-                    Direkte gespräche über den chat. alle gespräche zentral
-                    geordnet. Genießen Sie zudem unseren Support bei Fragen zu
-                    Recruiting-Prozessen oder unserem Marktplatz per Mail,
-                    Telefon und Whatsapp.
+                    mit jedem abgeschlossen projekt optimieren wir die
+                    zusammenarbeit auf der basis von vertrauen und bewiesener
+                    leistungsfähigkeit. So können beide Parteien im
+                    bestmöglichen setup miteinander offen und auf augenhöhe
+                    arbeiten.
                   </p>
                 </div>
               </div>
@@ -170,23 +169,24 @@ const FeaturesTiles = ({
             >
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
+                  <div className="mb-16">
                     <Image
                       src={
-                        "https://sajadghawami.github.io/recscout-homepage/public/assets/images/feature-tile-icon-03.svg"
+                        "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/communicate.svg"
                       }
                       alt="Features tile icon 05"
-                      width={64}
-                      height={64}
+                      width="100%"
+                      height={256}
                     />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">Zahlungen</h4>
+                  <h4 className="mt-0 mb-8">Kommunikation</h4>
                   <p className="m-0 text-sm">
-                    Zahlungen direkt über die recscout plattform. Allein die
-                    Iban ist ausreichend. alle zahlungen passend zu den
-                    prozessen.
+                    Direkte gespräche über den chat. alle gespräche zentral
+                    geordnet. Genießen Sie zudem unseren Kunden-Support bei
+                    Fragen zu Recruiting-Prozessen oder unserem Marktplatz per
+                    Mail, Telefon und Whatsapp.
                   </p>
                 </div>
               </div>
@@ -198,24 +198,25 @@ const FeaturesTiles = ({
             >
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
+                  <div className="mb-16">
                     <Image
                       src={
-                        "https://sajadghawami.github.io/recscout-homepage/public/assets/images/feature-tile-icon-06.svg"
+                        "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/payment.svg"
                       }
                       alt="Features tile icon 06"
-                      width={64}
-                      height={64}
+                      width="100%"
+                      height={256}
                     />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">Kommende Features</h4>
+                  <h4 className="mt-0 mb-8">Zahlungen</h4>
                   <p className="m-0 text-sm">
-                    Wir arbeiten schon an neuen features. wir möchten recruitern
-                    die mögleichkeit geben auf ausgeschriebene stellen passende
-                    kandidaten vorzustellen, ohne die tägliche arbeit der hr
-                    partner auf unternehmensseite zu stören. zudem
+                    Rechnungslegung und Zahlungen werden einfach und transparent
+                    über die RecScout Plattform abgewickelt - passend zu den
+                    individuellen Prozessen. Recruiter erhalten ihr Honorar
+                    innerhalb von 24 Stunden und Firmen genießen und behalten
+                    ihre Zahlungsflexibilität und gewohnten Zahlungsziele.
                   </p>
                 </div>
               </div>

@@ -30,6 +30,10 @@
 			color: get-color(dark, 1);
 		}
 
+		> p {
+			color: get-color(dark, 1);
+		}
+
 		.cta-split & {
 			margin-bottom: 0;
 			margin-right: $cta-slogan--padding-h__desktop;

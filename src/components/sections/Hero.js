@@ -68,23 +68,22 @@ const Hero = ({
       <div style={{ width: "100%", height: "100%" }}>
         <div className={innerClasses}>
           <div className="hero-content">
-            <h2
+            <h1
               className="mt-0 mb-16 reveal-from-bottom"
               data-reveal-delay="200"
             >
-              Finde den besten Recruiter für jede Vakanz
-              <br />
-              <span className="text-color-primary">- Komm recscouten</span>
-            </h2>
+              Finden Sie den besten Recruiter für Ihre Vakanz.
+              {/* <br /> */}
+              {/* <span className="text-color-primary">- Komm recscouten</span> */}
+            </h1>
             <div className="container-xs">
               <p
                 className="m-0 mb-32 reveal-from-bottom"
                 data-reveal-delay="400"
               >
-                Per Klick den besten Recruiter beauftragen. Recscout ist der
-                Marktplatz auf dem Firmen und Recruiter schnell zueinander
-                finden. Eröffnen Sie jetzt in wenigen Minuten Ihren kostenlosen
-                Account - komm recscouten
+                Unser Team setzt sich aus erfahrenen Gründern, Recruitern und HR
+                Business Partnern zusammen. Wir vereinen alle Blickwinkel und
+                Anforderungen in einer Plattform.
               </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
@@ -100,7 +99,7 @@ const Hero = ({
           </div>
           <div className="hero-image">
             <img
-              src="https://sajadghawami.github.io/recscout-homepage/public/assets/images/illustrations/three.svg"
+              src="https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/start.jpg"
               alt="#"
             />
           </div>

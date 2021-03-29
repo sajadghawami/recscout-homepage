@@ -49,9 +49,9 @@ const FeaturesSplit = ({
   );
 
   const sectionHeader = {
-    title: "Recruitment that just works",
+    title: "Die Vision von RECSCOUT.",
     paragraph:
-      "Unser Team setzt sich aus erfahrenen Gründern, Recruitern und HR Business Partnern zusammen. Wir vereinen somit die verschiedene Ansichten und Anforderungen aller Parteien in unserem Team. ",
+      "RECSCOUT bietet eine transparente und effiziente Zusammenarbeit zwischen Unternehmen und Recruitern",
   };
 
   return (
@@ -65,14 +65,21 @@ const FeaturesSplit = ({
                 className="split-item-content center-content-mobile reveal-from-left"
                 data-reveal-container=".split-item"
               >
-                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast recruitment
-                </div>
-                <h3 className="mt-0 mb-12">Data-driven insights</h3>
+                {/* <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
+                  Was uns stört
+                </div> */}
+                <h3 className="mt-0 mb-12">Was uns stört</h3>
                 <p className="m-0">
-                  Was ist das Besondere an Recscout. die probleme die wir sehen
-                  und wie wir diese lösen. verhalten untereinander, nervige
-                  anrufe. kontaktversuche cvs zusenden. keine inbound leads. usw
+                  Während unserer täglichen Arbeit im Recruitment haben wir
+                  einige Faktoren gefunden die uns stören. Unabhängig vom
+                  Arbeitgeber sind sie im Stile eines Wilhelm Tells auf den
+                  Punkt überschneidend. Der HR-Dienstleistungsmarkt ist breit
+                  aufgestellt und schwankt bei den Qualitätsansprüchen
+                  Stichwort: "Schwarze Schafe". Täglich erhalten Unternehmen
+                  unzählige Angebote von HR-Dienstleistern welche dann auch oft
+                  konsequent und nicht immer freundlich abgewiesen werden,
+                  obwohl der Recruiter wirklich einen passenden Kandidaten
+                  anbieten wollte und konnte.
                 </p>
               </div>
               <div
@@ -84,7 +91,7 @@ const FeaturesSplit = ({
               >
                 <Image
                   src={
-                    "https://sajadghawami.github.io/recscout-homepage/public/assets/images/illustrations/one.jpeg"
+                    "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/vision.svg"
                   }
                   alt="Features split 01"
                   width={528}
@@ -98,13 +105,17 @@ const FeaturesSplit = ({
                 className="split-item-content center-content-mobile reveal-from-right"
                 data-reveal-container=".split-item"
               >
-                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
+                {/* <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
                   Lightning fast recruitment
-                </div>
-                <h3 className="mt-0 mb-12">Data-driven insights</h3>
+                </div> */}
+                <h3 className="mt-0 mb-12">Was wir ändern.</h3>
                 <p className="m-0">
-                  So legen Sie los. Was passiert in den nächsten schritten und
-                  was ändert sich dadurch an den problemen
+                  RECSCOUT erleichtert die Zusammenarbeit zwischen Firmen und
+                  Recruitern bereits vor Auftragserteilung. Wir schaffen einen
+                  transparenten Markt, machen Hidden-Champions im Recruiting
+                  sichtbar und ermöglichen so einen effizienten und
+                  erfolgreichen Prozess für beide Seiten - und dies ganz ohne
+                  mühselige Anrufe und Kontaktversuche.
                 </p>
               </div>
               <div
@@ -116,7 +127,7 @@ const FeaturesSplit = ({
               >
                 <Image
                   src={
-                    "https://sajadghawami.github.io/recscout-homepage/public/assets/images/illustrations/two.jpeg"
+                    "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/change.svg"
                   }
                   alt="Features split 02"
                   width={528}
@@ -130,13 +141,16 @@ const FeaturesSplit = ({
                 className="split-item-content center-content-mobile reveal-from-left"
                 data-reveal-container=".split-item"
               >
-                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
+                {/* <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
                   Lightning fast recruitment
-                </div>
-                <h3 className="mt-0 mb-12">Data-driven insights</h3>
+                </div> */}
+                <h3 className="mt-0 mb-12">Ein Blick in die Zukunft.</h3>
                 <p className="m-0">
-                  Ein Blick in die Zukunft. welche funktionen und möglichkeiten
-                  kommen
+                  Weitere Features, wie der Zugriff auf einen nach
+                  Fachrichtungen spezialisierten Researcher Pool mit ergänzenden
+                  wechselbereiten Kandidaten oder die Nutzung eines Spec-Streams
+                  sorgen für eine zusätzliche Wertschöpfung, welche Recscout in
+                  einem Abo-Modell anbieten möchte.
                 </p>
               </div>
               <div
@@ -148,7 +162,7 @@ const FeaturesSplit = ({
               >
                 <Image
                   src={
-                    "https://sajadghawami.github.io/recscout-homepage/public/assets/images/illustrations/five.jpeg"
+                    "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/future.svg"
                   }
                   alt="Features split 03"
                   width={528}

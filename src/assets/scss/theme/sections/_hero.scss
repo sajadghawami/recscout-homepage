@@ -12,6 +12,10 @@
         flex-direction: column;
         display: flex;
         justify-content: center;
+
+        h1 {
+            font-weight: 300;
+        }
     }
 
     > .hero-image {
@@ -23,7 +27,7 @@
         > img {
             width: 100%;
             height: auto;
-            max-width: 827px;
+            max-width: 600px;
             max-height: 574px;
         }
     }
