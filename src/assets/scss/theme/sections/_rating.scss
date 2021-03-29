@@ -18,7 +18,9 @@
             border: none;
             width: 48px;
             height: 48px;
-            background-size: cover;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
             background-image: url(https://sajadghawami.github.io/recscout-homepage/public/assets/images/rating/star_empty.png);
             // color: #000;
             // border: solid 3px;

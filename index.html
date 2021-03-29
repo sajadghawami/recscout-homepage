@@ -102,7 +102,7 @@
           // check if in the initial values for this ratingQuestion.id we selected this answer
           if (initialRatingValues) {
             selectedCheck =
-              initialRatingValues[`${rating.id}`] <= j
+              initialRatingValues[`${rating.id}`] >= j
                 ? 'class="selected"'
                 : "";
           }
