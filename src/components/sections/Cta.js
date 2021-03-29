@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import { SectionProps } from "../../utils/SectionProps";
 import Input from "../elements/Input";
+import Image from "../elements/Image";
 
 const propTypes = {
   ...SectionProps.types,
@@ -53,7 +54,16 @@ const Cta = ({
             </p>
           </div>
 
-          <div className="cta-action">
+          <div className="cta-action" style={{ minWidth: "50%" }}>
+            <Image
+              src={
+                "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/appointment.png"
+              }
+              alt="Features split 01"
+              width="100%"
+              height="auto"
+              style={{ maxWidth: 425 }}
+            />
             {/* <Input
               id="newsletter"
               type="email"

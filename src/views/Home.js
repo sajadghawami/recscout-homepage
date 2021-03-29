@@ -14,11 +14,11 @@ const Home = () => {
       <FeaturesTiles className="illustration-section-01" />
       <FeaturesSplit
         invertMobile
-        topDivider
+        // topDivider
         imageFill
         className="illustration-section-02"
       />
-      <Testimonial topDivider />
+      {/* <Testimonial topDivider /> */}
       <Cta split />
     </div>
   );
