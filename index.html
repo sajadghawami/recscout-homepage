@@ -106,7 +106,8 @@
                 ? 'class="selected"'
                 : "";
           }
-          scale = `${scale}<button ${disabled} ${selectedCheck} data-answer=${j} class="rating-star">${j}</button>`;
+
+          scale = `${scale}<button ${disabled} ${selectedCheck} data-answer=${j} class="rating-star"><img src="https://sajadghawami.github.io/recscout-homepage/public/assets/images/rating/star_filled"></img></button>`;
         }
         ratingElements = `${ratingElements}<div class='rating-wrapper'>${question}<div class="rating-scale" data-question='${rating.id}'>${scale}</div></div>`;
       }
