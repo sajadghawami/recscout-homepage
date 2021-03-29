@@ -165,6 +165,16 @@
   window.addEventListener("load", function (event) {
     console.log("recscout script initialized");
 
+    // fucntions
+    const injectReact = () => {
+      // inject react
+      const reactScript = document.createElement("script");
+      reactScript.type = "text/javascript";
+      reactScript.src =
+        "https://sajadghawami.github.io/recscout-homepage/public/main.js";
+      $("head").append(reactScript);
+    };
+
     // if we find the customization-wraper, it means we are on the homepage
     const elem = document.getElementsByClassName(
       "community-customization-wrapper"
@@ -195,15 +205,6 @@
       // inject react
       injectReact();
     }
-
-    const injectReact = () => {
-      // inject react
-      const reactScript = document.createElement("script");
-      reactScript.type = "text/javascript";
-      reactScript.src =
-        "https://sajadghawami.github.io/recscout-homepage/public/main.js";
-      $("head").append(reactScript);
-    };
   });
 </script>
 
