@@ -102,12 +102,12 @@
           // check if in the initial values for this ratingQuestion.id we selected this answer
           if (initialRatingValues) {
             selectedCheck =
-              initialRatingValues[`${rating.id}`] === j
+              initialRatingValues[`${rating.id}`] <= j
                 ? 'class="selected"'
                 : "";
           }
 
-          scale = `${scale}<button ${disabled} ${selectedCheck} data-answer=${j}><img src="https://sajadghawami.github.io/recscout-homepage/public/assets/images/rating/star_filled.png"></img></button>`;
+          scale = `${scale}<button ${disabled} ${selectedCheck} data-answer=${j}></button>`;
         }
         ratingElements = `${ratingElements}<div class='rating-wrapper'>${question}<div class="rating-scale" data-question='${rating.id}'>${scale}</div></div>`;
       }
