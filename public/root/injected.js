@@ -107,6 +107,14 @@ window.addEventListener("load", function (event) {
       const uid = getParameterByName(decompressedRouterQuery, "uid");
 
       console.log(decompressedRouterQuery, lid, uid);
+      console.log(
+        lid,
+        splittedPathname[splittedPathnameArrayPosition],
+        uid,
+        userContext.loggedInUsername,
+        lid === splittedPathname[splittedPathnameArrayPosition],
+        uid === userContext.loggedInUsername
+      );
 
       // check if the user and the listingid is right
       if (
