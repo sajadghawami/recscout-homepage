@@ -83,7 +83,7 @@ window.addEventListener("load", function (event) {
             initialRatingValues[`${rating.id}`] >= j ? 'class="selected"' : "";
         }
 
-        scale = `${scale}<button type="button ${disabled} ${selectedCheck} data-answer=${j}></button>`;
+        scale = `${scale}<button type="button" ${disabled} ${selectedCheck} data-answer=${j}></button>`;
       }
       ratingElements = `${ratingElements}<div class='rating-wrapper'>${question}<div class="rating-scale" data-question='${rating.id}'>${scale}</div></div>`;
     }
