@@ -1,4 +1,55 @@
 /* eslint-env jquery */
+/* global lzstring */
+
+// functions
+const ratingQuestion = [
+  {
+    id: 1,
+    question: "Qualität der Profile",
+  },
+  {
+    id: 2,
+    question: "Zuverlässigkeit",
+  },
+  {
+    id: 3,
+    question: "Zusammenarbeit insgesamt",
+  },
+];
+
+/**
+ * Function to extract a variable from the query string
+ * @param query the query string
+ * @param variable the variable we want to extract
+ */
+
+const getParameterByName = (query, variable) => {
+  if (query) {
+    const vars = query.split("&");
+    for (let i = 0; i < vars.length; i++) {
+      const pair = vars[i].split("=");
+      if (decodeURIComponent(pair[0]) === variable) {
+        return decodeURIComponent(pair[1]);
+      }
+    }
+  }
+};
+
+/**
+ *  Decompress the router query
+ * @param query the query
+ * @returns
+ */
+
+const getDecompressedRouterQuery = (query) => {
+  // read the query string
+  const routerQuery = `${Object.keys(query)[0]}`;
+  // decompress
+  const decompressedRouterQuery = lzstring.decompressFromEncodedURIComponent(
+    routerQuery
+  );
+  return decompressedRouterQuery;
+};
 
 window.addEventListener("load", function (event) {
   // <!-- general -->
@@ -15,22 +66,20 @@ window.addEventListener("load", function (event) {
   console.log("rating script initialized");
 
   // <!-- Rating --->
+  const decompressedRouterQuery = getDecompressedRouterQuery(
+    window.location.href
+  );
+  const lid = getParameterByName(decompressedRouterQuery, "lid");
+  const uid = getParameterByName(decompressedRouterQuery, "uid");
 
-  // functions
-  const ratingQuestion = [
-    {
-      id: 1,
-      question: "Qualität der Profile",
-    },
-    {
-      id: 2,
-      question: "Zuverlässigkeit",
-    },
-    {
-      id: 3,
-      question: "Zusammenarbeit insgesamt",
-    },
-  ];
+  console.log(
+    "decompressedRouterQuery",
+    decompressedRouterQuery,
+    "lid",
+    lid,
+    "uid",
+    uid
+  );
 
   const createRatingElements = (initialRatingValues, disabled = false) => {
     // const disableCheck = initialRatingValues ? "disabled" : "";
