@@ -43,10 +43,10 @@ const getParameterByName = (query, variable) => {
 
 const getDecompressedRouterQuery = (query) => {
   // read the query string
-  const routerQuery = `${Object.keys(query)[0]}`;
+  // const routerQuery = `${Object.keys(query)[0]}`;
   // decompress
   const decompressedRouterQuery = lzstring.decompressFromEncodedURIComponent(
-    routerQuery
+    query
   );
   return decompressedRouterQuery;
 };
@@ -66,9 +66,8 @@ window.addEventListener("load", function (event) {
   console.log("rating script initialized");
 
   // <!-- Rating --->
-  const decompressedRouterQuery = getDecompressedRouterQuery(
-    window.location.href
-  );
+  const query = window.location.search.substr(1);
+  const decompressedRouterQuery = getDecompressedRouterQuery(query);
   const lid = getParameterByName(decompressedRouterQuery, "lid");
   const uid = getParameterByName(decompressedRouterQuery, "uid");
 
