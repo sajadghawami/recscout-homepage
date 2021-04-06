@@ -121,6 +121,11 @@ window.addEventListener("load", function (event) {
         lid === splittedPathname[splittedPathnameArrayPosition] &&
         uid === userContext.loggedInUsername
       ) {
+        // make the form visible
+        $("#comment-form").css({
+          display: "block",
+        });
+
         // append rating elements to the comment box
         $(".listing_comment_content_text_area")[0].after(
           createRatingElements()
