@@ -1,8 +1,17 @@
-console.log("go");
-
 /* eslint-env jquery */
+
 window.addEventListener("load", function (event) {
+  // <!-- general -->
+
+  const userContext = JSON.parse(
+    document.getElementById("js-react-on-rails-context").innerHTML
+  );
+
+  console.log("userContext", userContext);
+
   console.log("rating script initialized");
+
+  // <!-- Rating --->
 
   // functions
   const ratingQuestion = [
@@ -90,11 +99,9 @@ window.addEventListener("load", function (event) {
       $(this).after(createRatingElements(initialRatingValues));
     });
   }
-});
 
-// <!-- Homepage -->
-window.addEventListener("load", function (event) {
-  console.log("recscout script initialized");
+  // <!-- Homepage -->
+  console.log("homepage script initialized");
 
   // fucntions
   const injectReact = () => {
