@@ -108,10 +108,15 @@ window.addEventListener("load", function (event) {
 
       console.log(decompressedRouterQuery, lid, uid);
 
-      // check if the user is right, and the listingid is also right
-      if (lid === splittedPathname[splittedPathnameArrayPosition] && uid) {
-        // append rating elements
-        $("#testimonial_text").after(createRatingElements());
+      // check if the user and the listingid is right
+      if (
+        lid === splittedPathname[splittedPathnameArrayPosition] &&
+        uid === userContext.loggedInUsername
+      ) {
+        // append rating elements to the comment box
+        $(".listing_comment_content_text_area")[0].after(
+          createRatingElements()
+        );
 
         // add the event listener
         const ratingData = {};
@@ -122,7 +127,10 @@ window.addEventListener("load", function (event) {
           const question = $(this).parent().data("question"); // gets the question id
           const answer = $(this).data("answer"); // gets the actual selected answer
           ratingData[`${question}`] = answer;
-          $("#testimonial_text").val(JSON.stringify(ratingData));
+
+          $(".listing_comment_content_text_area")[0].val(
+            JSON.stringify(ratingData)
+          );
         });
       }
     }
