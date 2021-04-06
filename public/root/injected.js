@@ -148,7 +148,11 @@ window.addEventListener("load", function (event) {
 
         // add event listener to button
         $("#send_comment_button").click(function () {
-          window.location.href = "http://www.w3schools.com";
+          window.location.href =
+            window.location.protocol +
+            "//" +
+            window.location.host +
+            window.location.pathname;
         });
       }
     }
