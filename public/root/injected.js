@@ -146,13 +146,19 @@ window.addEventListener("load", function (event) {
             .val(JSON.stringify(ratingData));
         });
 
-        // add event listener to button
+        // add event listener to submit button
         $("#send_comment_button").click(function () {
-          window.location.href =
+          // make the form invvisible
+          $("#comment-form").css({
+            display: "none",
+          });
+
+          window.location.replace(
             window.location.protocol +
-            "//" +
-            window.location.host +
-            window.location.pathname;
+              "//" +
+              window.location.host +
+              window.location.pathname
+          );
         });
       }
     }
