@@ -141,9 +141,9 @@ window.addEventListener("load", function (event) {
           const answer = $(this).data("answer"); // gets the actual selected answer
           ratingData[`${question}`] = answer;
 
-          $(".listing_comment_content_text_area")[0].val(
-            JSON.stringify(ratingData)
-          );
+          $(".listing_comment_content_text_area")
+            .first()
+            .val(JSON.stringify(ratingData));
         });
       }
     }
