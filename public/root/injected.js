@@ -108,20 +108,23 @@ window.addEventListener("load", function (event) {
       const lid = getParameterByName(decompressedRouterQuery, "lid");
       const uid = getParameterByName(decompressedRouterQuery, "uid");
 
-      // append rating elements
-      $("#testimonial_text").after(createRatingElements());
+      // check if the user is right, and the listingid is also right
+      if (lid === splittedPathname[splittedPathnameArrayPosition] && uid) {
+        // append rating elements
+        $("#testimonial_text").after(createRatingElements());
 
-      // add the event listener
-      const ratingData = {};
-      $(".rating-wrapper button").click(function () {
-        // remove all selected
-        $(this).siblings().removeClass("selected");
-        $(this).addClass("selected");
-        const question = $(this).parent().data("question"); // gets the question id
-        const answer = $(this).data("answer"); // gets the actual selected answer
-        ratingData[`${question}`] = answer;
-        $("#testimonial_text").val(JSON.stringify(ratingData));
-      });
+        // add the event listener
+        const ratingData = {};
+        $(".rating-wrapper button").click(function () {
+          // remove all selected
+          $(this).siblings().removeClass("selected");
+          $(this).addClass("selected");
+          const question = $(this).parent().data("question"); // gets the question id
+          const answer = $(this).data("answer"); // gets the actual selected answer
+          ratingData[`${question}`] = answer;
+          $("#testimonial_text").val(JSON.stringify(ratingData));
+        });
+      }
     }
   }
 
