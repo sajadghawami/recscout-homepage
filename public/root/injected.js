@@ -1,3 +1,5 @@
+console.log("go");
+
 /* eslint-env jquery */
 window.addEventListener("load", function (event) {
   console.log("rating script initialized");
