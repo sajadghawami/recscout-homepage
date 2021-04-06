@@ -2,13 +2,16 @@
 
 window.addEventListener("load", function (event) {
   // <!-- general -->
+  // get the pathname
+  const splittedPathname = new URL(document.URL).pathname.split("/");
+  const splittedPathnameArrayPosition = splittedPathname.length - 1;
+  const isLocalhost = new URL(document.URL).hostname === "localhost";
 
   const userContext = JSON.parse(
     document.getElementById("js-react-on-rails-context").innerHTML
   );
 
   console.log("userContext", userContext);
-
   console.log("rating script initialized");
 
   // <!-- Rating --->
@@ -55,21 +58,13 @@ window.addEventListener("load", function (event) {
     return ratingElements;
   };
 
-  // get the pathname
-  const splittedPathname = new URL(document.URL).pathname.split("/");
-  const splittedPathnameArrayPosition = splittedPathname.length - 1;
-
   // pages
-  const isLocalhost = new URL(document.URL).hostname === "localhost";
-  const isCreateRatingPage =
-    splittedPathname[splittedPathnameArrayPosition] === "new" &&
-    splittedPathname[splittedPathnameArrayPosition - 1] === "feedbacks";
-  const isAutoAcceptRatingPage =
-    splittedPathname[splittedPathnameArrayPosition - 1] === "transactions";
-  const isReadRatingPage = $("#profile-testimonials-list").length > 0;
-
   // Rating Page
-  if (isCreateRatingPage || isLocalhost) {
+  const isListingsPage =
+    splittedPathname[splittedPathnameArrayPosition - 1] === "listings";
+
+  if (isListingsPage || isLocalhost) {
+    console.log("isListingsPage", isListingsPage);
     // append rating elements
     $("#testimonial_text").after(createRatingElements());
 
@@ -85,7 +80,10 @@ window.addEventListener("load", function (event) {
       $("#testimonial_text").val(JSON.stringify(ratingData));
     });
   }
+
   // Auto accept Rating Page
+  const isAutoAcceptRatingPage =
+    splittedPathname[splittedPathnameArrayPosition - 1] === "transactions";
   if (isAutoAcceptRatingPage) {
     console.log("autoaccept, redirecting");
     // automatically accept
@@ -93,6 +91,7 @@ window.addEventListener("load", function (event) {
   }
 
   // display rating
+  const isReadRatingPage = $("#profile-testimonials-list").length > 0;
   if (isReadRatingPage) {
     $(".testimonial-message").each(function () {
       const initialRatingValues = JSON.parse($(this).text());
