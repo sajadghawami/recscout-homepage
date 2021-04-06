@@ -61,25 +61,11 @@ window.addEventListener("load", function (event) {
   const userContext = JSON.parse(
     document.getElementById("js-react-on-rails-context").innerHTML
   );
-
   console.log("userContext", userContext);
+  console.log("splittedPathname", splittedPathname);
   console.log("rating script initialized");
 
   // <!-- Rating --->
-  const query = window.location.search.substr(1);
-  const decompressedRouterQuery = getDecompressedRouterQuery(query);
-  const lid = getParameterByName(decompressedRouterQuery, "lid");
-  const uid = getParameterByName(decompressedRouterQuery, "uid");
-
-  console.log(
-    "decompressedRouterQuery",
-    decompressedRouterQuery,
-    "lid",
-    lid,
-    "uid",
-    uid
-  );
-
   const createRatingElements = (initialRatingValues, disabled = false) => {
     // const disableCheck = initialRatingValues ? "disabled" : "";
 
@@ -107,26 +93,36 @@ window.addEventListener("load", function (event) {
   };
 
   // pages
-  // Rating Page
+  // listing Page
   const isListingsPage =
     splittedPathname[splittedPathnameArrayPosition - 1] === "listings";
 
   if (isListingsPage || isLocalhost) {
-    console.log("isListingsPage", isListingsPage);
-    // append rating elements
-    $("#testimonial_text").after(createRatingElements());
+    console.log("isListingsPage");
 
-    // add the event listener
-    const ratingData = {};
-    $(".rating-wrapper button").click(function () {
-      // remove all selected
-      $(this).siblings().removeClass("selected");
-      $(this).addClass("selected");
-      const question = $(this).parent().data("question"); // gets the question id
-      const answer = $(this).data("answer"); // gets the actual selected answer
-      ratingData[`${question}`] = answer;
-      $("#testimonial_text").val(JSON.stringify(ratingData));
-    });
+    // check if we have a query
+    const query = window.location.search.substr(1);
+    const decompressedRouterQuery = getDecompressedRouterQuery(query);
+
+    if (decompressedRouterQuery !== null) {
+      const lid = getParameterByName(decompressedRouterQuery, "lid");
+      const uid = getParameterByName(decompressedRouterQuery, "uid");
+
+      // append rating elements
+      $("#testimonial_text").after(createRatingElements());
+
+      // add the event listener
+      const ratingData = {};
+      $(".rating-wrapper button").click(function () {
+        // remove all selected
+        $(this).siblings().removeClass("selected");
+        $(this).addClass("selected");
+        const question = $(this).parent().data("question"); // gets the question id
+        const answer = $(this).data("answer"); // gets the actual selected answer
+        ratingData[`${question}`] = answer;
+        $("#testimonial_text").val(JSON.stringify(ratingData));
+      });
+    }
   }
 
   // Auto accept Rating Page
