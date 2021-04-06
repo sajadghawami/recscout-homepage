@@ -127,9 +127,9 @@ window.addEventListener("load", function (event) {
         });
 
         // append rating elements to the comment box
-        $(".listing_comment_content_text_area")[0].after(
-          createRatingElements()
-        );
+        $(".listing_comment_content_text_area")
+          .first()
+          .after(createRatingElements());
 
         // add the event listener
         const ratingData = {};
