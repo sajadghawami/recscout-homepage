@@ -42,8 +42,6 @@ const getParameterByName = (query, variable) => {
  */
 
 const getDecompressedRouterQuery = (query) => {
-  // read the query string
-  // const routerQuery = `${Object.keys(query)[0]}`;
   // decompress
   const decompressedRouterQuery = LZString.decompressFromEncodedURIComponent(
     query
@@ -107,6 +105,8 @@ window.addEventListener("load", function (event) {
     if (decompressedRouterQuery !== null) {
       const lid = getParameterByName(decompressedRouterQuery, "lid");
       const uid = getParameterByName(decompressedRouterQuery, "uid");
+
+      console.log(decompressedRouterQuery, lid, uid);
 
       // check if the user is right, and the listingid is also right
       if (lid === splittedPathname[splittedPathnameArrayPosition] && uid) {
