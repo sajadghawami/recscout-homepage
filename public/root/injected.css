@@ -1,0 +1,4 @@
+/* remove the button because its visible on first paint */
+.marketplace-lander .search-form {
+    display: none;
+}
