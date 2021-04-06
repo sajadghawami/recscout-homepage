@@ -131,7 +131,7 @@ window.addEventListener("load", function (event) {
           .first()
           .after(createRatingElements());
 
-        // add the event listener
+        // add the event listener to the rating buttons
         const ratingData = {};
         $(".rating-wrapper button").click(function () {
           // remove all selected
@@ -144,6 +144,11 @@ window.addEventListener("load", function (event) {
           $(".listing_comment_content_text_area")
             .first()
             .val(JSON.stringify(ratingData));
+        });
+
+        // add event listener to button
+        $("#send_comment_button").click(function () {
+          window.location.href = "http://www.w3schools.com";
         });
       }
     }
