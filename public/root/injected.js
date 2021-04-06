@@ -1,5 +1,5 @@
 /* eslint-env jquery */
-/* global lzstring */
+/* global LZString */
 
 // functions
 const ratingQuestion = [
@@ -45,7 +45,7 @@ const getDecompressedRouterQuery = (query) => {
   // read the query string
   // const routerQuery = `${Object.keys(query)[0]}`;
   // decompress
-  const decompressedRouterQuery = lzstring.decompressFromEncodedURIComponent(
+  const decompressedRouterQuery = LZString.decompressFromEncodedURIComponent(
     query
   );
   return decompressedRouterQuery;
