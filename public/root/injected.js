@@ -159,9 +159,9 @@ window.addEventListener("load", function (event) {
   }
 
   // display rating
-  const isReadRatingPage = $("#profile-testimonials-list").length > 0;
+  const isReadRatingPage = $("#comment-list").length > 0;
   if (isReadRatingPage) {
-    $(".testimonial-message").each(function () {
+    $(".comment-content").each(function () {
       const initialRatingValues = JSON.parse($(this).text());
       $(this).after(createRatingElements(initialRatingValues));
     });
