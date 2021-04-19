@@ -51,7 +51,7 @@ const FeaturesSplit = ({
   const sectionHeader = {
     title: "Die Vision von RECSCOUT.",
     paragraph:
-      "RECSCOUT bietet eine transparente und effiziente Zusammenarbeit zwischen Unternehmen und Recruitern",
+      "RECSCOUT schafft eine transparente und effiziente Zusammenarbeit zwischen Unternehmen und Recruitern.",
   };
 
   return (
@@ -70,16 +70,19 @@ const FeaturesSplit = ({
                 </div> */}
                 <h3 className="mt-0 mb-12">Was uns stört</h3>
                 <p className="m-0">
-                  Während unserer täglichen Arbeit im Recruitment haben wir
-                  einige Faktoren gefunden die uns stören. Unabhängig vom
-                  Arbeitgeber sind sie im Stile eines Wilhelm Tells auf den
-                  Punkt überschneidend. Der HR-Dienstleistungsmarkt ist breit
-                  aufgestellt und schwankt bei den Qualitätsansprüchen
-                  Stichwort: "Schwarze Schafe". Täglich erhalten Unternehmen
-                  unzählige Angebote von HR-Dienstleistern welche dann auch oft
-                  konsequent und nicht immer freundlich abgewiesen werden,
-                  obwohl der Recruiter wirklich einen passenden Kandidaten
-                  anbieten wollte und konnte.
+                  Während unserer täglichen Arbeit im Recruitment sind uns
+                  Potenziale aufgefallen, die wir nutzen wollen. Der
+                  HR-Dienstleistungsmarkt ist breit aufgestellt und schwankt bei
+                  den Qualitätsansprüchen.
+                </p>
+                <p className="m-0">
+                  Täglich erhalten Unternehmen unzählige Angebote von
+                  HR-Dienstleistern. Personalberatungen und Recruiter stehen vor
+                  der Herausforderung, Unternehmen von der Qualität und
+                  Effizienz ihrer Arbeit zu überzeugen und werden häufig
+                  abgewiesen, obwohl sie einen passenden Kandidaten anbieten
+                  wollen und können. Das Resultat: Verschenktes Potenzial auf
+                  beiden Seiten.
                 </p>
               </div>
               <div
@@ -110,12 +113,12 @@ const FeaturesSplit = ({
                 </div> */}
                 <h3 className="mt-0 mb-12">Was wir ändern.</h3>
                 <p className="m-0">
-                  RECSCOUT erleichtert die Zusammenarbeit zwischen Firmen und
-                  Recruitern bereits vor Auftragserteilung. Wir schaffen einen
-                  transparenten Markt, machen Hidden-Champions im Recruiting
-                  sichtbar und ermöglichen so einen effizienten und
-                  erfolgreichen Prozess für beide Seiten - und dies ganz ohne
-                  mühselige Anrufe und Kontaktversuche.
+                  RECSCOUT erleichtert die Zusammenarbeit zwischen Unternehmen
+                  und Recruitern bereits vor Auftragserteilung. Wir schaffen
+                  einen transparenten Markt, machen Hidden-Champions im
+                  Recruiting sichtbar und ermöglichen so einen effizienten und
+                  erfolgreichen Prozess für beide Seiten - und das ganz ohne
+                  mühselige Anrufe, Kontaktversuche und Follow ups.
                 </p>
               </div>
               <div
@@ -136,14 +139,14 @@ const FeaturesSplit = ({
               </div>
             </div>
 
-            <div className="split-item">
+            {/* <div className="split-item">
               <div
                 className="split-item-content center-content-mobile reveal-from-left"
                 data-reveal-container=".split-item"
               >
-                {/* <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
+              <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
                   Lightning fast recruitment
-                </div> */}
+                </div> 
                 <h3 className="mt-0 mb-12">Ein Blick in die Zukunft.</h3>
                 <p className="m-0">
                   Weitere Features, wie der Zugriff auf einen nach
@@ -169,7 +172,7 @@ const FeaturesSplit = ({
                   height={396}
                 />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

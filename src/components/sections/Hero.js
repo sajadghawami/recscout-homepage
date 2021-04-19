@@ -68,22 +68,23 @@ const Hero = ({
       <div style={{ width: "100%", height: "100%" }}>
         <div className={innerClasses}>
           <div className="hero-content">
-            <h1
+            {/* <h1
               className="mt-0 mb-16 reveal-from-bottom"
               data-reveal-delay="200"
             >
               Finden Sie den besten Recruiter für Ihre Vakanz.
-              {/* <br /> */}
-              {/* <span className="text-color-primary">- Komm recscouten</span> */}
-            </h1>
+            </h1> */}
+            {/* <br /> */}
+            {/* <span className="text-color-primary">- Komm recscouten</span> */}
             <div className="container-xs">
               <p
                 className="m-0 mb-32 reveal-from-bottom"
                 data-reveal-delay="400"
               >
-                Unser Team setzt sich aus erfahrenen Gründern, Recruitern und HR
-                Business Partnern zusammen. Wir vereinen alle Blickwinkel und
-                Anforderungen in einer Plattform.
+                Wir wissen wovon wir reden - Unser Team setzt sich aus
+                erfahrenen Gründern, Recruitern und HR Business Partnern
+                zusammen. Wir vereinen alle Blickwinkel und Anforderungen an
+                HR-Dienstleistungen in einer Plattform.
               </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>

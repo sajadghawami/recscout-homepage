@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <FeaturesTiles className="illustration-section-01" />
+      {/* <FeaturesTiles className="illustration-section-01" /> */}
       <FeaturesSplit
         invertMobile
         // topDivider
