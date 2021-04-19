@@ -1,0 +1,9 @@
+.listing-author-name {
+    height: auto;
+    line-height: 1em;
+}
+
+.listing-author-name-link {
+    overflow: visible;
+    white-space: normal;
+}

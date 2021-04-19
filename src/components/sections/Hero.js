@@ -77,17 +77,24 @@ const Hero = ({
             {/* <br /> */}
             {/* <span className="text-color-primary">- Komm recscouten</span> */}
             <div className="container-xs">
-              <p
+              <h3
                 className="m-0 mb-32 reveal-from-bottom"
                 data-reveal-delay="400"
+                style={{ fontWeight: 400 }}
               >
                 Wir wissen wovon wir reden - Unser Team setzt sich aus
                 erfahrenen Gründern, Recruitern und HR Business Partnern
                 zusammen. Wir vereinen alle Blickwinkel und Anforderungen an
                 HR-Dienstleistungen in einer Plattform.
-              </p>
-              <div className="reveal-from-bottom" data-reveal-delay="600">
-                <ButtonGroup>
+              </h3>
+              <div
+                className="reveal-from-bottom"
+                data-reveal-delay="600"
+                // style={{ textAlign: "left" }}
+              >
+                <ButtonGroup
+                // style={{ justifyContent: "left" }}
+                >
                   <Button tag="a" color="primary" wideMobile href="/register">
                     Jetzt recscouten
                   </Button>
