@@ -64,6 +64,7 @@ const FeaturesSplit = ({
               <div
                 className="split-item-content center-content-mobile reveal-from-left"
                 data-reveal-container=".split-item"
+                style={{ textAlign: "center" }}
               >
                 {/* <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
                   Was uns stört
@@ -107,6 +108,7 @@ const FeaturesSplit = ({
               <div
                 className="split-item-content center-content-mobile reveal-from-right"
                 data-reveal-container=".split-item"
+                style={{ textAlign: "center" }}
               >
                 {/* <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
                   Lightning fast recruitment
