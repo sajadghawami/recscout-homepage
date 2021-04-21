@@ -3,6 +3,7 @@ import classNames from "classnames";
 import { SectionSplitProps } from "../../utils/SectionProps";
 import SectionHeader from "./partials/SectionHeader";
 import Image from "../elements/Image";
+import Button from "../elements/Button";
 
 const propTypes = {
   ...SectionSplitProps.types,
@@ -74,22 +75,20 @@ const FeaturesSplit = ({
                 {/* <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
                   Was uns stört
                 </div> */}
-                <h2 className="mt-0 mb-12">Gemeinsam für den Klimaschutz.</h2>
-                <h6
-                  className="m-6"
-                  style={{
-                    backgroundColor: "#78d1c4",
-                    padding: 25,
-                    color: "#FFF",
-                    fontWeight: 300,
-                  }}
+                <h2 className="mt-0 mb-12">Rückruf vereinbaren.</h2>
+                <p className="m-6">
+                  Unser Team ist werktags von 9 bis 18 Uhr persönlich für Sie
+                  erreichbar.
+                </p>
+                <Button
+                  tag="a"
+                  color="dark"
+                  wideMobile
+                  href="/register"
+                  size="large"
                 >
-                  Für jeden erfolgreichen Projektabschluss pflanzen wir einen
-                  Baum.{" "}
-                  <span style={{ color: "#000" }}>
-                    + Social Cashback an nachhaltige Projekte
-                  </span>
-                </h6>
+                  Rückruf buchen
+                </Button>
               </div>
               <div
                 className={classNames(
