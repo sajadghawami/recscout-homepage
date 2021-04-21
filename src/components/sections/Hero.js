@@ -68,12 +68,12 @@ const Hero = ({
       <div style={{ width: "100%", height: "100%" }}>
         <div className={innerClasses}>
           <div className="hero-content">
-            {/* <h1
+            <h1
               className="mt-0 mb-16 reveal-from-bottom"
               data-reveal-delay="200"
             >
               Finden Sie den besten Recruiter für Ihre Vakanz.
-            </h1> */}
+            </h1>
             {/* <br /> */}
             {/* <span className="text-color-primary">- Komm recscouten</span> */}
             <div className="container-xs">
@@ -107,7 +107,7 @@ const Hero = ({
           </div>
           <div className="hero-image">
             <img
-              src="https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/start.jpg"
+              src="https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/start.png"
               alt="#"
             />
           </div>
