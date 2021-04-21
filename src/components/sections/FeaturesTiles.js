@@ -45,14 +45,18 @@ const FeaturesTiles = ({
   const sectionHeader = {
     title: "RECSCOUT - More Trust Less Bullshit",
     paragraph:
-      "Sparen Sie Zeit, Kosten und Ihre wertvollen Nerven mit effektiven Recruiting.",
+      " Sparen Sie Zeit, Kosten und Ihre wertvollen Nerven mit effektivem Recruiting.",
   };
 
   return (
     <section {...props} className={outerClasses}>
       <div className="container container-fluid" style={{ width: "100%" }}>
         <div className={innerClasses}>
-          <SectionHeader data={sectionHeader} className="center-content" />
+          <SectionHeader
+            data={sectionHeader}
+            className="center-content"
+            style={{ width: "100%", textAlign: "left" }}
+          />
           <div className={tilesClasses}>
             <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
@@ -73,7 +77,9 @@ const FeaturesTiles = ({
                   <p className="m-0 text-sm">
                     Erstellen Sie Ihren Account als Unternehmen oder Recruiter
                     schnell und kostenlos. In wenigen Schritten sind Sie
-                    startbereit.
+                    startbereit. Für Unternehmen ist die Plattform kostenfrei.
+                    Für Recruiter erheben wir bei einem erfolgreichen Abschluss
+                    eine Fee an dem gezahlten Honorar.
                   </p>
                 </div>
               </div>
@@ -99,10 +105,9 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">Matching</h4>
                   <p className="m-0 text-sm">
-                    Über Filter, wie Spezialisierung, Preis, Erreichbarkeit,
-                    Branche, Standort etc. finden Sie direkt den richtigen
-                    Recruiter für Ihre Vakanz und können gezielt in die
-                    Projektabsprache starten
+                    Finden und beauftragen Sie den richtigen Recruiter für Ihre
+                    Vakanz. Nutzen sie dazu unsere branchenspezifische
+                    Suchfunktion.
                   </p>
                 </div>
               </div>
@@ -128,9 +133,8 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">Bewertungen</h4>
                   <p className="m-0 text-sm">
-                    unser transparentes bewertungssystem sorgt für vertrauen und
-                    qualität. investieren sie direkt beim start in eine
-                    erfolgversprechende zusammenarbeit.
+                    Unser Bewertungssystem schafft einen transparenten Markt und
+                    macht Hidden-Champions im Recruiting sichtbar.
                   </p>
                 </div>
               </div>
@@ -151,13 +155,11 @@ const FeaturesTiles = ({
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">Optimierung</h4>
+                  <h4 className="mt-0 mb-8">Commitment</h4>
                   <p className="m-0 text-sm">
-                    mit jedem abgeschlossen projekt optimieren wir die
-                    zusammenarbeit auf der basis von vertrauen und bewiesener
-                    leistungsfähigkeit. So können beide Parteien im
-                    bestmöglichen setup miteinander offen und auf augenhöhe
-                    arbeiten.
+                    Über die Bewertungen ermöglichen wir ein sorgenfreies und
+                    verbindliches Commitment zwischen Unternehmen und Recruitern
+                    direkt bei der ersten Zusammenarbeit.
                   </p>
                 </div>
               </div>
@@ -183,10 +185,9 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">Kommunikation</h4>
                   <p className="m-0 text-sm">
-                    Direkte gespräche über den chat. alle gespräche zentral
-                    geordnet. Genießen Sie zudem unseren Kunden-Support bei
-                    Fragen zu Recruiting-Prozessen oder unserem Marktplatz per
-                    Mail, Telefon und Whatsapp.
+                    Die gesamte Kommunikation erfolgt über RECSCOUT - von der
+                    ersten Anfrage bishin zum Vertragsabschluss. Genießen Sie
+                    zudem unseren Kunden-Support via Mail, Telefon und Whatsapp.
                   </p>
                 </div>
               </div>
@@ -212,11 +213,13 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">Zahlungen</h4>
                   <p className="m-0 text-sm">
-                    Rechnungslegung und Zahlungen werden einfach und transparent
-                    über die RecScout Plattform abgewickelt - passend zu den
-                    individuellen Prozessen. Recruiter erhalten ihr Honorar
-                    innerhalb von 24 Stunden und Firmen genießen und behalten
-                    ihre Zahlungsflexibilität und gewohnten Zahlungsziele.
+                    Rechnungen werden schnell und digital über RECSCOUT
+                    abgewickelt. Sie sind in Echtzeit über den Zahlungsprozess
+                    informiert. Hierfür arbeiten wir mit starken Partnern
+                    zusammen. Recruitern bieten wir zudem die Möglichkeit einer
+                    Honorar-Auszahlung innerhalb von 48 Stunden an. Unternehmen
+                    genießen gleichzeitig eine Zahlungsflexibilität bis zu 90
+                    Tagen.
                   </p>
                 </div>
               </div>
