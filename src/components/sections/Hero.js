@@ -76,8 +76,8 @@ const Hero = ({
             </h1>
             {/* <br /> */}
             {/* <span className="text-color-primary">- Komm recscouten</span> */}
-            <div className="container-xs">
-              <h3
+            <div>
+              <p
                 className="m-0 mb-32 reveal-from-bottom"
                 data-reveal-delay="400"
                 style={{ fontWeight: 400 }}
@@ -86,19 +86,23 @@ const Hero = ({
                 erfahrenen Gründern, Recruitern und HR Business Partnern
                 zusammen. Wir vereinen alle Blickwinkel und Anforderungen an
                 HR-Dienstleistungen in einer Plattform.
-              </h3>
+              </p>
               <div
                 className="reveal-from-bottom"
                 data-reveal-delay="600"
                 // style={{ textAlign: "left" }}
               >
-                <ButtonGroup
-                // style={{ justifyContent: "left" }}
-                >
-                  <Button tag="a" color="primary" wideMobile href="/register">
+                <ButtonGroup style={{ justifyContent: "flex-start" }}>
+                  <Button
+                    tag="a"
+                    color="primary"
+                    wideMobile
+                    href="/register"
+                    size="large"
+                  >
                     Jetzt recscouten
                   </Button>
-                  <Button tag="a" color="dark" wideMobile href="#">
+                  <Button tag="a" color="dark" wideMobile href="#" size="large">
                     Demo buchen
                   </Button>
                 </ButtonGroup>

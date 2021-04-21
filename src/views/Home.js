@@ -11,13 +11,13 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <FeaturesTiles className="illustration-section-01" />
       <FeaturesSplit
         invertMobile
         // topDivider
         imageFill
         className="illustration-section-02"
       />
+      <FeaturesTiles className="illustration-section-01" />
       {/* <Testimonial topDivider /> */}
       <Cta split />
     </div>

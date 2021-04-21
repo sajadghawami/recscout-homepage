@@ -6,6 +6,10 @@
 }
 
 .hero-inner {
+	.hero-content {
+		text-align: left;
+	}
+
 	// Affects only hero full
 	> .hero-content + .hero-figure,
 	> .hero-figure + .hero-content {

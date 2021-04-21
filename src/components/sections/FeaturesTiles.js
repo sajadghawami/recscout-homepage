@@ -50,7 +50,7 @@ const FeaturesTiles = ({
 
   return (
     <section {...props} className={outerClasses}>
-      <div className="container">
+      <div className="container container-fluid" style={{ width: "100%" }}>
         <div className={innerClasses}>
           <SectionHeader data={sectionHeader} className="center-content" />
           <div className={tilesClasses}>
