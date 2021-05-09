@@ -8,11 +8,14 @@ import ClimateSplit from "../components/sections/ClimateSplit";
 import CallSplit from "../components/sections/CallSplit";
 import Testimonial from "../components/sections/Testimonial";
 import Cta from "../components/sections/Cta";
+import classNames from "classnames";
 
 // <div style={{ backgroundColor: "#f7f7f7" }}>
 const Home = () => {
+  const outerClasses = classNames("homepage-wrapper");
+
   return (
-    <div>
+    <div className={outerClasses}>
       <Hero />
       <FeaturesSplit
         invertMobile
