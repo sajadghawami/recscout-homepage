@@ -164,6 +164,17 @@ window.addEventListener("load", function (event) {
     }
   }
 
+  // contact page
+  // if we find the contact-wrapper, it means we are on the homepage
+  const elemContact = document.getElementsByClassName("new-feedback-form");
+  if (elemContact.length) {
+    // remove the page content
+    const pageContent = document.getElementsByClassName("page-content");
+    pageContent[0].parentNode.removeChild(pageContent[0]);
+  }
+
+  // <iframe width="100%" height="100%" src="https://recscout.hubspotpagebuilder.com/recscout-pr%C3%A4sentation" frameborder="0" style="height:100vh"></iframe>
+
   // Auto accept Rating Page
   const isAutoAcceptRatingPage =
     splittedPathname[splittedPathnameArrayPosition - 1] === "transactions";
