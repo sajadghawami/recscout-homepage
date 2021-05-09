@@ -178,14 +178,16 @@ window.addEventListener("load", function (event) {
       '<iframe class="embedded-contact" width="100%" height="100%" src="https://recscout.hubspotpagebuilder.com/recscout-pr%C3%A4sentation" frameborder="0" style="height:100vh"></iframe>';
 
     // $(".marketplace-lander")[0].after($(contactForm));
-    $(".marketplace-lander")[0].append(
-      $("<iframe/>", {
-        width: "100%",
-        height: "100%",
-        src:
-          "https://recscout.hubspotpagebuilder.com/recscout-pr%C3%A4sentation",
-      })
-    );
+    // $(".marketplace-lander")[0].append(
+    //   $("<iframe/>", {
+    //     width: "100%",
+    //     height: "100%",
+    //     src:
+    //       "https://recscout.hubspotpagebuilder.com/recscout-pr%C3%A4sentation",
+    //   })
+    // );
+    $(".marketplace-lander").append(contactForm);
+    console.log($(".marketplace-lander"));
     // console.log($(".marketplace-lander")[0]);
     // contactAppend.after(contactForm);
   }
