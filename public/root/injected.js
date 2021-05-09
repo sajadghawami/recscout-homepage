@@ -175,7 +175,9 @@ window.addEventListener("load", function (event) {
       "marketplace-lander"
     )[0];
     contactAppend.append(
-      '<iframe class="embedded-contact" width="100%" height="100%" src="https://recscout.hubspotpagebuilder.com/recscout-pr%C3%A4sentation" frameborder="0" style="height:100vh"></iframe>'
+      $(
+        '<iframe class="embedded-contact" width="100%" height="100%" src="https://recscout.hubspotpagebuilder.com/recscout-pr%C3%A4sentation" frameborder="0" style="height:100vh"></iframe>'
+      )
     );
   }
 
