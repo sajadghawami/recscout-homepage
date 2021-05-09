@@ -171,25 +171,14 @@ window.addEventListener("load", function (event) {
     // remove the page content
     const pageContent = document.getElementsByClassName("page-content");
     pageContent[0].parentNode.removeChild(pageContent[0]);
-    const contactAppend = document.getElementsByClassName(
-      "marketplace-lander"
-    )[0];
+
+    // remove the title
+    $(".title-container").remove();
+
     const contactForm =
       '<iframe class="embedded-contact" width="100%" height="100%" src="https://recscout.hubspotpagebuilder.com/recscout-pr%C3%A4sentation" frameborder="0" style="height:100vh"></iframe>';
 
-    // $(".marketplace-lander")[0].after($(contactForm));
-    // $(".marketplace-lander")[0].append(
-    //   $("<iframe/>", {
-    //     width: "100%",
-    //     height: "100%",
-    //     src:
-    //       "https://recscout.hubspotpagebuilder.com/recscout-pr%C3%A4sentation",
-    //   })
-    // );
     $(".marketplace-lander").append(contactForm);
-    console.log($(".marketplace-lander"));
-    // console.log($(".marketplace-lander")[0]);
-    // contactAppend.after(contactForm);
   }
 
   // Auto accept Rating Page
