@@ -174,10 +174,9 @@ window.addEventListener("load", function (event) {
 
     // remove the title
     $(".title-container").remove();
-
+    // add the contact
     const contactForm =
       '<iframe class="embedded-contact" width="100%" height="100%" src="https://recscout.hubspotpagebuilder.com/recscout-pr%C3%A4sentation" frameborder="0" style="height:100vh"></iframe>';
-
     $(".marketplace-lander").append(contactForm);
   }
 
