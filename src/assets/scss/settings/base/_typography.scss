@@ -13,6 +13,7 @@ $font--family: (
 
 // The typographic scale
 $font--scale: (
+	// test
 	// key 		// font-size, line-height, kerning
 	// alpha: (52px, 62px, -0.3px),
 	// beta: (44px, 54px, -0.3px),
@@ -22,14 +23,23 @@ $font--scale: (
 	// zeta: (18px, 28px, -0.1px),
 	// eta: (16px, 24px, -0.1px),
 	// theta: (14px, 22px, null),
-	alpha: (56px, 62px, -0.3px),
-	beta: (48px, 54px, -0.3px),
-	gamma: (36px, 42px, -0.3px),
-	delta: (28px, 34px, -0.1px),
-	epsilon: (24px, 30px, -0.1px),
-	zeta: (20px, 28px, -0.1px),
-	eta: (16px, 24px, -0.1px),
-	theta: (14px, 22px, null)
+	// old
+	alpha: (44px, 54px, -0.3px),
+	beta: (32px, 42px, -0.3px),
+	gamma: (24px, 34px, -0.1px),
+	delta: (20px, 30px, -0.1px),
+	epsilon: (18px, 28px, -0.1px),
+	zeta: (16px, 24px, -0.1px),
+	eta: (14px, 22px, null),
+	theta: (12px, 20px, null) // new
+// alpha: (56px, 62px, -0.3px),
+// beta: (48px, 54px, -0.3px),
+// gamma: (36px, 42px, -0.3px),
+// delta: (28px, 34px, -0.1px),
+// epsilon: (24px, 30px, -0.1px),
+// zeta: (20px, 28px, -0.1px),
+// eta: (16px, 24px, -0.1px),
+// theta: (14px, 22px, null)
 );
 
 // Base elements: font size
