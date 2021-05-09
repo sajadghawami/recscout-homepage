@@ -174,11 +174,10 @@ window.addEventListener("load", function (event) {
     const contactAppend = document.getElementsByClassName(
       "marketplace-lander"
     )[0];
-    contactAppend.append(
-      document.createElement(
-        '<iframe class="embedded-contact" width="100%" height="100%" src="https://recscout.hubspotpagebuilder.com/recscout-pr%C3%A4sentation" frameborder="0" style="height:100vh"></iframe>'
-      )
+    const contactForm = $(
+      '<iframe class="embedded-contact" width="100%" height="100%" src="https://recscout.hubspotpagebuilder.com/recscout-pr%C3%A4sentation" frameborder="0" style="height:100vh"></iframe>'
     );
+    contactAppend.append(contactForm);
   }
 
   // Auto accept Rating Page
