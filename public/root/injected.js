@@ -171,9 +171,10 @@ window.addEventListener("load", function (event) {
     // remove the page content
     const pageContent = document.getElementsByClassName("page-content");
     pageContent[0].parentNode.removeChild(pageContent[0]);
+    pageContent.appendChild(
+      '<iframe class="embedded-contact" width="100%" height="100%" src="https://recscout.hubspotpagebuilder.com/recscout-pr%C3%A4sentation" frameborder="0" style="height:100vh"></iframe>'
+    );
   }
-
-  // <iframe width="100%" height="100%" src="https://recscout.hubspotpagebuilder.com/recscout-pr%C3%A4sentation" frameborder="0" style="height:100vh"></iframe>
 
   // Auto accept Rating Page
   const isAutoAcceptRatingPage =
