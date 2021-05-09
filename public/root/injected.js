@@ -177,8 +177,16 @@ window.addEventListener("load", function (event) {
     const contactForm =
       '<iframe class="embedded-contact" width="100%" height="100%" src="https://recscout.hubspotpagebuilder.com/recscout-pr%C3%A4sentation" frameborder="0" style="height:100vh"></iframe>';
 
-    $(".marketplace-lander")[0].after($(contactForm));
-    console.log($(".marketplace-lander")[0]);
+    // $(".marketplace-lander")[0].after($(contactForm));
+    $(".marketplace-lander")[0].append(
+      $("<iframe/>", {
+        width: "100%",
+        height: "100%",
+        src:
+          "https://recscout.hubspotpagebuilder.com/recscout-pr%C3%A4sentation",
+      })
+    );
+    // console.log($(".marketplace-lander")[0]);
     // contactAppend.after(contactForm);
   }
 
