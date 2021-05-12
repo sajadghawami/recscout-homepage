@@ -7,3 +7,9 @@
     overflow: visible;
     white-space: normal;
 }
+
+/* transaction buttons */
+.transaction-button-link {
+    background-color: #000;
+    color: #fff;
+}
