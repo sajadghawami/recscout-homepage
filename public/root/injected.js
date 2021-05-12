@@ -43,9 +43,8 @@ const getParameterByName = (query, variable) => {
 
 const getDecompressedRouterQuery = (query) => {
   // decompress
-  const decompressedRouterQuery = LZString.decompressFromEncodedURIComponent(
-    query
-  );
+  const decompressedRouterQuery =
+    LZString.decompressFromEncodedURIComponent(query);
   return decompressedRouterQuery;
 };
 
@@ -162,6 +161,14 @@ window.addEventListener("load", function (event) {
         });
       }
     }
+  }
+
+  // transaction page
+  const isTransactionsPage =
+    splittedPathname[splittedPathnameArrayPosition - 1] === "transactions";
+
+  if (isTransactionsPage) {
+    console.log("isTransactionsPage");
   }
 
   // contact page
