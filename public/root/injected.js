@@ -169,6 +169,14 @@ window.addEventListener("load", function (event) {
 
   if (isTransactionsPage) {
     console.log("isTransactionsPage");
+
+    // remove old elements
+    $(".left-navi-section form").remove();
+    $("#admin_transactions_count").remove();
+    $("#admin_transactions").remove();
+
+    // admin_transactions_count
+    //admin_transactions
   }
 
   // contact page
