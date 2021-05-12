@@ -74,7 +74,7 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">Schneller Start</h4>
-                  <p className="m-0 text-sm">
+                  <p className="m-0">
                     Erstellen Sie Ihren Account als Unternehmen oder Recruiter
                     schnell und kostenlos. In wenigen Schritten sind Sie
                     startbereit. Für Unternehmen ist die Plattform kostenfrei.
@@ -104,7 +104,7 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">Matching</h4>
-                  <p className="m-0 text-sm">
+                  <p className="m-0">
                     Finden und beauftragen Sie den richtigen Recruiter für Ihre
                     Vakanz. Nutzen sie dazu unsere branchenspezifische
                     Suchfunktion.
@@ -132,7 +132,7 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">Bewertungen</h4>
-                  <p className="m-0 text-sm">
+                  <p className="m-0">
                     Unser Bewertungssystem schafft einen transparenten Markt und
                     macht Hidden-Champions im Recruiting sichtbar.
                   </p>
@@ -156,7 +156,7 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">Commitment</h4>
-                  <p className="m-0 text-sm">
+                  <p className="m-0">
                     Über die Bewertungen ermöglichen wir ein sorgenfreies und
                     verbindliches Commitment zwischen Unternehmen und Recruitern
                     direkt bei der ersten Zusammenarbeit.
@@ -184,7 +184,7 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">Kommunikation</h4>
-                  <p className="m-0 text-sm">
+                  <p className="m-0">
                     Die gesamte Kommunikation erfolgt über RECSCOUT - von der
                     ersten Anfrage bishin zum Vertragsabschluss. Genießen Sie
                     zudem unseren Kunden-Support via Mail, Telefon und Whatsapp.
@@ -212,7 +212,7 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">Zahlungen</h4>
-                  <p className="m-0 text-sm">
+                  <p className="m-0">
                     Rechnungen werden schnell und digital über RECSCOUT
                     abgewickelt. Sie sind in Echtzeit über den Zahlungsprozess
                     informiert. Hierfür arbeiten wir mit starken Partnern

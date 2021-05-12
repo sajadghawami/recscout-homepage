@@ -97,12 +97,18 @@ const Hero = ({
                     tag="a"
                     color="primary"
                     wideMobile
-                    href="/register"
+                    href="/de/signup"
                     size="large"
                   >
                     Jetzt recscouten
                   </Button>
-                  <Button tag="a" color="dark" wideMobile href="#" size="large">
+                  <Button
+                    tag="a"
+                    color="dark"
+                    wideMobile
+                    href="/user_feedbacks/new"
+                    size="large"
+                  >
                     Demo buchen
                   </Button>
                 </ButtonGroup>

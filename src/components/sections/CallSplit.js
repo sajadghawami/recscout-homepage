@@ -84,7 +84,7 @@ const FeaturesSplit = ({
                   tag="a"
                   color="dark"
                   wideMobile
-                  href="/register"
+                  href="/user_feedbacks/new"
                   size="large"
                 >
                   Rückruf buchen
