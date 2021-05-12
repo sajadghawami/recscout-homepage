@@ -165,7 +165,7 @@ window.addEventListener("load", function (event) {
 
   // transaction page
   const isTransactionsPage =
-    splittedPathname[splittedPathnameArrayPosition - 1] === "transactions";
+    splittedPathname[splittedPathnameArrayPosition] === "transactions";
 
   if (isTransactionsPage) {
     console.log("isTransactionsPage");
