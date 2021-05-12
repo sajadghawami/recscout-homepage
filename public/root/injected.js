@@ -177,6 +177,7 @@ window.addEventListener("load", function (event) {
 
     // admin_transactions_count
     //admin_transactions
+    $(".left-navi-section h2").after("<p>this is a test</p>");
   }
 
   // contact page
