@@ -178,7 +178,7 @@ window.addEventListener("load", function (event) {
     // admin_transactions_count
     //admin_transactions
     $(".left-navi-section h2").after(
-      '<a class="transaction-button-link" href="#">this is a test</a>'
+      '<div class="transaction-button-wrapper"><a class="transaction-button-link" href="#">payactive</a><a class="transaction-button-link" href="#">payactive</a></div>'
     );
   }
 

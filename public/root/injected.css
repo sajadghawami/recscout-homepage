@@ -9,11 +9,15 @@
 }
 
 /* transaction buttons */
-.transaction-button-link {
+/* .transaction-button-link {
     color: #fff;
+} */
+
+.transaction-button-wrapper {
 }
 
 a.transaction-button-link {
     color: #fff;
     background-color: #000;
+    border-radius: 15px;
 }
