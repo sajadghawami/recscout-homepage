@@ -178,7 +178,7 @@ window.addEventListener("load", function (event) {
     // admin_transactions_count
     //admin_transactions
     $(".left-navi-section h2").after(
-      '<div class="transaction-button-wrapper"><a class="transaction-button-link" href="#">payactive</a><a class="transaction-button-link" href="#">payactive</a></div>'
+      '<div class="transaction-button-wrapper"><a class="transaction-button-link" href="#">payactive</a><a class="transaction-button-link" href="https://www.aifinyo.de/?source=recscout">aifinyo</a></div>'
     );
   }
 
