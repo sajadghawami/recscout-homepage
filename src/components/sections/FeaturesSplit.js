@@ -204,6 +204,7 @@ const FeaturesSplit = ({
   );
 };
 
+
 FeaturesSplit.propTypes = propTypes;
 FeaturesSplit.defaultProps = defaultProps;
 
