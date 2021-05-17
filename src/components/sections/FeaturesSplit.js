@@ -82,7 +82,7 @@ const FeaturesSplit = ({
                   HR-Dienstleistern - wie sollen Unternehmen diese gerecht
                   einschätzen können? Manche Unternehmen arbeiten daher aus
                   Gewohnheit mit mehr oder weniger guten Partnern aber sicher
-                  nicht mit dem Passendsten.
+                  nicht mit dem Passendsten. Test
                 </p>
 
                 <p className="m-6">
