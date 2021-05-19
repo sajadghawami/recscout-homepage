@@ -52,7 +52,8 @@ const FeaturesSplit = ({
 
   const sectionHeader = {
     title: "Die Vision von RECSCOUT.",
-    paragraph: "Wir möchten Ihnen Vertrauen, Transparenz und eine klare Struktur vom ersten Kontakt bieten. Denken Sie an zahlreiche Anrufe, Mails, Rechnungen, unterschiedliche Erwartungen... und vergessen Sie diese. Wir laden HR-Teams und Berater ein, die Highlights im Recruiting zusammen auf RECSCOUT zu erleben. ",
+    paragraph: "Denken Sie an zahlreiche Anrufe, Mails, Rechnungen, unterschiedliche Erwartungen... und vergessen Sie diese. 
+    Wir laden HR-Teams und Berater ein, die Highlights im Recruiting zusammen auf RECSCOUT zu erleben.",
   };
 
   return (
@@ -118,7 +119,7 @@ const FeaturesSplit = ({
                 </div> */}
                 <h3 className="mt-0 mb-12">Was wir ändern.</h3>
                 <p className="m-6">
-                  Wir schaffen für Sie auf der Grundlage von Daten einen vertraulichen 
+                  Wir schaffen für Sie auf der Grundlage von Technik und Daten einen vertraulichen 
                   und transparenten Markt, machen per Schnell-Suche Hidden-Champions
                   im Recruiting sichtbar und ermöglichen so einen optimalen Prozess für
                   BEIDE Seiten. So findet jede Vakanz ihren optimalen Berater.
