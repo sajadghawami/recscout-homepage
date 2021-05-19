@@ -76,26 +76,18 @@ const FeaturesSplit = ({
                 </div> */}
                 {/* <h3 className="mt-0 mb-12">Was uns stört.</h3> */}
                 <p className="m-6">
-                  RECSCOUT wird weiter an neuen Technologien und Möglichkeiten
-                  arbeiten. Wir planen zum Beispiel ein Feature, worüber wir
-                  Unternehmen und Recruiter automatisiert miteinander vernetzen
-                  und bei passenden Kandidaten-Daten eine Empfehlung
-                  ermöglichen. Ein weiterer technologisch getriebener Kanal der
-                  Zusammenarbeit.
+                  RECSCOUT arbeitet weiter an neuen Technologien und Funktionen.
+                  Zum Beispiel an einem Feature, worüber wir Unternehmen und Berater
+                  spezifisch miteinander vernetzen. Ein weiterer technologisch
+                  getriebener Kanal der Zusammenarbeit. Zudem die Funktion auf eine
+                  erhöhte Projekt-Auslastung oder besondere Kandidaten-Anforderungen 
+                  flexibel reagieren zu können.
                 </p>
 
                 <p className="m-6">
-                  Zudem arbeiten wir an einem Feature, das Unternehmen und
-                  Recruitern ermöglicht auf eine erhöhte Projekt-Auslastung oder
-                  besondere Kandidaten-Anforderungen flexibel zu reagieren und
-                  entsprechende Hilfestellungen / KnowHow einzukaufen.
-                </p>
-
-                <p className="m-6">
-                  Hier hören wir auch auf das Feedback der Recscout-Community.
-                  Bauen Sie mit uns zusammen an der Recruiting-Plattform von
-                  Morgen und profitieren Sie als "Early Bird" langfristig von
-                  besonderen Konditionen.
+                  Ergänzend analysieren wir den Markt weiter nach passenden   
+                  Software-Produkten und Partnern, um Ihnen ein best mögliches
+                  Erlebnis zu bieten. 
                 </p>
               </div>
               <div
