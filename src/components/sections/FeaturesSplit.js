@@ -52,7 +52,7 @@ const FeaturesSplit = ({
 
   const sectionHeader = {
     title: "Die Vision von RECSCOUT.",
-    paragraph: "Wir bringen moderne Technologien in den Recruiting Markt.",
+    paragraph: "Wir möchten Ihnen Vertrauen, Transparenz und eine klare Struktur vom ersten Kontakt bieten. Denken Sie an zahlreiche Anrufe, Mails, Rechnungen, unterschiedliche Erwartungen... und vergessen Sie diese. Wir laden HR-Teams und Berater ein, die Highlights im Recruiting zusammen auf RECSCOUT zu erleben. ",
   };
 
   return (
@@ -76,27 +76,17 @@ const FeaturesSplit = ({
                 </div> */}
                 <h3 className="mt-0 mb-12">Was uns stört.</h3>
                 <p className="m-6">
-                  Der HR-Dienstleistungsmarkt ist breit aufgestellt und schwankt
-                  stark bei den Qualitätsansprüchen. Täglich erhalten
-                  Unternehmen unzählige Angebote von unbekannten
-                  HR-Dienstleistern - wie sollen Unternehmen diese gerecht
-                  einschätzen können? Manche Unternehmen arbeiten daher aus
-                  Gewohnheit mit mehr oder weniger guten Partnern aber sicher
-                  nicht mit dem Passendsten.
+                  Der HR-Dienstleistungsmarkt schwankt in seinen Qualitätsansprüchen.
+                  Es gibt unzählige Angebote von unbekannten Personalberatern.
+                  Welches HR-Team soll da direkt einordnen können, welcher Berater 
+                  am besten zu den Anforderungen passt? 
                 </p>
 
                 <p className="m-6">
-                  Recruiter stehen vor der Herausforderung, Unternehmen in
+                  Berater stehen vor der Herausforderung, Unternehmen in
                   wenigen Minuten von der Qualität und Effizienz ihrer Arbeit
-                  überzeugen zu müssen und werden meist abgewiesen, obwohl sie
-                  in ihrem Bereich Experten sind und einen optimalen
-                  Kandidaten-Pool aufweisen können, jedoch einfach an der nicht
-                  vorhanden Transparenz scheitern.
-                </p>
-
-                <p className="m-6">
-                  Das Resultat: Verlorene Energie, Zeit und Potenziale auf
-                  beiden Seiten.
+                  überzeugen zu können. Oft werden Sie abgewiesen, obwohl sie
+                  in ihrem Bereich vielleicht DIE Experten sind.
                 </p>
               </div>
               <div
@@ -128,21 +118,15 @@ const FeaturesSplit = ({
                 </div> */}
                 <h3 className="mt-0 mb-12">Was wir ändern.</h3>
                 <p className="m-6">
-                  RECSCOUT erleichtert die Zusammenarbeit zwischen Unternehmen
-                  und Recruitern bereits vor Auftragserteilung. Wir schaffen auf
-                  der Grundlage von Daten einen vertraulichen und transparenten
-                  Markt, machen per Schnell-Suche Hidden-Champions im Recruiting
-                  sichtbar und ermöglichen so einen entspannten, effizienten und
-                  erfolgreichen Prozess für beide Seiten - genau so, wie Sie es
-                  von modernen Plattformen z.B. zur Buchung von Unterkünften
-                  oder Lieferdiensten kennen.
+                  Wir schaffen für Sie auf der Grundlage von Daten einen vertraulichen 
+                  und transparenten Markt, machen per Schnell-Suche Hidden-Champions
+                  im Recruiting sichtbar und ermöglichen so einen optimalen Prozess für
+                  BEIDE Seiten. So findet jede Vakanz ihren optimalen Berater.
                 </p>
 
                 <p className="m-6">
-                  Über RECSCOUT arbeiten zu jeder Vakanz stets die beiden best
-                  möglichen Partner miteinander. Beide Parteien können absofort
-                  bei Kontakt direkt und freundlich auf RECSCOUT verweisen und
-                  von den gemeinsamen Vorteilen profitieren.
+                  Verstehen Sie RECSCOUT als bewegliche Plattform. Wir ergänzen RECSCOUT
+                  stets mit Funktionen, aus denen Sie ganz nach Bedarf wählen können.
                 </p>
               </div>
               <div
