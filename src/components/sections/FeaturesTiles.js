@@ -76,7 +76,7 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">Schneller Start</h4>
                   <p className="m-0">
-                    Erstellen Sie Ihren Account als Unternehmen oder Recruiter
+                    Erstellen Sie Ihren Account als Unternehmen oder Berater
                     schnell und kostenlos. In wenigen Schritten sind Sie
                     startbereit.
                   </p>
@@ -104,9 +104,9 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">Matching</h4>
                   <p className="m-0">
-                    Vermeiden Sie Risiken und finden wie beauftragen Sie 
+                    Vermeiden Sie Risiken. Finden und beauftragen Sie 
                     über unsere spezifische Suchfunktion den richtigen 
-                    Recruiter für Ihre Vakanz.
+                    Berater für Ihre Vakanz.
                   </p>
                 </div>
               </div>
