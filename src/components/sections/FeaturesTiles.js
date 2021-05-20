@@ -45,8 +45,7 @@ const FeaturesTiles = ({
   const sectionHeader = {
     title: "RECSCOUT - More Trust Less Bullshit",
     paragraph:
-      "Sparen Sie Zeit, Kosten und Nerven, indem Sie die anstrengende "Projektanbahnung" ausklammern 
-      und stattdessen mit den richtigen Beratern direkt in produktive Projektabsprachen starten.",
+      "Sparen Sie Zeit, Kosten und Nerven, indem Sie die anstrengende 'Projektanbahnung' ausklammern  und stattdessen mit den richtigen Beratern direkt in produktive Projektabsprachen starten.",
   };
 
   return (
@@ -104,9 +103,9 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">Matching</h4>
                   <p className="m-0">
-                    Vermeiden Sie Risiken. Finden und beauftragen Sie 
-                    über unsere spezifische Suchfunktion den richtigen 
-                    Berater für Ihre Vakanz.
+                    Vermeiden Sie Risiken. Finden und beauftragen Sie über
+                    unsere spezifische Suchfunktion den richtigen Berater für
+                    Ihre Vakanz.
                   </p>
                 </div>
               </div>
@@ -156,8 +155,8 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">Commitment</h4>
                   <p className="m-0">
-                    Über Bewertungen ermöglichen wir ein verbindliches Commitment
-                    direkt bei der ersten Zusammenarbeit.
+                    Über Bewertungen ermöglichen wir ein verbindliches
+                    Commitment direkt bei der ersten Zusammenarbeit.
                   </p>
                 </div>
               </div>
@@ -210,9 +209,8 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">Zahlungen</h4>
                   <p className="m-0">
-                    Zahlungen werden bequem digital abgewickelt.
-                    Nutzen Sie moderne E-Rechnungen oder Factoring.
-                    LINK ZUM BLOG
+                    Zahlungen werden bequem digital abgewickelt. Nutzen Sie
+                    moderne E-Rechnungen oder Factoring. LINK ZUM BLOG
                   </p>
                 </div>
               </div>
