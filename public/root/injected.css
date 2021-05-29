@@ -19,17 +19,6 @@
 
 /* message buttons */
 
-.message-selection {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.message-selection-column {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}
-
 a.message-button-link {
     color: #fff;
     background-color: #000;
@@ -41,6 +30,22 @@ a.message-button-link {
     padding-top: 0.5625em;
     padding-bottom: 0.5625em;
     margin: 0;
+}
+
+/* top buttons */
+.message-selection {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.message-selection-column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.message-selection-column a {
+    margin: 5;
 }
 
 /* bottom wrapper for videochat start  */

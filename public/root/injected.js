@@ -267,6 +267,7 @@ window.addEventListener("load", function (event) {
     $(".message-form-submit-wrapper").append(
       $("<a>Videochat starten</a>")
         .attr({ href: "https://apps.recscout.com/jitsi" })
+        .attr({ target: "_blank" })
         .addClass("message-button-link")
     );
     console.log("messages page");
