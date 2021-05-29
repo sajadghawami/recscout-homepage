@@ -141,7 +141,8 @@ window.addEventListener("load", function (event) {
 
           // remove all selected
           $(clickedRatingButton).siblings().removeClass("selected");
-          // make all smaller value stars selected
+          // make self and all siblings selected that are smaller
+          $(clickedRatingButton).addClass("selected");
           $(clickedRatingButton)
             .siblings()
             .each(function () {
