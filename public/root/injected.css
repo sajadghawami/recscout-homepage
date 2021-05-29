@@ -44,7 +44,7 @@ a.message-button-link {
     flex-direction: column;
 }
 
-.message-selection-column {
+.message-selection-column a {
     margin: 5px;
 }
 
