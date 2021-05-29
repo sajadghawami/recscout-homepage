@@ -273,9 +273,8 @@ window.addEventListener("load", function (event) {
         .click(function (event) {
           event.preventDefault();
           emailjs.send("service_6kq6oze", "template_6ed6agl", {
-            from_name: "test123",
-            to_name: "to_name123",
-            message: messageContentBox.val(),
+            userId: userContext.loggedInUsername,
+            message: messageContentBox.val().replace(/\n/g, "<br />"),
           });
         })
     );
