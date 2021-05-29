@@ -198,7 +198,6 @@ window.addEventListener("load", function (event) {
     // and send it via mail
     let attachMessage = false;
     $('button[name="button"]').click(function (event) {
-      event.preventDefault();
       if (attachMessage === true) {
         emailjs.send("service_6kq6oze", "template_6ed6agl", {
           userId: userContext.loggedInUsername,
