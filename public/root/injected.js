@@ -200,7 +200,13 @@ window.addEventListener("load", function (event) {
 
     $(".transaction-selection")
       .append(
-        $("<a>test</a>").attr({ href: "#" }).addClass("message-button-link")
+        $("<a>Auftrag akzeptiert</a>")
+          .attr({ href: "#" })
+          .addClass("message-button-link")
+          .click(function (event) {
+            event.preventDefault();
+            console.log("AKZEPTIERT");
+          })
       )
       .append(
         $("<a>test2</a>").attr({ href: "#" }).addClass("message-button-link")
