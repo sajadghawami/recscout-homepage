@@ -113,7 +113,7 @@ window.addEventListener("load", function (event) {
     //   .parent()
     //   .prepend('<div class="jitsi-button">test</button');
     $("div[class*=    Topbar__topbarMenuSpacer__]").after(
-      '<a class="jitsi-button" hre="#"><img src="https://sajadghawami.github.io/recscout-homepage/public/assets/images/icons/170px-Logo_Jitsi.png"></a>'
+      '<a class="jitsi-button" href="https://apps.recscout/jitsi"><img src="https://sajadghawami.github.io/recscout-homepage/public/assets/images/icons/170px-Logo_Jitsi.png"></a>'
     );
   }
 
