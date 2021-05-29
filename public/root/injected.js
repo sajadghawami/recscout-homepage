@@ -102,9 +102,10 @@ window.addEventListener("load", function (event) {
 
   if (isUserLoggedIn) {
     // display the jitsi button
-    $("div[class*=Topbar__topbarLanguageMenuLabel__]")
-      .first()
-      .insertBefore('<div class="jitsi-button">test</button');
+    $(".MenuPriority").first().append('<div class="jitsi-button">test</button');
+    // $("div[class*=Topbar__topbarLanguageMenuLabel__]")
+    //   .first()
+    //   .insertBefore('<div class="jitsi-button">test</button');
   }
 
   // pages
