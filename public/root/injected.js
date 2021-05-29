@@ -194,6 +194,19 @@ window.addEventListener("load", function (event) {
 
   if (isMessagesTransactionsPage) {
     const messageContentBox = $("#message_content");
+    // track if we need to attach the message
+    // and send it via mail
+    let attachMessage = false;
+    $('button[name="button"]').click(function (event) {
+      event.preventDefault();
+      if (attachMessage === true) {
+        console.log(messageContentBox.val());
+        // emailjs.send("service_6kq6oze", "template_6ed6agl", {
+        //   userId: userContext.loggedInUsername,
+        //   message: messageContentBox.val().replace(/\n/g, "<br />"),
+        // });
+      }
+    });
 
     // create the top buttons
     $("#reply_form").before(
@@ -211,6 +224,7 @@ window.addEventListener("load", function (event) {
               .addClass("message-button-link")
               .click(function (event) {
                 event.preventDefault();
+                attachMessage = true;
                 messageContentBox.val(
                   "Hallo, \nhiermit nehme ich den Auftrag an. \nMit freundlichen Grüßen, \n"
                 );
@@ -222,6 +236,7 @@ window.addEventListener("load", function (event) {
               .addClass("message-button-link")
               .click(function (event) {
                 event.preventDefault();
+                attachMessage = true;
                 messageContentBox.val(
                   "Hallo, \nhiermit storniere ich den Auftrag. \nMit freundlichen Grüßen,\n"
                 );
@@ -270,13 +285,6 @@ window.addEventListener("load", function (event) {
         .attr({ href: "https://apps.recscout.com/jitsi" })
         .attr({ target: "_blank" })
         .addClass("message-button-link")
-        .click(function (event) {
-          event.preventDefault();
-          emailjs.send("service_6kq6oze", "template_6ed6agl", {
-            userId: userContext.loggedInUsername,
-            message: messageContentBox.val().replace(/\n/g, "<br />"),
-          });
-        })
     );
     console.log("messages page");
   }
