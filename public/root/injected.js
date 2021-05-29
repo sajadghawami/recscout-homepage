@@ -192,11 +192,10 @@ window.addEventListener("load", function (event) {
     splittedPathname[splittedPathnameArrayPosition - 1] === "transactions";
 
   if (isMessagesTransactionsPage) {
-    // $("#reply_form").before(
-    //   "<div class='message-avatar-padding'><a class='transaction-button-link' href='#'>payactive</a><a class='transaction-button-link' href='https://www.aifinyo.de/?source=recscout'>aifinyo</a></div>"
-    // );
     $("#reply_form").before(
-      '<div class="message-avatar-padding transaction-selection"></div>'
+      $("<div></div>")
+        .addClass("message-avatar-padding")
+        .addClass("transaction-selection")
     );
 
     $(".transaction-selection")
