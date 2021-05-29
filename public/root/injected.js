@@ -209,19 +209,26 @@ window.addEventListener("load", function (event) {
           })
       )
       .append(
-        $("<a>test2</a>").attr({ href: "#" }).addClass("message-button-link")
+        $("<a>Auftrag storniert</a>")
+          .attr({ href: "#" })
+          .addClass("message-button-link")
       )
       .append(
-        $("<a>test2</a>").attr({ href: "#" }).addClass("message-button-link")
+        $("<a>Auftrag on hold</a>")
+          .attr({ href: "#" })
+          .addClass("message-button-link")
       )
       .append(
-        $("<a>test2</a>").attr({ href: "#" }).addClass("message-button-link")
+        $("<a>Vakanz besetzt</a>")
+          .attr({ href: "#" })
+          .addClass("message-button-link")
+      )
+      .append(
+        $("<a>Rechnungsstellung (für Berater)</a>")
+          .attr({ href: "#" })
+          .addClass("message-button-link")
       );
 
-    //     .append($('<table></table>')
-    //     .attr({ cellSpacing : 0 })
-    //     .addClass("text")
-    // )
     console.log("messages page");
   }
 
