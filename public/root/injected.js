@@ -102,9 +102,9 @@ window.addEventListener("load", function (event) {
 
   if (isUserLoggedIn) {
     // display the jitsi button
-    $(".MenuPriority")
-      // .first()
-      .insertAfter('<div class="jitsi-button">test</div');
+    // $(".MenuPriority")
+    //   // .first()
+    //   .insertAfter('<div class="jitsi-button">test</div');
     // $("div[class*=Topbar__topbarLanguageMenuLabel__]")
     //   .first()
     //   .insertBefore('<div class="jitsi-button">test</button');
