@@ -112,8 +112,8 @@ window.addEventListener("load", function (event) {
     // $("div[class*=Topbar__topbarLanguageMenuLabel__]")
     //   .parent()
     //   .prepend('<div class="jitsi-button">test</button');
-    $("div[class*=    Topbar__topbarMenuSpacer__]").after(
-      '<a class="jitsi-button" href="https://apps.recscout/jitsi"><img src="https://sajadghawami.github.io/recscout-homepage/public/assets/images/icons/170px-Logo_Jitsi.png"></a>'
+    $("div[class*=Topbar__topbarMenuSpacer__]").after(
+      '<a class="jitsi-button" target="_blank" rel="noreferrer" href="https://apps.recscout.com/jitsi"><img src="https://sajadghawami.github.io/recscout-homepage/public/assets/images/icons/170px-Logo_Jitsi.png"></a>'
     );
   }
 
