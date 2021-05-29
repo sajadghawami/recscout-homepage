@@ -103,7 +103,7 @@ window.addEventListener("load", function (event) {
   if (isUserLoggedIn) {
     // display jitsi button in navbar
     $("div[class*=Topbar__topbarMenuSpacer__]").after(
-      '<a class="jitsi-button" target="_blank" rel="noreferrer" href="https://apps.recscout.com/jitsi"><img src="https://sajadghawami.github.io/recscout-homepage/public/assets/images/icons/170px-Logo_Jitsi.png"></a>'
+      '<a class="jitsi-button" target="_blank" rel="noreferrer" href="https://apps.recscout.com/jitsi">Videocall starten</a>'
     );
   }
 
