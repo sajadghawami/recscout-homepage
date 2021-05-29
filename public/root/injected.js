@@ -200,11 +200,10 @@ window.addEventListener("load", function (event) {
     $('button[name="button"]').click(function (event) {
       event.preventDefault();
       if (attachMessage === true) {
-        console.log(messageContentBox.val());
-        // emailjs.send("service_6kq6oze", "template_6ed6agl", {
-        //   userId: userContext.loggedInUsername,
-        //   message: messageContentBox.val().replace(/\n/g, "<br />"),
-        // });
+        emailjs.send("service_6kq6oze", "template_6ed6agl", {
+          userId: userContext.loggedInUsername,
+          message: messageContentBox.val().replace(/\n/g, "<br />"),
+        });
       }
     });
 
