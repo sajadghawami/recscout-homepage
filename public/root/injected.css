@@ -1,12 +1,12 @@
 /* this is directly injected into the page */
 
 /* navigationbar */
-
 .jitsi-button img {
     width: 25px;
     height: auto;
 }
 
+/*listings */
 .listing-author-name {
     height: auto;
     line-height: 1em;
@@ -15,6 +15,17 @@
 .listing-author-name-link {
     overflow: visible;
     white-space: normal;
+}
+
+/* message buttons */
+a.message-button-link {
+    color: #fff;
+    background-color: #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
 }
 
 /* transaction buttons */

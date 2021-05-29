@@ -187,12 +187,36 @@ window.addEventListener("load", function (event) {
     }
   }
 
-  // message transactions page
-  // settings transaction page
+  // messages page
   const isMessagesTransactionsPage =
     splittedPathname[splittedPathnameArrayPosition - 1] === "transactions";
 
   if (isMessagesTransactionsPage) {
+    // $("#reply_form").before(
+    //   "<div class='message-avatar-padding'><a class='transaction-button-link' href='#'>payactive</a><a class='transaction-button-link' href='https://www.aifinyo.de/?source=recscout'>aifinyo</a></div>"
+    // );
+    $("#reply_form").before(
+      '<div class="message-avatar-padding transaction-selection"></div>'
+    );
+
+    $(".transaction-selection")
+      .append(
+        $("<a>test</a>").attr({ href: "#" }).addClass("message-button-link")
+      )
+      .append(
+        $("<a>test2</a>").attr({ href: "#" }).addClass("message-button-link")
+      )
+      .append(
+        $("<a>test2</a>").attr({ href: "#" }).addClass("message-button-link")
+      )
+      .append(
+        $("<a>test2</a>").attr({ href: "#" }).addClass("message-button-link")
+      );
+
+    //     .append($('<table></table>')
+    //     .attr({ cellSpacing : 0 })
+    //     .addClass("text")
+    // )
     console.log("messages page");
   }
 
