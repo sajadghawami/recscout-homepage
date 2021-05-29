@@ -200,49 +200,56 @@ window.addEventListener("load", function (event) {
 
     $(".transaction-selection")
       .append(
-        $("<a>Auftrag akzeptiert</a>")
-          .attr({ href: "#" })
-          .addClass("message-button-link")
-          .click(function (event) {
-            event.preventDefault();
-            console.log("AKZEPTIERT");
-          })
+        $("<div></div>")
+          .append(
+            $("<a>Auftrag akzeptiert</a>")
+              .attr({ href: "#" })
+              .addClass("message-button-link")
+              .click(function (event) {
+                event.preventDefault();
+                console.log("AKZEPTIERT");
+              })
+          )
+          .append(
+            $("<a>Auftrag storniert</a>")
+              .attr({ href: "#" })
+              .addClass("message-button-link")
+              .click(function (event) {
+                event.preventDefault();
+                console.log("AKZEPTIERT");
+              })
+          )
+          .append(
+            $("<a>Auftrag on hold</a>")
+              .attr({ href: "#" })
+              .addClass("message-button-link")
+              .click(function (event) {
+                event.preventDefault();
+                console.log("AKZEPTIERT");
+              })
+          )
       )
+
       .append(
-        $("<a>Auftrag storniert</a>")
-          .attr({ href: "#" })
-          .addClass("message-button-link")
-          .click(function (event) {
-            event.preventDefault();
-            console.log("AKZEPTIERT");
-          })
-      )
-      .append(
-        $("<a>Auftrag on hold</a>")
-          .attr({ href: "#" })
-          .addClass("message-button-link")
-          .click(function (event) {
-            event.preventDefault();
-            console.log("AKZEPTIERT");
-          })
-      )
-      .append(
-        $("<a>Vakanz besetzt</a>")
-          .attr({ href: "#" })
-          .addClass("message-button-link")
-          .click(function (event) {
-            event.preventDefault();
-            console.log("AKZEPTIERT");
-          })
-      )
-      .append(
-        $("<a><div>Rechnungsstellung</div><div>(für Berater)</div></a>")
-          .attr({ href: "#" })
-          .addClass("message-button-link")
-          .click(function (event) {
-            event.preventDefault();
-            console.log("AKZEPTIERT");
-          })
+        $("<div></div>")
+          .append(
+            $("<a>Vakanz besetzt</a>")
+              .attr({ href: "#" })
+              .addClass("message-button-link")
+              .click(function (event) {
+                event.preventDefault();
+                console.log("AKZEPTIERT");
+              })
+          )
+          .append(
+            $("<a><div>Rechnungsstellung</div><div>(für Berater)</div></a>")
+              .attr({ href: "#" })
+              .addClass("message-button-link")
+              .click(function (event) {
+                event.preventDefault();
+                console.log("AKZEPTIERT");
+              })
+          )
       );
 
     console.log("messages page");
