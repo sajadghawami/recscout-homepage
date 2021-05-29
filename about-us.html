@@ -8,61 +8,211 @@
   </head>
   <body>
     <style>
-      .person-wrapper {
-        display:flex
+      .flex-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      .image-cropper {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+      }
+
+      .image-timo {
+        width: auto;
+        max-width: max-content;
+        left: -20%;
+        position: relative;
+      }
+
+      .people-image {
+        display: inline;
+        margin: 0 auto;
+        height: 100%;
+        width: auto;
+      }
+      .people-text {
+        margin-top: 15px;
+      }
+
+      .column-3 {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .column-4 {
+        width: 22%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .border-wrapper {
+        border: solid 3px #ccc;
+        padding: 15px;
+      }
+
+      .border-wrapper h3 {
+        text-align: center;
+      }
+
+      .culture-image {
+        width: 75%;
+        height: auto;
+        margin-bottom: 50px;
       }
     </style>
-    <h1>Ihre Ansprechpartner.<h1>
-    <h3>Kontaktieren Sie uns jederzeit und sprechen wir über unsere Zusammenarbeit oder Recscout im Allgemeinen.</h3>
-    <div class="person-wrapper">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
+    <h1>Ihre Ansprechpartner</h1>
+    <p>
+      Kontaktieren Sie uns jederzeit und sprechen wir über unsere Zusammenarbeit
+      oder Recscout im Allgemeinen.
+    </p>
+    <div class="flex-wrapper">
+      <div class="column-3">
+        <div class="image-cropper">
+          <img
+            class="people-image image-timo"
+            src="https://sajadghawami.github.io/recscout-homepage/public/assets/images/people/timo_koenig.jpg"
+          />
+        </div>
+        <h3>Timo König, CEO</h3>
+        <a class="message-button-link" href="mailto:timo.koenig@recscout.com"
+          >Mail senden</a
+        >
+        <p class="people-text">
+          Bei recscout wollen wir die Erfahrung im Personalwesen zum Besseren
+          verändern. Wir vertrauen auf unsere Vision, unsere Arbeit und Sie. Ich
+          möchte sicherstellen, dass recscout Ihre Chance ist zu wachsen.
+        </p>
       </div>
+      <div class="column-3">
+        <div class="image-cropper">
+          <img
+            class="people-image"
+            src="https://sajadghawami.github.io/recscout-homepage/public/assets/images/people/kevin_manski.jpeg"
+          />
+        </div>
+        <h3>Kevin Manski, COO</h3>
+        <a class="message-button-link" href="mailto:kevin.manski@recscout.com"
+          >Mail senden</a
+        >
+        <p class="people-text">
+          Arbeiten Sie immer mit dem selben oder immer mit dem besten
+          Personalberater? RECSCOUT bringt datenbasierte Transparenz in den
+          Markt. Das ermöglicht valide Entscheidungen und führt zum besten
+          Recruitingprozess.
+        </p>
+        <p>
+          Als früherer Personalberater und heutiger HR Business Partner setze
+          ich meine Erfahrungen ein, um RECSCOUT zur führenden Recruiting
+          Plattform zu entwickeln
+        </p>
+      </div>
+      <div class="column-3">
+        <div class="image-cropper">
+          <img
+            class="people-image"
+            src="https://sajadghawami.github.io/recscout-homepage/public/assets/images/people/sajad_ghawami.jpg"
+          />
+        </div>
+        <h3>Sajad Ghawami, CTO</h3>
+        <a class="message-button-link" href="mailto:sajad.ghawami@recscout.com"
+          >Mail senden</a
+        >
+        <p class="people-text">
+          In einer vernetzten Welt, in der alles leichter zugänglich ist, darf
+          eine grundlegende Dienstleistung wie die Personalberatung keine
+          Ausnahme bilden. Wir arbeiten daran, den Kontakt zwischen Firmen und
+          Beratungen durch Technologie zu vereinfachen.
+        </p>
+      </div>
+    </div>
+    <h1>Unsere Kultur.</h1>
+    <p>
+      Wir lieben es, mit Menschen zu arbeiten, die echte Probleme lösen wollen.
+      Mit Recscout widmen wir ein ganzes Unternehmen der Aufgabe, die
+      Personalbranche technologisch zu optimieren. Wenn Sie dies spannend
+      finden, möchten wir Sie kennenlernen!
+    </p>
+    <div class="flex-wrapper">
+      <div class="column-4">
+        <img
+          class="culture-image"
+          src="https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/optimize.svg"
+        />
+        <div class="border-wrapper">
+          <h3>UMWELT</h3>
+          <p>
+            Für unsere tägliche Arbeit nutzen wir eine Handvoll an Techniken,
+            wie Hardware und Software. Daher möchten wir unseren ökologischen
+            Abdruck ein wenig schmälern und werden je erfolgreichem Projekt
+            einen Baum pflanzen, sowie Social Cashback je gesendeter Rechnung
+            leisten.
+          </p>
+        </div>
+      </div>
+      <div class="column-4">
+        <img
+          class="culture-image"
+          src="https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/optimize.svg"
+        />
+        <div class="border-wrapper">
+          <h3>UMFELD</h3>
+          <p>
+            Bei Recscout pflegen wir ein innovatives und agiles Umfeld in
+            welchem wir Fehler auf der Grundlage selbst kreierter Entscheidungen
+            tolerieren. Wir leben flache Hierarchien, eine offene ehrliche
+            Kommunikati kation und regelmäßige Feedbackgespräche.
+          </p>
+        </div>
+      </div>
+      <div class="column-4">
+        <img
+          class="culture-image"
+          src="https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/optimize.svg"
+        />
+        <div class="border-wrapper">
+          <h3>UMGANG</h3>
+          <p>
+            Wir wollen das unsere Arbeit und unsere Prozesse einfach und
+            reibungslos für uns und für einander sind. Wir legen Wert auf
+            Effizienz, klare Entscheidungen und unkomplizierte Prozesse, die
+            unserer Arbeit eine gewisse, aber nicht übermäßige Struktur geben.
+          </p>
+        </div>
+      </div>
+      <div class="column-4">
+        <img
+          class="culture-image"
+          src="https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/optimize.svg"
+        />
+        <div class="border-wrapper">
+          <h3>UMSTAND</h3>
+          <p>
+            Wir wollen die aktuelle Personalbranche verändern und neu erfinden.
+            Wir glauben an die Kraft der Technologie und des disruptiven
+            Denkens. Wir wollen unsere Erfahrungen anwenden und sind alle bereit
+            das zu tun, was getan werden muss, um bestehende Grenzen zu
+            erweitern.
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
+  <!-- FOR THE PAGE --->
+  <link
+    href="https://sajadghawami.github.io/recscout-homepage/public/main.css"
+    rel="stylesheet"
+  />
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+  <script src="https://sajadghawami.github.io/recscout-homepage/public/root/lz-string.min.js"></script>
+  <script src="https://sajadghawami.github.io/recscout-homepage/public/root/injected.js"></script>
+  <link
+    href="https://sajadghawami.github.io/recscout-homepage/public/root/injected.css"
+    rel="stylesheet"
+  />
 </html>
-
-<!-- FOR THE PAGE --->
-<link
-  href="https://sajadghawami.github.io/recscout-homepage/public/main.css"
-  rel="stylesheet"
-/>
-<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
-<script src="https://sajadghawami.github.io/recscout-homepage/public/root/lz-string.min.js"></script>
-<script src="https://sajadghawami.github.io/recscout-homepage/public/root/injected.js"></script>
-<link
-  href="https://sajadghawami.github.io/recscout-homepage/public/root/injected.css"
-  rel="stylesheet"
-/>
-<script
-  type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
-></script>
-<script type="text/javascript">
-  (function () {
-    emailjs.init("user_VIpPTgE6zDdygtV99WPbk");
-  })();
-</script>
-<style>
-  /* remove the these here because otherwise they will be visible on first paint */
-  /* homepage */
-  .marketplace-lander .search-form {
-    display: none;
-  }
-  /* transactions */
-  #admin_transactions_count,
-  #admin_transactions,
-  .left-navi-section form {
-    display: none;
-  }
-  /*  the comment box */
-  #comment-form,
-  .listing_comment_content_text_area,
-  .comment-content p {
-    display: none;
-  }
-  /*  the contact form */
-  .new-feedback-form {
-    display: none;
-  }
-</style>
