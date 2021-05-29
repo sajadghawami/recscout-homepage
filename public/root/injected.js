@@ -210,7 +210,9 @@ window.addEventListener("load", function (event) {
               .addClass("message-button-link")
               .click(function (event) {
                 event.preventDefault();
-                messageContentBox.val("TEST123");
+                messageContentBox.val(
+                  "Hallo, \n hiermit nehme ich den Auftrag an. \n Mit freundlichen Grüßen, \n"
+                );
               })
           )
           .append(
