@@ -18,6 +18,11 @@
 }
 
 /* message buttons */
+
+.message-selection {
+    display: "flex";
+}
+
 a.message-button-link {
     color: #fff;
     background-color: #000;

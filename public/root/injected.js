@@ -195,10 +195,10 @@ window.addEventListener("load", function (event) {
     $("#reply_form").before(
       $("<div></div>")
         .addClass("message-avatar-padding")
-        .addClass("transaction-selection")
+        .addClass("message-selection")
     );
 
-    $(".transaction-selection")
+    $(".message-selection")
       .append(
         $("<div></div>")
           .append(
