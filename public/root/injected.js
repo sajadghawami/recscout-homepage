@@ -103,7 +103,7 @@ window.addEventListener("load", function (event) {
   if (isUserLoggedIn) {
     // display jitsi button in navbar
     $("div[class*=Topbar__topbarMenuSpacer__]").after(
-      '<a class="jitsi-button" target="_blank" rel="noreferrer" href="https://apps.recscout.com/jitsi">Videocall starten</a>'
+      '<a class="jitsi-button" target="_blank" rel="noreferrer" href="https://apps.recscout.com/jitsi">Videochat starten</a>'
     );
   }
 
@@ -194,12 +194,12 @@ window.addEventListener("load", function (event) {
   if (isMessagesTransactionsPage) {
     const messageContentBox = $("#message_content");
 
+    // create the top buttons
     $("#reply_form").before(
       $("<div></div>")
         .addClass("message-avatar-padding")
         .addClass("message-selection")
     );
-
     $(".message-selection")
       .append(
         $("<div></div>")
@@ -260,7 +260,15 @@ window.addEventListener("load", function (event) {
               .addClass("message-button-link")
           )
       );
-
+    // create the videocall button
+    $('button[name="button"]').wrap(
+      '<div class="message-form-submit-wrapper"></div>'
+    );
+    $(".message-form-submit-wrapper").append(
+      $("<a>Videochat starten</a>")
+        .attr({ href: "https://apps.recscout.com/jitsi" })
+        .addClass("message-button-link")
+    );
     console.log("messages page");
   }
 

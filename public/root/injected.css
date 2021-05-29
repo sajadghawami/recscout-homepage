@@ -33,13 +33,22 @@
 a.message-button-link {
     color: #fff;
     background-color: #000;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 15px;
+    border-radius: 0.3125em;
     text-align: center;
-    margin: 5px;
+    margin: 0;
+    padding: 0 1.5em;
+    line-height: 1.15;
+    padding-top: 0.5625em;
+    padding-bottom: 0.5625em;
+    margin: 0;
+}
+
+/* bottom wrapper for videochat start  */
+
+.message-form-submit-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 /* transaction buttons */
