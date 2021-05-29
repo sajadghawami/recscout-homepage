@@ -201,6 +201,7 @@ window.addEventListener("load", function (event) {
     $(".message-selection")
       .append(
         $("<div></div>")
+          .addClass("message-selection-column")
           .append(
             $("<a>Auftrag akzeptiert</a>")
               .attr({ href: "#" })
@@ -232,6 +233,7 @@ window.addEventListener("load", function (event) {
 
       .append(
         $("<div></div>")
+          .addClass("message-selection-column")
           .append(
             $("<a>Vakanz besetzt</a>")
               .attr({ href: "#" })
