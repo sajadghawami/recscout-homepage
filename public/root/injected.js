@@ -142,12 +142,14 @@ window.addEventListener("load", function (event) {
           // remove all selected
           $(clickedRatingButton).siblings().removeClass("selected");
           // make all smaller value stars selected
-          $(".rating-wrapper button").each(function () {
-            const fillUpStar = parseInt($(this).data("answer"), 10);
-            if (fillUpStar <= answer) {
-              $(this).addClass("selected");
-            }
-          });
+          $(clickedRatingButton)
+            .siblings()
+            .each(function () {
+              const fillUpStar = parseInt($(this).data("answer"), 10);
+              if (fillUpStar <= answer) {
+                $(this).addClass("selected");
+              }
+            });
 
           // push the data into the comment box
           $(".listing_comment_content_text_area")
