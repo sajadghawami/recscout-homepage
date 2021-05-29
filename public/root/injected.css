@@ -20,7 +20,14 @@
 /* message buttons */
 
 .message-selection {
-    display: "flex";
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.message-selection-column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
 }
 
 a.message-button-link {
