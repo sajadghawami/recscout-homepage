@@ -1,3 +1,4 @@
+/* this is directly injected into the page */
 /* eslint-env jquery */
 /* global LZString */
 
@@ -16,6 +17,37 @@ const ratingQuestion = [
     question: "Zusammenarbeit insgesamt",
   },
 ];
+
+/**
+ *
+ * @param {*} initialRatingValues is an object with multiple {questionId: answer}
+ * @param {*} disabled wether or not we
+ * @returns
+ */
+
+// <!-- Rating --->
+const createRatingElements = (initialRatingValues) => {
+  let ratingElements = "";
+  // create the rating elements
+  for (let i = 0; i < ratingQuestion.length; i++) {
+    const rating = ratingQuestion[i];
+
+    const question = `<p class="rating-question">${rating.question}</p>`;
+    let scale = "";
+    for (let j = 1; j <= 5; j++) {
+      let selectedCheck = "";
+      // check if in the initial values for this ratingQuestion.id we selected this answer
+      if (initialRatingValues) {
+        selectedCheck =
+          initialRatingValues[`${rating.id}`] >= j ? 'class="selected"' : "";
+      }
+
+      scale = `${scale}<button type="button" ${selectedCheck} data-answer=${j}></button>`;
+    }
+    ratingElements = `${ratingElements}<div class='rating-wrapper'>${question}<div class="rating-scale" data-question='${rating.id}'>${scale}</div></div>`;
+  }
+  return ratingElements;
+};
 
 /**
  * Function to extract a variable from the query string
@@ -58,39 +90,16 @@ window.addEventListener("load", function (event) {
   const userContext = JSON.parse(
     document.getElementById("js-react-on-rails-context").innerHTML
   );
+
+  // if this field is set, we are logged in
+  const isUserLoggedIn = userContext.loggedInUsername !== null;
+
   console.log("userContext", userContext);
   console.log("splittedPathname", splittedPathname);
   console.log("rating script initialized");
 
-  // <!-- Rating --->
-  const createRatingElements = (initialRatingValues, disabled = false) => {
-    // const disableCheck = initialRatingValues ? "disabled" : "";
-
-    let ratingElements = "";
-    // create the rating elements
-    for (let i = 0; i < ratingQuestion.length; i++) {
-      const rating = ratingQuestion[i];
-
-      const question = `<p class="rating-question">${rating.question}</p>`;
-      let scale = "";
-      for (let j = 1; j <= 5; j++) {
-        let selectedCheck = "";
-        // if (disableCheck) {
-        // check if in the initial values for this ratingQuestion.id we selected this answer
-        if (initialRatingValues) {
-          selectedCheck =
-            initialRatingValues[`${rating.id}`] >= j ? 'class="selected"' : "";
-        }
-
-        scale = `${scale}<button type="button" ${disabled} ${selectedCheck} data-answer=${j}></button>`;
-      }
-      ratingElements = `${ratingElements}<div class='rating-wrapper'>${question}<div class="rating-scale" data-question='${rating.id}'>${scale}</div></div>`;
-    }
-    return ratingElements;
-  };
-
   // pages
-  // listing Page
+  // listing page, display rating if
   const isListingsPage =
     splittedPathname[splittedPathnameArrayPosition - 1] === "listings";
 
@@ -104,16 +113,6 @@ window.addEventListener("load", function (event) {
     if (decompressedRouterQuery !== null) {
       const lid = getParameterByName(decompressedRouterQuery, "lid");
       const uid = getParameterByName(decompressedRouterQuery, "uid");
-
-      console.log(decompressedRouterQuery, lid, uid);
-      console.log(
-        lid,
-        splittedPathname[splittedPathnameArrayPosition],
-        uid,
-        userContext.loggedInUsername,
-        lid === splittedPathname[splittedPathnameArrayPosition],
-        uid === userContext.loggedInUsername
-      );
 
       // check if the user and the listingid is right
       if (
@@ -152,6 +151,7 @@ window.addEventListener("load", function (event) {
             display: "none",
           });
 
+          // now redirect to the page
           window.location.replace(
             window.location.protocol +
               "//" +
@@ -198,14 +198,15 @@ window.addEventListener("load", function (event) {
     $(".marketplace-lander").append(contactForm);
   }
 
+  // WE PROBABLY DONT NEED THIS ANYMORE
   // Auto accept Rating Page
-  const isAutoAcceptRatingPage =
-    splittedPathname[splittedPathnameArrayPosition - 1] === "transactions";
-  if (isAutoAcceptRatingPage) {
-    console.log("autoaccept, redirecting");
-    // automatically accept
-    $("a.accept")[0].click();
-  }
+  // const isAutoAcceptRatingPage =
+  //   splittedPathname[splittedPathnameArrayPosition - 1] === "transactions";
+  // if (isAutoAcceptRatingPage) {
+  //   console.log("autoaccept, redirecting");
+  //   // automatically accept
+  //   $("a.accept")[0].click();
+  // }
 
   // display rating
   const isReadRatingPage = $("#comment-list").length > 0;

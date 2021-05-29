@@ -1,3 +1,5 @@
+/* this is directly injected into the page */
+
 .listing-author-name {
     height: auto;
     line-height: 1em;
@@ -13,8 +15,8 @@
     color: #fff;
 } */
 
-.transaction-button-wrapper {
-}
+/* .transaction-button-wrapper {
+} */
 
 a.transaction-button-link {
     color: #fff;

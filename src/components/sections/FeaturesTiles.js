@@ -3,6 +3,7 @@ import classNames from "classnames";
 import { SectionTilesProps } from "../../utils/SectionProps";
 import SectionHeader from "./partials/SectionHeader";
 import Image from "../elements/Image";
+import Button from "../elements/Button";
 
 const propTypes = {
   ...SectionTilesProps.types,
@@ -210,7 +211,18 @@ const FeaturesTiles = ({
                   <h4 className="mt-0 mb-8">Zahlungen</h4>
                   <p className="m-0">
                     Zahlungen werden bequem digital abgewickelt. Nutzen Sie
-                    moderne E-Rechnungen oder Factoring. LINK ZUM BLOG
+                    moderne E-Rechnungen oder Factoring.
+                    <Button
+                      tag="a"
+                      color="dark"
+                      wideMobile
+                      href="https://recscout.medium.com/e-rechnung-und-factoring-im-recruitment-519d0b3cd8f2"
+                      target="_blank"
+                      size="sm"
+                      style={{ marginTop: 5 }}
+                    >
+                      LINK ZUM BLOG
+                    </Button>
                   </p>
                 </div>
               </div>

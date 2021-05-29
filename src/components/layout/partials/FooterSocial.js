@@ -8,7 +8,11 @@ const FooterSocial = ({ className, ...props }) => {
     <div {...props} className={classes}>
       <ul className="list-reset">
         <li>
-          <a href="https://recscout.medium.com/">
+          <a
+            href="https://recscout.medium.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <svg
               height="16px"
               // style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
@@ -21,7 +25,11 @@ const FooterSocial = ({ className, ...props }) => {
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/recscout">
+          <a
+            href="https://twitter.com/recscout"
+            target="_blank"
+            rel="noreferrer"
+          >
             <svg
               width="16"
               height="16"
@@ -34,7 +42,11 @@ const FooterSocial = ({ className, ...props }) => {
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/recscout.blog/">
+          <a
+            href="https://www.instagram.com/recscout.blog/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <svg
               width="16"
               height="16"
