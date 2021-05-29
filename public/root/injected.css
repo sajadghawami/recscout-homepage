@@ -1,5 +1,12 @@
 /* this is directly injected into the page */
 
+/* navigationbar */
+
+.jitsi-button img {
+    width: 25px;
+    height: auto;
+}
+
 .listing-author-name {
     height: auto;
     line-height: 1em;
