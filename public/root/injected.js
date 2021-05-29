@@ -81,8 +81,6 @@ const getDecompressedRouterQuery = (query) => {
 };
 
 window.addEventListener("load", function (event) {
-  // <!-- general -->
-  // get the pathname
   const splittedPathname = new URL(document.URL).pathname.split("/");
   const splittedPathnameArrayPosition = splittedPathname.length - 1;
   const isLocalhost = new URL(document.URL).hostname === "localhost";
@@ -97,6 +95,17 @@ window.addEventListener("load", function (event) {
   console.log("userContext", userContext);
   console.log("splittedPathname", splittedPathname);
   console.log("rating script initialized");
+
+  /**
+   * General
+   */
+
+  if (isUserLoggedIn) {
+    // display the jitsi button
+    $("div[class*=Topbar__topbarLanguageMenuLabel__]")
+      .first()
+      .insertBefore('<div class="jitsi-button">test</button');
+  }
 
   // pages
   // listing page, display rating if
