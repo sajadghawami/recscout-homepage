@@ -134,16 +134,14 @@ window.addEventListener("load", function (event) {
         $(".rating-wrapper button").click(function () {
           const clickedRatingButton = this;
 
-          // remove all selected
-          $(clickedRatingButton).siblings().removeClass("selected");
-          $(clickedRatingButton).addClass("selected");
-
           const question = $(clickedRatingButton).parent().data("question"); // gets the question id
           const answer = $(clickedRatingButton).data("answer"); // gets the actual selected answer
 
           ratingData[`${question}`] = answer;
 
-          // make all selected
+          // remove all selected
+          $(clickedRatingButton).siblings().removeClass("selected");
+          // make all smaller value stars selected
           $(".rating-wrapper button").each(function () {
             const fillUpStar = parseInt($(this).data("answer"), 10);
             if (fillUpStar <= answer) {
