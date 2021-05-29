@@ -221,7 +221,9 @@ window.addEventListener("load", function (event) {
               .addClass("message-button-link")
               .click(function (event) {
                 event.preventDefault();
-                console.log("AKZEPTIERT");
+                messageContentBox.val(
+                  "Hallo, \n hiermit storniere ich den Auftrag. \n Mit freundlichen Grüßen, \n"
+                );
               })
           )
           .append(
@@ -230,7 +232,9 @@ window.addEventListener("load", function (event) {
               .addClass("message-button-link")
               .click(function (event) {
                 event.preventDefault();
-                console.log("AKZEPTIERT");
+                messageContentBox.val(
+                  "Hallo, \n der Auftrag befindet sich derzeit on Hold. \n Mit freundlichen Grüßen, \n"
+                );
               })
           )
       )
@@ -244,17 +248,16 @@ window.addEventListener("load", function (event) {
               .addClass("message-button-link")
               .click(function (event) {
                 event.preventDefault();
-                console.log("AKZEPTIERT");
+                messageContentBox.val(
+                  "Hallo, \n die Vakanz ist leider schon besetzt. \n Mit freundlichen Grüßen, \n"
+                );
               })
           )
           .append(
             $("<a><div>Rechnungsstellung</div><div>(für Berater)</div></a>")
-              .attr({ href: "#" })
+              .attr({ href: "https://payactive.eu/de/" })
+              .attr({ target: "_blank" })
               .addClass("message-button-link")
-              .click(function (event) {
-                event.preventDefault();
-                console.log("AKZEPTIERT");
-              })
           )
       );
 
