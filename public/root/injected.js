@@ -192,6 +192,8 @@ window.addEventListener("load", function (event) {
     splittedPathname[splittedPathnameArrayPosition - 1] === "transactions";
 
   if (isMessagesTransactionsPage) {
+    const messageContentBox = $("#message_content");
+
     $("#reply_form").before(
       $("<div></div>")
         .addClass("message-avatar-padding")
@@ -208,7 +210,7 @@ window.addEventListener("load", function (event) {
               .addClass("message-button-link")
               .click(function (event) {
                 event.preventDefault();
-                console.log("AKZEPTIERT");
+                messageContentBox.value("TEST123");
               })
           )
           .append(
