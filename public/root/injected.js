@@ -145,8 +145,9 @@ window.addEventListener("load", function (event) {
           $(clickedRatingButton)
             .siblings()
             .each(function () {
-              const fillUpStar = parseInt($(this).data("answer"), 10);
-              if (fillUpStar <= answer) {
+              const fillUpStarRating = parseInt($(this).data("answer"), 10);
+              console.log("fillUpStarRating, answer", fillUpStarRating, answer);
+              if (fillUpStarRating <= answer) {
                 $(this).addClass("selected");
               }
             });
