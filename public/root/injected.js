@@ -132,13 +132,26 @@ window.addEventListener("load", function (event) {
         // add the event listener to the rating buttons
         const ratingData = {};
         $(".rating-wrapper button").click(function () {
+          const clickedRatingButton = this;
+
           // remove all selected
-          $(this).siblings().removeClass("selected");
-          $(this).addClass("selected");
-          const question = $(this).parent().data("question"); // gets the question id
-          const answer = $(this).data("answer"); // gets the actual selected answer
+          $(clickedRatingButton).siblings().removeClass("selected");
+          $(clickedRatingButton).addClass("selected");
+
+          const question = $(clickedRatingButton).parent().data("question"); // gets the question id
+          const answer = $(clickedRatingButton).data("answer"); // gets the actual selected answer
+
           ratingData[`${question}`] = answer;
 
+          // make all selected
+          $(".rating-wrapper button").each(function () {
+            const fillUpStar = parseInt($(this).data("answer"), 10);
+            if (fillUpStar <= answer) {
+              $(this).addClass("selected");
+            }
+          });
+
+          // push the data into the comment box
           $(".listing_comment_content_text_area")
             .first()
             .val(JSON.stringify(ratingData));
