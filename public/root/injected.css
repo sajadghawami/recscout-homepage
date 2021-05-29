@@ -26,6 +26,7 @@ a.message-button-link {
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 15px;
+    text-align: center;
 }
 
 /* transaction buttons */
