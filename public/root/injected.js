@@ -101,17 +101,7 @@ window.addEventListener("load", function (event) {
    */
 
   if (isUserLoggedIn) {
-    // display the jitsi button
-    // $(".MenuPriority")
-    //   // .first()
-    //   .insertAfter('<div class="jitsi-button">test</div');
-    // $("div[class*=Topbar__topbarLanguageMenuLabel__]")
-    //   .first()
-    //   .insertBefore('<div class="jitsi-button">test</button');
-    // $(".MenuPriority").parent().append('<div class="jitsi-button">test</div');
-    // $("div[class*=Topbar__topbarLanguageMenuLabel__]")
-    //   .parent()
-    //   .prepend('<div class="jitsi-button">test</button');
+    // display jitsi button in navbar
     $("div[class*=Topbar__topbarMenuSpacer__]").after(
       '<a class="jitsi-button" target="_blank" rel="noreferrer" href="https://apps.recscout.com/jitsi"><img src="https://sajadghawami.github.io/recscout-homepage/public/assets/images/icons/170px-Logo_Jitsi.png"></a>'
     );
@@ -197,7 +187,16 @@ window.addEventListener("load", function (event) {
     }
   }
 
-  // transaction page
+  // message transactions page
+  // settings transaction page
+  const isMessagesTransactionsPage =
+    splittedPathname[splittedPathnameArrayPosition - 1] === "transactions";
+
+  if (isMessagesTransactionsPage) {
+    console.log("messages page");
+  }
+
+  // settings transaction page
   const isTransactionsPage =
     splittedPathname[splittedPathnameArrayPosition] === "transactions";
 
