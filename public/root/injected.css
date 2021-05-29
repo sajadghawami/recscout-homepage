@@ -44,8 +44,8 @@ a.message-button-link {
     flex-direction: column;
 }
 
-.message-selection-column a {
-    margin: 5;
+.message-selection-column {
+    margin: 5px;
 }
 
 /* bottom wrapper for videochat start  */
