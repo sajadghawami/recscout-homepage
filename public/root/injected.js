@@ -211,7 +211,7 @@ window.addEventListener("load", function (event) {
               .click(function (event) {
                 event.preventDefault();
                 messageContentBox.val(
-                  "Hallo, \n hiermit nehme ich den Auftrag an. \n Mit freundlichen Grüßen, \n"
+                  "Hallo, \nhiermit nehme ich den Auftrag an. \nMit freundlichen Grüßen, \n"
                 );
               })
           )
@@ -222,7 +222,7 @@ window.addEventListener("load", function (event) {
               .click(function (event) {
                 event.preventDefault();
                 messageContentBox.val(
-                  "Hallo, \n hiermit storniere ich den Auftrag. \n Mit freundlichen Grüßen, \n"
+                  "Hallo, \nhiermit storniere ich den Auftrag. \nMit freundlichen Grüßen,\n"
                 );
               })
           )
@@ -233,7 +233,7 @@ window.addEventListener("load", function (event) {
               .click(function (event) {
                 event.preventDefault();
                 messageContentBox.val(
-                  "Hallo, \n der Auftrag befindet sich derzeit on Hold. \n Mit freundlichen Grüßen, \n"
+                  "Hallo, \nder Auftrag befindet sich derzeit on Hold. \nMit freundlichen Grüßen,\n"
                 );
               })
           )
@@ -249,7 +249,7 @@ window.addEventListener("load", function (event) {
               .click(function (event) {
                 event.preventDefault();
                 messageContentBox.val(
-                  "Hallo, \n die Vakanz ist leider schon besetzt. \n Mit freundlichen Grüßen, \n"
+                  "Hallo, \n die Vakanz ist leider schon besetzt.\nMit freundlichen Grüßen,\n"
                 );
               })
           )
