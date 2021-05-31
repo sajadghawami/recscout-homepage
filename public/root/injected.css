@@ -1,5 +1,15 @@
 /* this is directly injected into the page */
 
+/* general pages*/
+/* this is for the about pages */
+.left-navi {
+    display: none;
+}
+.left-navi-section.about-section {
+    width: 100%;
+    margin-left: 0;
+}
+
 /* navigationbar */
 .jitsi-button img {
     width: 25px;

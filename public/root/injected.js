@@ -100,6 +100,11 @@ window.addEventListener("load", function (event) {
   /**
    * General
    */
+  const isAboutPage =
+    splittedPathname[splittedPathnameArrayPosition - 1] === "infos";
+  if (isAboutPage) {
+    $(".wrapper").css({ maxWidth: "100%" });
+  }
 
   if (isUserLoggedIn) {
     // display jitsi button in navbar
