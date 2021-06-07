@@ -106,11 +106,11 @@ window.addEventListener("load", function (event) {
   const isAboutPage =
     splittedPathname[splittedPathnameArrayPosition - 1] === "infos";
   if (isAboutPage) {
-    // remove sidebar in info pages
-    $(".left-navi ").css({ display: "none" });
-    $(".left-navi-section.about-section").css({ width: "100%", marginLeft: 0 });
     // make wrapper fullwidth
     $(".wrapper").css({ maxWidth: "100%" });
+  } else {
+    // add the sidebar if not in about
+    $(".left-navi ").css({ display: "inline-block" });
   }
 
   if (isUserLoggedIn) {
