@@ -17,9 +17,9 @@ const FooterNav = ({ className, ...props }) => {
         <li>
           <a href="#0">FAQ's</a>
         </li>
-        <li>
+        {/* <li>
           <a href="#0">Support</a>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
