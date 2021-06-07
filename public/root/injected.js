@@ -108,7 +108,7 @@ window.addEventListener("load", function (event) {
 
   if (isUserLoggedIn) {
     // display the add new card button
-    $(".AddNewListingButton").css({ display: "inline-block" });
+    $(".AddNewListingButton").css({ display: "inline-block !important" });
 
     // display jitsi button in navbar
     $("div[class*=Topbar__topbarMenuSpacer__]").after(
