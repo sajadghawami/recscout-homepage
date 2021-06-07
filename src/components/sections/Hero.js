@@ -95,7 +95,7 @@ const Hero = ({
                 <ButtonGroup style={{ justifyContent: "flex-start" }}>
                   <Button
                     tag="a"
-                    color="primary"
+                    color="dark"
                     wideMobile
                     href="/de/signup"
                     size="large"
@@ -103,8 +103,8 @@ const Hero = ({
                     Jetzt recscouten
                   </Button>
                   <Button
+                    color="primary"
                     tag="a"
-                    color="dark"
                     wideMobile
                     href="/user_feedbacks/new"
                     size="large"

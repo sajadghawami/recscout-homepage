@@ -107,6 +107,9 @@ window.addEventListener("load", function (event) {
   }
 
   if (isUserLoggedIn) {
+    // display the add new card button
+    $(".AddNewListingButton").css({ display: "inline-block" });
+
     // display jitsi button in navbar
     $("div[class*=Topbar__topbarMenuSpacer__]").after(
       '<a class="jitsi-button" target="_blank" rel="noreferrer" href="https://apps.recscout.com/jitsi">Videochat starten</a>'
