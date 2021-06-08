@@ -132,13 +132,13 @@ window.addEventListener("load", function (event) {
     $("#person_description").before($("<br/>"));
     $("#person_description").before(
       $(
-        "<a href='https://recscout.medium.com/musterprofil-personalberater-edcff48fe6f9' target='_blank'><small>Mustervorlage für Personalberater</small></a>"
+        "<a href='https://recscout.medium.com/musterprofil-personalberater-edcff48fe6f9' target='_blank' class='profile-link'><small>Mustervorlage für Personalberater</small></a>"
       )
     );
     $("#person_description").before($("<br/>"));
     $("#person_description").before(
       $(
-        "<a href='https://recscout.medium.com/musterprofil-unternehmen-58112506312b' target='_blank'><small>Mustervorlage für Unternehmen</small></a>"
+        "<a href='https://recscout.medium.com/musterprofil-unternehmen-58112506312b' target='_blank' class='profile-link'><small>Mustervorlage für Unternehmen</small></a>"
       )
     );
     // add the placeholder
@@ -147,14 +147,37 @@ window.addEventListener("load", function (event) {
       "placeholder",
       "Für Recruiter (Personalberater):\nIn Ihrem Profil stehen Sie als Person im Mittelpunkt. Skizzieren Sie Ihre Expertise als Personalberater, Ihren Kundenfokus sowie weitere relevante Spezialisierungen. Eine Mustervorlage finden Sie in dem Link über diesem Textfeld.\n\nFür Unternehmen:\nSie entscheiden selbst, wann und mit welchen  Personalberatern Sie in Kontakt treten.  Stellen Sie Ihr Unternehmen für den weiteren Verlauf kurz vor:                                Empfehlung:   „Über uns” Text der Unternehmenshomepage einfügen. Ihr Profil wird nicht veröffentlicht. Ihre Informationen werden nur für von Ihnen kontaktierte Recruiter sichtbar."
     );
+
+    // image upload
+    $("#avatar_file").before($("<br/>"));
+    $("#avatar_file").before(
+      $(
+        "<small>Als Berater laden Sie ein Business Portraitfoto von Ihnen als Person hoch.</small>"
+      )
+    );
+    $("#avatar_file").before($("<br/>"));
+    $("#avatar_file").before(
+      $(
+        "<small>Als Unternehmen können Sie hier Ihr Unternehmens Logo einfügen.</small>"
+      )
+    );
+    $("#avatar_file").before($("<br/>"));
   }
 
   // listing page, display rating if
   const isListingsPage =
     splittedPathname[splittedPathnameArrayPosition - 1] === "listings";
 
-  if (isListingsPage || isLocalhost) {
+  if (isListingsPage) {
     console.log("isListingsPage");
+
+    // check if this is a create new listing page
+    const isCreateListingsPage =
+      splittedPathname[splittedPathnameArrayPosition] === "new";
+
+    if (isCreateListingsPage) {
+      console.log("isCreateListingPage");
+    }
 
     // check if we have a query
     const query = window.location.search.substr(1);
