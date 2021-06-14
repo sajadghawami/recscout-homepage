@@ -72,7 +72,7 @@ const Hero = ({
               className="mt-0 mb-16 reveal-from-bottom"
               data-reveal-delay="200"
             >
-              Finden Sie den besten Recruiter für Ihre Vakanz.
+              Finden Sie den besten Personalberater für Ihre Vakanz.
             </h1>
             {/* <br /> */}
             {/* <span className="text-color-primary">- Komm recscouten</span> */}
@@ -82,10 +82,7 @@ const Hero = ({
                 data-reveal-delay="400"
                 style={{ fontWeight: 400 }}
               >
-                Wir wissen wovon wir reden - Unser Team setzt sich aus
-                erfahrenen Gründern, Recruitern und HR Business Partnern
-                zusammen. Wir vereinen alle Blickwinkel und Anforderungen an
-                HR-Dienstleistungen in einer Plattform.
+                Wir verknüpfen HR-Teams und Berater auf der Grundlage von Technologie und Daten, damit Sie die besten Teams aufbauen können - komm recscouten.
               </p>
               <div
                 className="reveal-from-bottom"
