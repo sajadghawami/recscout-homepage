@@ -46,7 +46,7 @@ const FeaturesTiles = ({
   const sectionHeader = {
     title: "RECSCOUT - More Trust Less Bullshit",
     paragraph:
-      "Sparen Sie Zeit, Kosten und Nerven, indem Sie die anstrengende 'Projektanbahnung' ausklammern  und stattdessen mit den richtigen Beratern direkt in produktive Projektabsprachen starten.",
+      "",
   };
 
   return (
@@ -183,8 +183,8 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">Kommunikation</h4>
                   <p className="m-0">
-                    Kommunizieren Sie per Chat und Video über RECSCOUT - von der
-                    ersten Anfrage bis zum Vertragsabschluss und der Rechnung.
+                    Die gesamte Kommunikation (Chat&Video) erfolgt über RECSCOUT - Der Erstkontakt kann nur durch Unternehmen erfolgen. 
+.
                   </p>
                 </div>
               </div>

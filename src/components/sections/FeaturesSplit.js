@@ -53,7 +53,9 @@ const FeaturesSplit = ({
   const sectionHeader = {
     title: "Die Vision von RECSCOUT.",
     paragraph:
-      "Denken Sie an zahlreiche Anrufe, Mails, Rechnungen, unterschiedliche Erwartungen... und vergessen Sie diese. Wir laden HR-Teams und Berater ein, die Highlights im Recruiting zusammen auf RECSCOUT zu erleben.",
+      "Denken Sie an zahlreiche Anrufe, Mails, unterschiedliche Erwartungen ... und vergessen Sie diese. Wir laden HR-Teams und Berater ein, die Highlights im Recruiting zusammen auf RECSCOUT zu erleben.
+
+Wir wissen wovon wir reden - Unser Team setzt sich aus erfahrenen Gründern, Beratern und HR Business Partnern zusammen. Wir vereinen alle Blickwinkel und Anforderungen an HR-Dienstleistungen in einer Plattform.",
   };
 
   return (
@@ -120,17 +122,15 @@ const FeaturesSplit = ({
                 </div> */}
                 <h3 className="mt-0 mb-12">Was wir ändern.</h3>
                 <p className="m-6">
-                  Wir schaffen für Sie auf der Grundlage von Technik und Daten
-                  einen vertraulichen und transparenten Markt, machen per
-                  Schnell-Suche Hidden-Champions im Recruiting sichtbar und
-                  ermöglichen so einen optimalen Prozess für BEIDE Seiten. So
-                  findet jede Vakanz ihren optimalen Berater.
+                  Wir schaffen für Sie auf der Grundlage von Technik und Daten einen vertraulichen 
+                  und transparenten Markt, machen per Schnell-Suche Hidden-Champions im Recruiting 
+                  sichtbar und ermöglichen so einen optimalen Prozess für BEIDE Seiten. 
+                  So findet jede Vakanz ihren optimalen Berater.
                 </p>
 
                 <p className="m-6">
-                  Verstehen Sie RECSCOUT als bewegliche Plattform. Wir ergänzen
-                  RECSCOUT stets mit Funktionen, aus denen Sie ganz nach Bedarf
-                  wählen können.
+                  Verstehen Sie RECSCOUT als bewegliche Plattform. Wir ergänzen RECSCOUT stets 
+                  mit Funktionen, aus denen Sie ganz nach Bedarf wählen können.
                 </p>
               </div>
               <div

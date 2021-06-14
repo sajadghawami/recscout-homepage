@@ -76,19 +76,13 @@ const FeaturesSplit = ({
                 </div> */}
                 {/* <h3 className="mt-0 mb-12">Was uns stört.</h3> */}
                 <p className="m-6">
-                  RECSCOUT arbeitet weiter an neuen Technologien und Funktionen.
-                  Zum Beispiel an einem Feature, worüber wir Unternehmen und Berater
-                  spezifisch miteinander vernetzen. Ein weiterer technologisch
-                  getriebener Kanal der Zusammenarbeit. Zudem die Funktion auf eine
-                  erhöhte Projekt-Auslastung oder besondere Kandidaten-Anforderungen 
-                  flexibel reagieren zu können.
+                  RECSCOUT arbeitet weiter an neuen Technologien und Funktionen. Zum Beispiel an einem Feature, 
+                  worüber wir Unternehmen und Berater spezifisch miteinander vernetzen. Ein weiterer technologisch 
+                  getriebener Kanal der Zusammenarbeit. Zudem die Funktion auf eine erhöhte Projekt-Auslastung oder 
+                  besondere Kandidaten-Anforderungen flexibel reagieren zu können. Ergänzend analysieren wir den 
+                  Markt weiter nach passenden Software-Produkten und Partnern, um Ihnen ein best mögliches Erlebnis zu bieten.
                 </p>
 
-                <p className="m-6">
-                  Ergänzend analysieren wir den Markt weiter nach passenden   
-                  Software-Produkten und Partnern, um Ihnen ein best mögliches
-                  Erlebnis zu bieten. 
-                </p>
               </div>
               <div
                 className={classNames(
