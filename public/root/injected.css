@@ -1,7 +1,8 @@
 /* this is directly injected into the page */
 
-/* show the underline */
-a:not(.button) {
+/* show the underline for both */
+#privacy_link,
+#terms_link {
     text-decoration: underline;
 }
 
