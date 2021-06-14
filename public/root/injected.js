@@ -242,48 +242,15 @@ window.addEventListener("load", function (event) {
           );
       }
 
-      function watchForElement() {
-        displayCreatingListingElements();
-        waitForElm("#listing_title").then((elm) => {
-          watchForElement();
-        });
-      }
+      // function watchForElement() {
+      //   displayCreatingListingElements();
+      //   waitForElm("#listing_title").then((elm) => {
+      //     watchForElement();
+      //   });
+      // }
       // wait for the elem to appear
       waitForElm("#listing_title").then((elm) => {
-        watchForElement();
-        // displayCreatingListingElements();
-        // $("#listing_title").prop(
-        //   "placeholder",
-        //   "z.B. Senior SAP Consultant bei XY GmbH"
-        // );
-        // $("#listing_description").prop(
-        //   "placeholder",
-        //   "z.B. Informationen zu Ihrer Person, Ihrer Personalberatung und Ihrer Spezialisierung. Ihre Angaben hier sind wichtig für die Schlagwortsuche für potentielle Auftraggeber."
-        // );
-        // // meine kernpositionen
-        // $("#custom_fields_168716").prop(
-        //   "placeholder",
-        //   "z.B. Head of SAP Application, SAP S/4Hana, SAP Consultant (PP, SD, FI CO, MM, WM), Cloud Architect"
-        // );
-        // // meine referenzen
-        // $("#custom_fields_169340").prop(
-        //   "placeholder",
-        //   "z.B. SAP Solution Manager, SAP Key User, SAP PP Consultant bei Globaler Chemie & Pharma Konzern"
-        // );
-        // // Mein Beraterhonorar in Prozent auf das OTE*
-        // $("#custom_fields_165417").prop(
-        //   "placeholder",
-        //   "z.B. 25% bis 65.000€ OTE, 30% ab 65.000€ OTE"
-        // );
-        // // Mindestberaterhonorar
-        // $("#custom_fields_169342").prop("placeholder", "z.B. 15.000€");
-
-        // $('label[for="listing_image"]')
-        //   .next(".info-text-container")
-        //   .children(".info-text-content")
-        //   .append(
-        //     "Als erstes Bild sollten Sie immer ein Business Portraitfoto von Ihnen als Person einstellen. Als weitere Bilder können Sie z.B. Ihr Firmenlogo oder Themenbilder hochladen (optional)."
-        //   );
+        displayCreatingListingElements();
       });
     }
 
@@ -480,6 +447,15 @@ window.addEventListener("load", function (event) {
     $(".left-navi-section h2").after(
       '<div class="transaction-button-wrapper"><a class="transaction-button-link" href="#">payactive</a><a class="transaction-button-link" href="https://www.aifinyo.de/?source=recscout">aifinyo</a></div>'
     );
+
+    const isNewTransactionsPage =
+      splittedPathname[splittedPathnameArrayPosition] === "new";
+
+    if (isNewTransactionsPage) {
+      $("#message").val(
+        "Hallo, \ngerne würde ich mich bezüglich eines Auftrag in Verbinung setzten. \nMit freundlichen Grüßen, \n"
+      );
+    }
   }
 
   // contact page
