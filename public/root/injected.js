@@ -3,6 +3,27 @@
 /* global LZString */
 /* global emailjs */
 
+// wait for element to be shown
+function waitForElm(selector) {
+  return new Promise((resolve) => {
+    if (document.querySelector(selector)) {
+      return resolve(document.querySelector(selector));
+    }
+
+    const observer = new MutationObserver((mutations) => {
+      if (document.querySelector(selector)) {
+        resolve(document.querySelector(selector));
+        observer.disconnect();
+      }
+    });
+
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true,
+    });
+  });
+}
+
 // functions
 const ratingQuestion = [
   {
@@ -178,6 +199,10 @@ window.addEventListener("load", function (event) {
 
   if (isListingsPage) {
     console.log("isListingsPage");
+
+    waitForElm("#listing_title").then((elm) =>
+      console.log("FOUND", elm.textContent)
+    );
 
     // check if this is a create new listing page
     const isCreateListingsPage =
