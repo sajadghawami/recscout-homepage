@@ -1,5 +1,10 @@
 /* this is directly injected into the page */
 
+/* show the underline */
+a:not(.button) {
+    text-decoration: underline;
+}
+
 /* general pages*/
 /* this is for the about pages */
 .left-navi {

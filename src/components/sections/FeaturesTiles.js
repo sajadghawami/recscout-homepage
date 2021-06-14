@@ -145,7 +145,7 @@ const FeaturesTiles = ({
                   <div className="mb-16">
                     <Image
                       src={
-                        "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/optimize.svg"
+                        "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/commitment.svg"
                       }
                       alt="Features tile icon 04"
                       width="100%"

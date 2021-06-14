@@ -101,7 +101,7 @@ window.addEventListener("load", function (event) {
    * General
    */
   // change menu name
-  $(".MenuPriority .MenuLabel").contents()[2].nodeValue = "Mehr";
+  // $(".MenuPriority .MenuLabel").contents()[2].nodeValue = "Mehr";
 
   const isAboutPage =
     splittedPathname[splittedPathnameArrayPosition - 1] === "infos";
