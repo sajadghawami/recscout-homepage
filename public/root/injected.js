@@ -431,11 +431,11 @@ window.addEventListener("load", function (event) {
   }
 
   // settings transaction page
-  const isTransactionsPage =
+  const isSettingsTransactionsPage =
     splittedPathname[splittedPathnameArrayPosition] === "transactions";
 
-  if (isTransactionsPage) {
-    console.log("isTransactionsPage");
+  if (isSettingsTransactionsPage) {
+    console.log("isSettingsTransactionsPage");
 
     // remove old elements
     $(".left-navi-section form").remove();
@@ -447,15 +447,19 @@ window.addEventListener("load", function (event) {
     $(".left-navi-section h2").after(
       '<div class="transaction-button-wrapper"><a class="transaction-button-link" href="#">payactive</a><a class="transaction-button-link" href="https://www.aifinyo.de/?source=recscout">aifinyo</a></div>'
     );
+  }
 
-    const isNewTransactionsPage =
-      splittedPathname[splittedPathnameArrayPosition] === "new";
+  // is create a new transaction page
+  const isNewTransactionsPage =
+    splittedPathname[splittedPathnameArrayPosition - 1] === "transactions";
 
-    if (isNewTransactionsPage) {
-      $("#message").val(
-        "Hallo, \ngerne würde ich mich bezüglich eines Auftrag in Verbinung setzten. \nMit freundlichen Grüßen, \n"
-      );
-    }
+  const isGeneralTransactionsPage =
+    splittedPathname[splittedPathnameArrayPosition] === "new";
+
+  if (isGeneralTransactionsPage && isNewTransactionsPage) {
+    $("#message").val(
+      "Hallo, \ngerne würde ich mich bezüglich eines Auftrag in Verbinung setzten. \nMit freundlichen Grüßen, \n"
+    );
   }
 
   // contact page
