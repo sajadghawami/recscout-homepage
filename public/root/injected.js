@@ -366,9 +366,11 @@ window.addEventListener("load", function (event) {
               .click(function (event) {
                 event.preventDefault();
                 attachMessage = true;
-                messageContentBox.val(
-                  "Hiermit akzeptieren wir die Beauftragung über RECSCOUT.\n\nID: (Ihre interne Projektnummer, wenn vorhanden)\nVakanz:\nZielgehalt: X - X €\nBeraterhornorar: X % vom Jahreszielgehalt\nAnzahlung: X € / Erfolgsbasiert\nNachpräsentation:\nErgänzende Vereinbarung:\n\nDarüber Hinaus werden die AGB der Personalberatung XXX akzeptiert\n\nViele Grüße"
-                );
+                messageContentBox
+                  .val(
+                    "Hiermit akzeptieren wir die Beauftragung über RECSCOUT.\n\nID: (Ihre interne Projektnummer, wenn vorhanden)\nVakanz:\nZielgehalt: X - X €\nBeraterhornorar: X % vom Jahreszielgehalt\nAnzahlung: X € / Erfolgsbasiert\nNachpräsentation:\nErgänzende Vereinbarung:\n\nDarüber Hinaus werden die AGB der Personalberatung XXX akzeptiert\n\nViele Grüße"
+                  )
+                  .trigger("input");
               })
           )
           .append(
@@ -378,9 +380,11 @@ window.addEventListener("load", function (event) {
               .click(function (event) {
                 event.preventDefault();
                 attachMessage = true;
-                messageContentBox.val(
-                  "Hiermit stornieren wir die Beauftragung über RECSCOUT vom X für die Vakanz X. \n(Optional: Ihre interne Projektnummer)\n\nBegründung:\nOffener Rechnungsbetrag aus Anzahlung (optional):\n\nViele Grüße\n"
-                );
+                messageContentBox
+                  .val(
+                    "Hiermit stornieren wir die Beauftragung über RECSCOUT vom X für die Vakanz X. \n(Optional: Ihre interne Projektnummer)\n\nBegründung:\nOffener Rechnungsbetrag aus Anzahlung (optional):\n\nViele Grüße\n"
+                  )
+                  .trigger("input");
               })
           )
           .append(
@@ -389,9 +393,11 @@ window.addEventListener("load", function (event) {
               .addClass("message-button-link")
               .click(function (event) {
                 event.preventDefault();
-                messageContentBox.val(
-                  "Hiermit pausieren wir die Beauftragung über RECSCOUT vom X für die Vakanz X.\n(Optional: Ihre interne Projektnummer)\n\nBegründung:\nOffener Rechnungsbetrag aus Anzahlung (optional): \nWir bitten Sie, die Suche erst nach erneuter Beauftragung fortzusetzen.\n\nBegründung:\n\nViele Grüße"
-                );
+                messageContentBox
+                  .val(
+                    "Hiermit pausieren wir die Beauftragung über RECSCOUT vom X für die Vakanz X.\n(Optional: Ihre interne Projektnummer)\n\nBegründung:\nOffener Rechnungsbetrag aus Anzahlung (optional): \nWir bitten Sie, die Suche erst nach erneuter Beauftragung fortzusetzen.\n\nBegründung:\n\nViele Grüße"
+                  )
+                  .trigger("input");
               })
           )
       )
@@ -405,9 +411,11 @@ window.addEventListener("load", function (event) {
               .addClass("message-button-link")
               .click(function (event) {
                 event.preventDefault();
-                messageContentBox.val(
-                  "HERZLICHEN GLÜCKWUNSCH!\n\nHiermit bestätigen wir den erfolgreichen Projektabschluss über RECSCOUT.\n\n(Optional: Ihre interne Projektnummer)\nVakanz:\nZielgehalt lt. Arbeitsvertrag: X €\n\nWir freuen uns über die erfolgreiche Zusammenarbeit und bitten Sie um Rechnungserstellung. Bitte senden Sie die Rechnung an XXX.\n\nVielen Dank für die erfolgreiche Zusammenarbeit!\n"
-                );
+                messageContentBox
+                  .val(
+                    "HERZLICHEN GLÜCKWUNSCH!\n\nHiermit bestätigen wir den erfolgreichen Projektabschluss über RECSCOUT.\n\n(Optional: Ihre interne Projektnummer)\nVakanz:\nZielgehalt lt. Arbeitsvertrag: X €\n\nWir freuen uns über die erfolgreiche Zusammenarbeit und bitten Sie um Rechnungserstellung. Bitte senden Sie die Rechnung an XXX.\n\nVielen Dank für die erfolgreiche Zusammenarbeit!\n"
+                  )
+                  .trigger("input");
               })
           )
           .append(
