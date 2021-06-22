@@ -45,8 +45,7 @@ const FeaturesTiles = ({
 
   const sectionHeader = {
     title: "RECSCOUT - More Trust Less Bullshit",
-    paragraph:
-      "",
+    paragraph: "",
   };
 
   return (
@@ -68,8 +67,6 @@ const FeaturesTiles = ({
                         "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/quick_start.svg"
                       }
                       alt="Features tile icon 01"
-                      width="100%"
-                      height={256}
                     />
                   </div>
                 </div>
@@ -96,8 +93,6 @@ const FeaturesTiles = ({
                         "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/matching.svg"
                       }
                       alt="Features tile icon 02"
-                      width="100%"
-                      height={256}
                     />
                   </div>
                 </div>
@@ -124,8 +119,6 @@ const FeaturesTiles = ({
                         "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/rating.svg"
                       }
                       alt="Features tile icon 03"
-                      width="100%"
-                      height={256}
                     />
                   </div>
                 </div>
@@ -148,8 +141,6 @@ const FeaturesTiles = ({
                         "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/commitment.svg"
                       }
                       alt="Features tile icon 04"
-                      width="100%"
-                      height={256}
                     />
                   </div>
                 </div>
@@ -175,16 +166,14 @@ const FeaturesTiles = ({
                         "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/communicate.svg"
                       }
                       alt="Features tile icon 05"
-                      width="100%"
-                      height={256}
                     />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">Kommunikation</h4>
                   <p className="m-0">
-                    Die gesamte Kommunikation (Chat&Video) erfolgt über RECSCOUT - Der Erstkontakt kann nur durch Unternehmen erfolgen. 
-.
+                    Die gesamte Kommunikation (Chat&Video) erfolgt über RECSCOUT
+                    - Der Erstkontakt kann nur durch Unternehmen erfolgen. .
                   </p>
                 </div>
               </div>
@@ -202,8 +191,6 @@ const FeaturesTiles = ({
                         "https://sajadghawami.github.io/recscout-homepage/public/assets/images/homepage/payment.svg"
                       }
                       alt="Features tile icon 06"
-                      width="100%"
-                      height={256}
                     />
                   </div>
                 </div>
@@ -212,18 +199,18 @@ const FeaturesTiles = ({
                   <p className="m-0">
                     Zahlungen werden bequem digital abgewickelt. Nutzen Sie
                     moderne E-Rechnungen oder Factoring.
-                    <Button
-                      tag="a"
-                      color="dark"
-                      wideMobile
-                      href="https://recscout.medium.com/e-rechnung-und-factoring-im-recruitment-519d0b3cd8f2"
-                      target="_blank"
-                      size="sm"
-                      style={{ marginTop: 5 }}
-                    >
-                      LINK ZUM BLOG
-                    </Button>
                   </p>
+                  <Button
+                    tag="a"
+                    color="dark"
+                    wideMobile
+                    href="https://recscout.medium.com/e-rechnung-und-factoring-im-recruitment-519d0b3cd8f2"
+                    target="_blank"
+                    size="sm"
+                    style={{ marginTop: 5 }}
+                  >
+                    LINK ZUM BLOG
+                  </Button>
                 </div>
               </div>
             </div>

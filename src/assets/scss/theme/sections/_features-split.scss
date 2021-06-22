@@ -1,6 +1,16 @@
+.features-tiles-item-header {
+    display: flex;
+    justify-content: center;
+}
+
 .features-tiles-item-header .mb-16 {
-    height: 100%;
-    max-height: 300px;
+    // height: 100%;
+    // max-height: 300px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .features-tiles-item-header img {
