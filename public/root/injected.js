@@ -367,7 +367,7 @@ window.addEventListener("load", function (event) {
                 event.preventDefault();
                 attachMessage = true;
                 messageContentBox.val(
-                  "Hallo, \nhiermit nehme ich den Auftrag an. \nMit freundlichen Grüßen, \n"
+                  "Hiermit akzeptieren wir die Beauftragung über RECSCOUT.\n\nID: (Ihre interne Projektnummer, wenn vorhanden)\nVakanz:\nZielgehalt: X - X €\nBeraterhornorar: X % vom Jahreszielgehalt\nAnzahlung: X € / Erfolgsbasiert\nNachpräsentation:\nErgänzende Vereinbarung:\n\nDarüber Hinaus werden die AGB der Personalberatung XXX akzeptiert\n\nViele Grüße"
                 );
               })
           )
@@ -379,7 +379,7 @@ window.addEventListener("load", function (event) {
                 event.preventDefault();
                 attachMessage = true;
                 messageContentBox.val(
-                  "Hallo, \nhiermit storniere ich den Auftrag. \nMit freundlichen Grüßen,\n"
+                  "Hiermit stornieren wir die Beauftragung über RECSCOUT vom X für die Vakanz X. \n(Optional: Ihre interne Projektnummer)\n\nBegründung:\nOffener Rechnungsbetrag aus Anzahlung (optional):\n\nViele Grüße\n"
                 );
               })
           )
@@ -390,7 +390,7 @@ window.addEventListener("load", function (event) {
               .click(function (event) {
                 event.preventDefault();
                 messageContentBox.val(
-                  "Hallo, \nder Auftrag befindet sich derzeit on Hold. \nMit freundlichen Grüßen,\n"
+                  "Hiermit pausieren wir die Beauftragung über RECSCOUT vom X für die Vakanz X.\n(Optional: Ihre interne Projektnummer)\n\nBegründung:\nOffener Rechnungsbetrag aus Anzahlung (optional): \nWir bitten Sie, die Suche erst nach erneuter Beauftragung fortzusetzen.\n\nBegründung:\n\nViele Grüße"
                 );
               })
           )
@@ -406,7 +406,7 @@ window.addEventListener("load", function (event) {
               .click(function (event) {
                 event.preventDefault();
                 messageContentBox.val(
-                  "Hallo, \n die Vakanz ist leider schon besetzt.\nMit freundlichen Grüßen,\n"
+                  "HERZLICHEN GLÜCKWUNSCH!\n\nHiermit bestätigen wir den erfolgreichen Projektabschluss über RECSCOUT.\n\n(Optional: Ihre interne Projektnummer)\nVakanz:\nZielgehalt lt. Arbeitsvertrag: X €\n\nWir freuen uns über die erfolgreiche Zusammenarbeit und bitten Sie um Rechnungserstellung. Bitte senden Sie die Rechnung an XXX.\n\nVielen Dank für die erfolgreiche Zusammenarbeit!\n"
                 );
               })
           )
@@ -458,7 +458,7 @@ window.addEventListener("load", function (event) {
 
   if (isGeneralTransactionsPage && isNewTransactionsPage) {
     $("#message").val(
-      "Hallo, \ngerne würde ich mich bezüglich eines Auftrag in Verbinung setzten. \nMit freundlichen Grüßen, \n"
+      "Hallo,\ngerne möchten wir Sie im - Chat oder per Videocall - kennenlernen und mit Ihnen folgende Punkte besprechen:\n\n1. Vorstellungsrunde\n2. Unsere aktuelle offene Vakanz\n3. Absprache der Konditionen\n4. (...)\n\nFolgende Terminvorschläge bieten wir Ihnen gerne an:\nTag, Datum um x Uhr\nTag, Datum um x Uhr\nWir freuen uns auf ein erstes Kennenlernen und würden Ihnen - nach einer erfolgreicher Absprache- gerne den Auftrag über RECSCOUT erteilen."
     );
   }
 
