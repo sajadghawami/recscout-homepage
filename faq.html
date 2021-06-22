@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- For the Page -->
+    <style>
+      .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 20px;
+        transition: 0.4s;
+      }
+
+      .active,
+      .accordion:hover {
+        background-color: #ccc;
+      }
+
+      .accordion:after {
+        content: "\002B";
+        color: #000;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+        font-size: 25px;
+      }
+
+      .accordion h2 {
+        font-size: 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        display: inline-block;
+      }
+
+      .active:after {
+        content: "\2212";
+      }
+
+      .panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+    </style>
+
+    <h1>FAQ</h1>
+
+    <button class="accordion"><h2>Section 1</h2></button>
+    <div class="panel">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
+    </div>
+
+    <button class="accordion"><h2>Section 2</h2></button>
+    <div class="panel">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
+    </div>
+
+    <button class="accordion"><h2>Section 3</h2></button>
+    <div class="panel">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
+    </div>
+
+    <!-- FOR THE PAGE --->
+  </body>
+  <link
+    href="https://sajadghawami.github.io/recscout-homepage/public/main.css"
+    rel="stylesheet"
+  />
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+  <script src="https://sajadghawami.github.io/recscout-homepage/public/root/lz-string.min.js"></script>
+  <script src="https://sajadghawami.github.io/recscout-homepage/public/root/injected.js"></script>
+  <link
+    href="https://sajadghawami.github.io/recscout-homepage/public/root/injected.css"
+    rel="stylesheet"
+  />
+</html>
