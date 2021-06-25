@@ -38,7 +38,6 @@
 }
 
 /* message buttons */
-
 a.message-button-link {
     color: #fff;
     background-color: #000;
@@ -77,12 +76,14 @@ a.message-button-link {
 }
 
 /* transaction buttons */
-/* .transaction-button-link {
-    color: #fff;
-} */
+.transaction-explainer {
+    flex: 1;
+    margin-left: 25px;
+}
 
-/* .transaction-button-wrapper {
-} */
+.transaction-button-wrapper {
+    display: flex;
+}
 
 a.transaction-button-link {
     color: #fff;
