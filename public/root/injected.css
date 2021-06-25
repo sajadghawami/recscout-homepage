@@ -22,6 +22,10 @@
     height: auto;
 }
 
+.Avatar:hover {
+    cursor: pointer;
+}
+
 /*listings */
 .listing-author-name {
     height: auto;

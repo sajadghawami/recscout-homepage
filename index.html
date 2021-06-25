@@ -111,8 +111,32 @@
       display: none;
     }
   </style>
-  <!-- <script type="text/javascript">
-   document.getElementsByClassName('left-navi')[0].style.display = 'none' 
-  </script> -->
+  <!-- Start of HubSpot Embed Code -->
+  <script
+    type="text/javascript"
+    id="hs-script-loader"
+    async
+    defer
+    src="//js.hs-scripts.com/9485849.js"
+  ></script>
+  <!-- End of HubSpot Embed Code -->
+  <!-- Custom Body Code -->
+  <script type="text/javascript">
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+  <!-- Custom Body Code  -->
 </html>
 <!-- <--- REMOVE THE HTML TAG IF YOU UPDATE --->
