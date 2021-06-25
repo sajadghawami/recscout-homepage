@@ -461,10 +461,10 @@ window.addEventListener("load", async function (event) {
     // admin_transactions_count
     //admin_transactions
     $(".left-navi-section h2").after(
-      `<div class="transaction-button-wrapper"><a class="transaction-button-link" href="https://www.aifinyo.de/?source=recscout">aifinyo</a><div class="transaction-explainer">Erklärtext</div></div>`
+      `<div class="transaction-button-wrapper"><div class="transaction-button"><a class="transaction-button-link" href="https://www.aifinyo.de/?source=recscout">aifinyo</a></div><div class="transaction-explainer">Erklärtext</div></div>`
     );
     $(".left-navi-section h2").after(
-      `<div class="transaction-button-wrapper"><a class="transaction-button-link" href="${payactiveEndpointData.invitationUrl}" _target="blank">payactive</a><div class="transaction-explainer">Erklärtext</div></div>`
+      `<div class="transaction-button-wrapper"><div class="transaction-button"><a class="transaction-button-link" href="${payactiveEndpointData.invitationUrl}" _target="blank">payactive</a></div><div class="transaction-explainer">Erklärtext</div></div>`
     );
   }
 
