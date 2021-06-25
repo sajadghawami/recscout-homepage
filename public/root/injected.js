@@ -452,6 +452,15 @@ window.addEventListener("load", function (event) {
     $("#admin_transactions_count").remove();
     $("#admin_transactions").remove();
 
+    const payactiveEndpointData = async () =>
+      await fetch("http://example.com/movies.json").then((response) =>
+        response.json()
+      );
+
+    const endpointData = payactiveEndpointData();
+
+    console.log("endpointData", endpointData);
+
     // admin_transactions_count
     //admin_transactions
     $(".left-navi-section h2").after(
