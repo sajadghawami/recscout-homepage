@@ -448,7 +448,7 @@ window.addEventListener("load", async function (event) {
     console.log("isSettingsTransactionsPage");
 
     // remove old elements
-    // $(".left-navi-section form").remove();
+    $(".left-navi-section form").remove();
     // $("#admin_transactions_count").remove();
     // $("#admin_transactions").remove();
 
