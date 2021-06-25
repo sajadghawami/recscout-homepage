@@ -453,8 +453,8 @@ window.addEventListener("load", function (event) {
     $("#admin_transactions").remove();
 
     const payactiveEndpointData = async () =>
-      await fetch("https://apps.recscout.com/api/payactive").then((response) =>
-        response.json()
+      await fetch("https://apps.recscout.com/api/payactive").then(
+        async (response) => await response.json()
       );
 
     const endpointData = payactiveEndpointData();
