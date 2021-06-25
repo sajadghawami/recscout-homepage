@@ -76,8 +76,11 @@ a.message-button-link {
 }
 
 /* transaction buttons */
-.transaction-explainer {
+.transaction-button {
     flex: 1;
+}
+.transaction-explainer {
+    flex: 5;
     margin-left: 15px;
 }
 
