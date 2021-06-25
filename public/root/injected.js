@@ -102,7 +102,7 @@ const getDecompressedRouterQuery = (query) => {
   return decompressedRouterQuery;
 };
 
-window.addEventListener("load", function (event) {
+window.addEventListener("load", async function (event) {
   const splittedPathname = new URL(document.URL).pathname.split("/");
   const splittedPathnameArrayPosition = splittedPathname.length - 1;
   const isLocalhost = new URL(document.URL).hostname === "localhost";
@@ -452,14 +452,11 @@ window.addEventListener("load", function (event) {
     $("#admin_transactions_count").remove();
     $("#admin_transactions").remove();
 
-    const payactiveEndpointData = async () =>
-      await fetch("https://apps.recscout.com/api/payactive").then(
-        async (response) => await response.json()
-      );
+    const payactiveEndpointData = await fetch(
+      "https://apps.recscout.com/api/payactive"
+    ).then(async (response) => await response.json());
 
-    const endpointData = payactiveEndpointData();
-
-    console.log("endpointData", endpointData);
+    console.log("endpointData", payactiveEndpointData);
 
     // admin_transactions_count
     //admin_transactions
