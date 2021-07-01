@@ -156,13 +156,14 @@ window.addEventListener("load", async function (event) {
     splittedPathname[splittedPathnameArrayPosition] === "settings";
   if (isSettingsPage) {
     // remove anzeigename
-    $("#person_display_name").prev("small").remove();
-    $("#person_display_name")
-      .prevAll(".inline-label-container")
-      .first()
-      .remove();
-    $("#person_display_name").prev(".alert-box-icon").remove();
-    $("#person_display_name").remove();
+    // $("#person_display_name").prev("small").remove();
+    // $("#person_display_name")
+    //   .prevAll(".inline-label-container")
+    //   .first()
+    //   .remove();
+    // $("#person_display_name").prev(".alert-box-icon").remove();
+    // $("#person_display_name").remove();
+
     // add the links
     $("#person_description").before($("<br/>"));
     $("#person_description").before(
