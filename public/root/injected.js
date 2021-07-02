@@ -367,7 +367,7 @@ window.addEventListener("load", async function (event) {
         $("<div></div>")
           .addClass("message-selection-column")
           .append(
-            $("<a>Auftrag akzeptiert</a>")
+            $("<a>Auftrag vergeben</a>")
               .attr({ href: "#" })
               .addClass("message-button-link")
               .click(function (event) {
