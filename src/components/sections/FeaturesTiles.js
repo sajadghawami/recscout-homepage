@@ -173,7 +173,7 @@ const FeaturesTiles = ({
                   <h4 className="mt-0 mb-8">Kommunikation</h4>
                   <p className="m-0">
                     Die gesamte Kommunikation (Chat&Video) erfolgt über RECSCOUT
-                    - Der Erstkontakt kann nur durch Unternehmen erfolgen. .
+                    - Der Erstkontakt kann nur durch Unternehmen erfolgen.
                   </p>
                 </div>
               </div>
