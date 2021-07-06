@@ -7,6 +7,10 @@
 }
 
 /* general pages*/
+/* helper css */
+.display-none {
+    display: none;
+}
 
 /* notifications */
 .ajax-notice,
