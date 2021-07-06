@@ -517,7 +517,7 @@ window.addEventListener("load", async function (event) {
     );
 
     waitForElm("#hubspot-messages-iframe-container").then((elm) => {
-      elem.attr("style", "display: none !important");
+      $(elem).attr("style", "display: none !important");
     });
   }
 
