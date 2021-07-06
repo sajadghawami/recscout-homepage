@@ -212,6 +212,14 @@ window.addEventListener("load", async function (event) {
     const isCreateListingsPage =
       splittedPathname[splittedPathnameArrayPosition] === "new";
 
+    // in the listings page, remove the hidden elements that are not
+    $(".checkbox-option.not-selected").remove();
+    $(".col-4")
+      .filter(function (index) {
+        return $(this).children().length < 1;
+      })
+      .remove();
+
     if (isCreateListingsPage) {
       console.log("isCreateListingPage");
 
