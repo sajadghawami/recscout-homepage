@@ -130,11 +130,12 @@ window.addEventListener("load", async function (event) {
   // change menu name
   // $(".MenuPriority .MenuLabel").contents()[2].nodeValue = "Mehr";
 
-  const isAboutPage =
+  const isInfoPages =
     splittedPathname[splittedPathnameArrayPosition - 1] === "infos";
-  if (isAboutPage) {
+
+  if (isInfoPages) {
     // make wrapper fullwidth
-    $(".wrapper").css({ maxWidth: "100%" });
+    // $(".wrapper").css({ maxWidth: "100%" });
   } else {
     // add the sidebar if not in about
     $(".left-navi").css({ display: "inline-block" });
@@ -459,13 +460,16 @@ window.addEventListener("load", async function (event) {
 
     console.log("endpointData", payactiveEndpointData);
 
-    // admin_transactions_count
     //admin_transactions
     $(".left-navi-section h2").after(
-      `<div class="transaction-button-wrapper"><div class="transaction-button"><a class="transaction-button-link" href="https://www.aifinyo.de/?source=recscout" target="_blank">aifinyo</a></div><div class="transaction-explainer">Erklärtext</div></div>`
+      `<p>Informationen zum Payment über unsere Partner finden Sie<a href="https://recscout.medium.com/e-rechnung-und-factoring-im-recruitment-519d0b3cd8f2" target="_blank">HIER</a></p>`
+    );
+
+    $(".left-navi-section h2").after(
+      `<div class="transaction-button-wrapper"><div class="transaction-button"><a class="transaction-button-link" href="https://www.aifinyo.de/?source=recscout" target="_blank">aifinyo</a></div><div class="transaction-explainer"><h6>Factoring</h6>Mit unserem Payment-Partner für Factoring bieten wir Personalberater:innen den digitalen Boost für mehr Liquidität an. Berater:innen bieten wir die Möglichkeit einer Honorar-Auszahlung innerhalb von 48 Stunden. Gleichzeitig genießen Unternehmen eine Zahlungsflexibilität von bis zu 90 Tagen.</div></div>`
     );
     $(".left-navi-section h2").after(
-      `<div class="transaction-button-wrapper"><div class="transaction-button"><a class="transaction-button-link" href="${payactiveEndpointData.invitationUrl}" target="_blank">payactive</a></div><div class="transaction-explainer">Erklärtext</div></div>`
+      `<div class="transaction-button-wrapper"><div class="transaction-button"><a class="transaction-button-link" href="${payactiveEndpointData.invitationUrl}" target="_blank">payactive</a></div><div class="transaction-explainer"><h6>E-Rechnungen</h6>Berater:innen bieten wir die Möglichkeit Rechnungen digital an Ihren Auftraggeber zu senden. Dazu können Berater:innen wie gewohnt ihre Rechnungen erstellen und auf payactive hochladen. Sobald die Rechnung versendet ist, werden die Berater:innen über den aktuellen Stand informiert.</div></div>`
     );
   }
 
