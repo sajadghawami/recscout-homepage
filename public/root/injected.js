@@ -511,7 +511,10 @@ window.addEventListener("load", async function (event) {
     $(".marketplace-lander").append(contactForm);
 
     // remove the second hubspot element
-    $(".hubspot-messages-iframe-container").css({ display: "none" });
+
+    waitForElm(".hubspot-messages-iframe-container").then((elm) => {
+      elem.css({ display: "none" });
+    });
   }
 
   // WE PROBABLY DONT NEED THIS ANYMORE
