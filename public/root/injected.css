@@ -7,6 +7,17 @@
 }
 
 /* general pages*/
+
+/* notifications */
+.ajax-notice,
+.ajax-warning,
+.flash-notice,
+.flash-warning,
+.ajax-update-notice {
+    background: #79d1c3;
+    color: #fff;
+}
+
 /* this is for the about pages */
 .left-navi {
     display: none;
