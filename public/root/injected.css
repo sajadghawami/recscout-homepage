@@ -82,10 +82,15 @@ a.message-button-link {
 /* transaction buttons */
 .transaction-button {
     flex: 1;
+    display: flex;
 }
 .transaction-explainer {
     flex: 5;
     margin-left: 15px;
+}
+
+.transaction-explainer h5 {
+    margin-top: 0;
 }
 
 .transaction-button-wrapper {

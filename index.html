@@ -85,7 +85,6 @@
   </script>
   <style>
     /* remove the these here because otherwise they will be visible on first paint */
-
     #admin_transactions_count,
     #admin_transactions {
       display: none;
@@ -113,9 +112,9 @@
     }
 
     /* remove the startpage from the menu */
-    .MenuContent > div:nth-child(3) {
+    /* .MenuContent > div:nth-child(3) {
       display: none;
-    }
+    } */
   </style>
   <!-- Start of HubSpot Embed Code -->
   <script
@@ -128,9 +127,9 @@
   <!-- End of HubSpot Embed Code -->
   <!-- Custom Body Code -->
   <script type="text/javascript">
+  // accordion
     var acc = document.getElementsByClassName("accordion");
     var i;
-
     for (i = 0; i < acc.length; i++) {
       acc[i].addEventListener("click", function () {
         this.classList.toggle("active");
