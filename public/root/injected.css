@@ -9,7 +9,7 @@
 /* general pages*/
 /* helper css */
 .display-none {
-    display: none;
+    display: none !important;
 }
 
 /* notifications */
