@@ -509,6 +509,9 @@ window.addEventListener("load", async function (event) {
     const contactForm =
       '<iframe class="embedded-contact" id="embedded-contactform" width="100%" height="100%" src="https://recscout.hubspotpagebuilder.com/recscout-pr%C3%A4sentation" frameborder="0" style="height:100vh"></iframe>';
     $(".marketplace-lander").append(contactForm);
+
+    // remove the second hubspot element
+    $(".hubspot-messages-iframe-container").css({ display: "none" });
   }
 
   // WE PROBABLY DONT NEED THIS ANYMORE
