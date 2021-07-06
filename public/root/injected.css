@@ -114,7 +114,7 @@ a.transaction-button-link:nth-of-type(2) {
 
 /* profile */
 .profile-link {
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 
 .profile-link:hover {
