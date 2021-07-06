@@ -511,6 +511,10 @@ window.addEventListener("load", async function (event) {
     $(".marketplace-lander").append(contactForm);
 
     // remove the second hubspot element
+    $("#hubspot-messages-iframe-container").attr(
+      "style",
+      "display: none !important"
+    );
 
     waitForElm(".hubspot-messages-iframe-container").then((elm) => {
       elem.css({ display: "none" });
