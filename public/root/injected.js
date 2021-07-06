@@ -516,8 +516,8 @@ window.addEventListener("load", async function (event) {
       "display: none !important"
     );
 
-    waitForElm(".hubspot-messages-iframe-container").then((elm) => {
-      elem.css({ display: "none" });
+    waitForElm("#hubspot-messages-iframe-container").then((elm) => {
+      elem.attr("style", "display: none !important");
     });
   }
 
