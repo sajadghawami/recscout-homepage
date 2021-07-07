@@ -98,7 +98,9 @@ a.message-button-link {
 .transaction-button {
     flex: 1;
     display: flex;
+    align-items: flex-start;
 }
+
 .transaction-explainer {
     flex: 5;
     margin-left: 15px;
